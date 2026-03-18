@@ -40,7 +40,7 @@ theme: simple
 
 **Een Python framework om data scripts om te zetten in interactieve web apps**
 
-<div style="font-size: 0.7em; margin-bottom: 30px;">
+<div style="font-size: 0.7em; margin: 60px 0px 60px 0px;">
 
 📚 **Streamlit Python-bibliotheek** - snel interactieve visualisaties en analyses<br>
 📊 **Geen HTML, CSS of JavaScript nodig** - focus op data en logica<br>
