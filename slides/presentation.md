@@ -3,24 +3,24 @@ title: Streamlit Workshop - Deel 1
 theme: simple
 ---
 
-<h1 style="font-size: 2em;">Streamlit: Snel & Makkelijk Visualiseren</h1>
+<h1 style="font-size: 1.3em;">Streamlit: Snel & Makkelijk Visualiseren</h1>
 
-<h3 style="font-size: 1.2em;">Deel 1: Overzicht van Streamlit</h3>
+<h3 style="font-size: 0.8em;">Deel 1: Overzicht van Streamlit</h3>
 
 <br>
-
-<div style="display: flex; justify-content: center; gap: 20px; font-size: 0.8em;">
+<br>
+<div style="display: flex; justify-content: center; gap: 105px; font-size: 0.8em;">
   <div>
     <strong>Sander Kools</strong><br>
-    <i>Workshop Leider</i>
+    <i>Pokemon Trainer</i>
   </div>
   <div>
     <strong>Dennis Stoel</strong><br>
-    <i>Helper</i>
+    <i>Pokemon Professor</i>
   </div>
   <div>
     <strong>Dervis van Leersum</strong><br>
-    <i>Helper</i>
+    <i>Pokemon Gym Leader</i>
   </div>
 </div>
 
@@ -30,7 +30,7 @@ theme: simple
   <img
     src="https://streamlit.io/images/brand/streamlit-mark-color.png"
     alt="Streamlit Logo"
-    style="max-width: 150px; height: auto; display: inline-block;"
+    style="max-width: 200px; height: auto; display: inline-block;"
   >
 </div>
 
@@ -38,11 +38,36 @@ theme: simple
 
 ## Wat is Streamlit?
 
+**Een Python framework om data scripts om te zetten in interactieve web apps**
+
+<div style="font-size: 0.7em; margin-bottom: 30px;">
+
+📚 **Streamlit Python-bibliotheek** - snel interactieve visualisaties en analyses<br>
+📊 **Geen HTML, CSS of JavaScript nodig** - focus op data en logica<br>
+⚡ **Van script naar shareable app in minuten**  - gemak<br>
+🐍 **Pure Python** – gebruik je bestaande skills<br>
+🔄 **Live updates** – elke code wijziging direct zichtbaar<br>
+
+</div>
+<div style="font-size: 0.7em;">
+
+> *"If you can write Python, you can build a web app"*
+
+</div>
+
+---
+
+## Waarom Streamlit?
+<br>
+
 - **Streamlit** is een **Python-bibliotheek** om snel interactieve web-apps te bouwen voor data visualisatie en analyse.
 - **Geen frontend-kennis nodig** – focus op je data en logica.
 - **Out-of-the-box visualisaties** met minimale code.
 
 ---
+
+## Bijvoorbeeld
+<br>
 
 <table>
 <tr>
@@ -78,6 +103,45 @@ st.line_chart([1, 2, 3, 4, 5])
 </table>
 
 ---
+
+## Streamlit Execution Model
+#### Architecture & Execution
+<br>
+
+- **Run Your App:** begrijpen hoe je een Streamlit app start
+- **Architecture:** basics over de Streamlit client-server architecture
+- **The App Chrome:** De build-in Streamlit app widget voor devs en users
+
+---
+
+### Start met Streamlit
+<br>
+
+- ...
+
+---
+
+### Architectuur
+<br>
+
+- ...
+
+---
+
+### The App Chrome
+<br>
+
+- ...
+
+---
+
+## Core Widgets
+<br>
+
+- ...
+
+---
+
 ## Sessiebeheer in Streamlit
 
 ### Wat is sessiebeheer?
