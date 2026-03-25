@@ -347,6 +347,7 @@ st.subheader("📍 Subheader")
 st.markdown("**Bold** en *italic* tekst")
 
 # ✨ Magic!
+st.file_uploader("Upload pokemon...")
 
 # Data
 df = pd.DataFrame(
@@ -366,7 +367,7 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/widgets-display.png"
+    src="images/widgets-input.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -375,7 +376,6 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
 </td>
 </tr>
 </table>
-
 ---
 
 ## 🧩 Core Widgets - Visualize
@@ -596,6 +596,64 @@ st.plotly_chart(fig)
 
 ---
 
+## 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+🥧 Pie Chart
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+# Voorbeeld Pokemon data
+df = pd.DataFrame({
+    "pokemon": [
+      "Pikachu", "Charizard",
+      "Blastoise", "Venusaur", "Gengar"
+    ],
+    "attack": [55, 84, 83, 82, 65],
+    "defense": [40, 78, 100, 83, 60],
+    "speed": [90, 100, 78, 80, 110],
+    "type": [
+      "Electric", "Fire", "Water", "Grass", "Ghost"
+    ],
+    "hp": [35, 78, 79, 80, 60]
+})
+
+# 🥧 Pie Chart - Type Distribution
+type_counts = df["type"].value_counts().reset_index()
+type_counts.columns = ["type", "count"]
+fig_pie = px.pie(
+    type_counts,
+    values="count",
+    names="type",
+    title="Pokemon Type Distribution"
+)
+st.plotly_chart(fig_pie, use_container_width=True)
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/pie-chart.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
 ### 🚀 Deel 1: Aan de slag met Streamlit
 
 <div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
@@ -655,8 +713,8 @@ st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 
 ---
 
-## More Features
-(denk aan slides met: file_uploader(), dataframe(), selectbox(), multiselect(), slider(), metric(), plotly_chart(), tabs(), columns(), image(), download_button())
+## filters
+(denk aan slides met: file_uploader(), dataframe(), selectbox(), multiselect(), slider(), metric(), tabs(), columns(), image(), download_button())
 
 ### Query Params
 
