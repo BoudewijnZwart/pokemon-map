@@ -152,40 +152,470 @@ streamlit run app.py
 ---
 
 ## Streamlit Execution Model
-#### Architecture & Execution
-<br>
+#### *Dit is CRUCIAAL om te begrijpen!*
 
-- **Run Your App:** begrijpen hoe je een Streamlit app start
-- **Architecture:** basics over de Streamlit client-server architecture
-- **The App Chrome:** De build-in Streamlit app widget voor devs en users
+<div style="font-size: 0.8em; margin: 40px 0px 40px 0px; text-align: left;">
+
+#### ⚡ Het Belangrijkste Principe:
+
+</div>
+<div style="font-size: 0.6em;">
+
+> **Streamlit re-runs je hele script bij elke interactie**  
+> Van boven naar beneden, telkens opnieuw
+
+</div>
+<div style="font-size: 0.8em; margin: 40px 0px 40px 0px; text-align: left;">
+
+🖱️ **Elke widget click** = complete re-run  
+⌨️ **Elke input change** = complete re-run  
+📁 **Elke file upload** = complete re-run  
+
+</div>
+<div style="font-size: 0.4em; margin: 40px 0px 10px 0px;;">
+
+> Meer hierover in de volgende presentatie...
+
+</div>
 
 ---
 
-### Start met Streamlit
-<br>
+## 🚀 Start met Streamlit
 
-- ...
+<div style="font-size: 0.65em; margin: 30px 0px 0px 0px;">
+
+### 📦 **Installatie**
+```bash
+uv sync
+```
+
+</div>
+<div style="font-size: 0.65em; margin: 30px 0px 0px 0px;">
+
+### 📝 **Maak een module:** `app.py`
+```python
+import streamlit as st
+
+st.write("Hallo workshop! 👋")
+```
+
+</div>
+<div style="font-size: 0.65em; margin: 30px 0px 0px 0px;">
+
+### ▶️ **Run het**
+```bash
+uv run streamlit run app.py
+```
+
+</div>
+<div style="font-size: 0.65em; margin: 50px 0px 0px 0px;">
+
+**Browser opent (automatisch) op** `http://localhost:8501` 🎉
+
+</div>
+
 
 ---
 
-### Architectuur
-<br>
+### 🏗️ Architectuur Basics
 
-- ...
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+<table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+<tr>
+<td style="width: 40%; background: #2779d6; padding: 30px; border-radius: 10px; border: 2px solid #4a90e2;">
+
+### 🌐 **Browser (Frontend)**
+
+<div style="font-size: 0.9em; margin-top: 20px; text-align: left;">
+
+✨ UI Rendering  
+⌨️ User Input  
+🖱️ Interactivity  
+📱 Responsive Layout  
+
+</div>
+
+</td>
+
+<td style="width: 20%; text-align: center; vertical-align: middle; font-size: 2em;">
+
+**↔️**
+
+<div style="font-size: 0.4em; margin-top: 10px;">
+WebSocket
+</div>
+
+</td>
+
+<td style="width: 40%; background: #c58d38; padding: 30px; border-radius: 10px; border: 2px solid #ff9800;">
+
+### 🐍 **Python (Backend)**
+
+<div style="font-size: 0.9em; margin-top: 20px; text-align: left;">
+
+⚙️ Script Execution  
+🧮 Data Processing  
+💾 State Management  
+📊 Compute Work  
+
+</div>
+
+</td>
+</tr>
+</table>
+
+🔌 **WebSocket verbinding:** real-time updates  
+🖥️ **Server-side rendering:** Python doet het zware werk  
+📡 **Auto-reconnect:** verbinding verloren? Herstelt automatisch  
+
+💡 **Voor jou:** Schrijf gewoon Python, Streamlit regelt de rest!
+
+</div>
 
 ---
 
 ### The App Chrome
-<br>
 
-- ...
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+Built-in dev tools
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+in the top right corner
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+⚙️ **Settings** 
+  * theme, run on save, wide mode
+
+🔄 **Rerun** 
+  * handmatig hertrigger
+
+🗑️ **Clear cache** 
+  * verwijder gecachte data
+
+📹 **Record screencast** 
+  * maak een demo video
+
+🐛 **Print** 
+  * print de pagina
+
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/the_app_chrome.png"
+    alt="Streamlit App Chrome Example"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Core Widgets
-<br>
+## 🧩 Core Widgets - display & Input
 
-- ...
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+📊 Data Weergeven
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import pandas as pd
+
+# Text
+st.write("Simpelste manier om iets te tonen")
+st.title("🏆 Grote titel")
+st.header("📌 Header")
+st.subheader("📍 Subheader")
+st.markdown("**Bold** en *italic* tekst")
+
+# ✨ Magic!
+
+# Data
+df = pd.DataFrame(
+  {
+    "pokemon": ["Pikachu", "Charizard", "Bulbasaur"], 
+    "hp": [35, 78, 45]
+  }
+)
+st.dataframe(df)  # 📊 Interactieve tabel (sorteerbaar!)
+st.table(df)      # 📋 Static tabel
+
+# Metrics: 📈 Met delta
+st.metric("Totaal Pokemon", "151", "+1 nieuwe")
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/widgets-display.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+📊 Bar Chart
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import pandas as pd
+
+# Create DataFrame
+data = pd.DataFrame({
+    "stad": [
+      "Amsterdam", "Rotterdam", "Utrecht", "Eindhoven"
+    ],
+    "temperatuur": [15, 17, 14, 16]
+})
+
+# Create a dropdown box
+selected_city = st.selectbox(
+    "Kies een stad:",
+    data["stad"].unique()
+)
+# filter on selection
+filtered_data = data[data["stad"] == selected_city]
+
+st.write(
+    f"Temperatuur in {selected_city}: {
+        filtered_data['temperatuur'].values[0]
+    }°C"
+)
+# Plot a bar chart
+st.bar_chart(filtered_data.set_index("stad"))
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/bar-chart.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+📊 Matplotlib
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Genereer willekeurige data
+data = np.random.normal(0, 1, 1000)
+
+# Maak een histogram
+fig, ax = plt.subplots()
+ax.hist(data, bins=30, edgecolor='black')
+ax.set_title("Normale Verdeling")
+ax.set_xlabel("Waarde")
+ax.set_ylabel("Frequentie")
+
+# Toon de grafiek in Streamlit
+st.pyplot(fig)
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/pyplot.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+📊 Plotly
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import plotly.express as px
+import pandas as pd
+
+# Voorbeeld data
+df = pd.DataFrame({
+    "x": [1, 2, 3, 4, 5],
+    "y": [10, 11, 8, 13, 9],
+    "categorie": ["A", "B", "A", "C", "B"]
+})
+
+# Maak een interactieve scatter plot
+fig = px.scatter(
+  df,
+  x="x", y="y", 
+  color="categorie",
+  title="Interactieve Scatter Plot"
+)
+
+# Toon de grafiek in Streamlit
+st.plotly_chart(fig)
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/plotly.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+📊 GeoPlots
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+# Voorbeeld data met locaties
+df = pd.DataFrame({
+    "stad": ["Amsterdam", "Rotterdam", "Utrecht"],
+    "lat": [52.3676, 51.9244, 52.0907],
+    "lon": [4.9041, 4.4777, 5.1214]
+})
+
+# Maak een kaart met Plotly
+fig = px.scatter_geo(
+    df,
+    lat="lat",
+    lon="lon",
+    hover_name="stad",
+    title="Locaties in Nederland",
+    projection="natural earth"
+)
+
+# Toon de kaart in Streamlit
+st.plotly_chart(fig)
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/scatter_geo.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🚀 Deel 1: Aan de slag met Streamlit
+
+<div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
+
+### Wat gaan we doen?
+1. 📡 **Dataset Uploaden**
+2. 📊 **Dataset Overview**
+3. 📉 **Data Preview & Filters**
+4. 👩‍🎨 **Visualiseren**
+5. 💾 **Download**
+
+🎁 **Bonus Challenges** 
+
+</div>
+
+---
+
+<h1 style="font-size: 1.3em;">Streamlit: Meer dan de basics</h1>
+
+<h3 style="font-size: 0.8em;">Deel 2: Interactie met je data</h3>
 
 ---
 
@@ -216,208 +646,24 @@ st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 ```
 
 ---
-## 🚀 Deel 1: Aan de slag met Streamlit
 
-<div style="font-size: 0.95em; line-height: 1.5;">
-
-### Wat gaan we doen?
-- **Streamlit installeren en draaiend krijgen**
-- **Sessiebeheer leren gebruiken**
-- **Een lijn-grafiek maken met een weer-API**
-
+## Query Params
 
 ---
-## Filters in Streamlit
 
-<div style="display: flex; flex-direction: column; font-size: 0.9em;">
-
-<div style="margin-bottom: 10px;">
-Wat zijn filters?
-Filters laten gebruikers data selecteren, zoals:
-- Steden
-- Categorieën
-- Opties uit een lijst
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-
-
-```python
-import streamlit as st
-import pandas as pd
-
-data = pd.DataFrame({
-    "stad": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven"],
-    "temperatuur": [15, 17, 14, 16]
-})
-selected_city = st.selectbox(
-    "Kies een stad:",
-    data["stad"].unique()
-)
-filtered_data = data[data["stad"] == selected_city]
-
-st.write(f"Temperatuur in {selected_city}: 
-    {filtered_data['temperatuur'].values[0]}°C")
-st.bar_chart(filtered_data.set_index("stad"))
-```
----
-## Matplotlib in Streamlit
-
-<div style="display: flex; flex-direction: column; font-size: 0.9em;">
-
-<div style="margin-bottom: 10px;">
-Matplotlib is een krachtige bibliotheek voor het maken van **staatgrafieken, histograms, en scatter plots**. In Streamlit kun je Matplotlib-grafieken direct weergeven met `st.pyplot()`.
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-
-<div style="flex: 1; padding-right: 10px;">
-
-<div style="font-size: 0.75em; padding: 8px; border-radius: 4px;">
-
-```python
-import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Genereer willekeurige data
-data = np.random.normal(0, 1, 1000)
-
-# Maak een histogram
-fig, ax = plt.subplots()
-ax.hist(data, bins=30, edgecolor='black')
-ax.set_title("Normale Verdeling")
-ax.set_xlabel("Waarde")
-ax.set_ylabel("Frequentie")
-# Toon de grafiek in Streamlit
-st.pyplot(fig)
-```
-</div>
-</div>
-<div style="flex: 1; text-align: center;">
-  <img
-    src="images/hello_world.png"
-    alt="Matplotlib Histogram Example"
-    style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;"
-  >
-</div>
-</div>
-</div>
----
-
-## Plotly in Streamlit
-
-<div style="display: flex; flex-direction: column; font-size: 0.9em;">
-
-Plotly is ideaal voor **interactieve visualisaties**, zoals 3D-plots, animaties, en geavanceerde grafieken. In Streamlit gebruik je `st.plotly_chart()` om Plotly-figuren weer te geven.
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-
-<div style="width: 50%; flex: 1; padding-right: 10px;">
-
-<div style="font-size: 0.75em; padding: 8px; border-radius: 4px;">
-
-```python
-import streamlit as st
-import plotly.express as px
-import pandas as pd
-
-# Voorbeeld data
-df = pd.DataFrame({
-    "x": [1, 2, 3, 4, 5],
-    "y": [10, 11, 8, 13, 9],
-    "categorie": ["A", "B", "A", "C", "B"]
-})
-
-# Maak een interactieve scatter plot
-fig = px.scatter(df, x="x", y="y", color="categorie", title="Interactieve Scatter Plot")
-
-# Toon de grafiek in Streamlit
-st.plotly_chart(fig)
-```
-</div>
-</div>
-<div style="width: 50%; flex: 1; text-align: center;">
-  <img
-    src="images/hello_world.png"
-    alt="Plotly Scatter Plot Example"
-    style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;"
-  >
-</div>
-</div>
-</div>
----
-
-## Geoplots in Streamlit
-
-<div style="display: flex; flex-direction: column; font-size: 0.9em;">
-
-<div style="margin-bottom: 10px;">
-
-Geoplots zijn perfect voor het visualiseren van **geografische data**, zoals locaties op een kaart. Met bibliotheken zoals `folium` of `plotly.express` kun je eenvoudig kaarten toevoegen aan je Streamlit-app.
-</div>
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-
-<div style="font-size: 0.75em; background-color: padding: 8px; border-radius: 4px;">
-
-```python
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-
-# Voorbeeld data met locaties
-df = pd.DataFrame({
-    "stad": ["Amsterdam", "Rotterdam", "Utrecht"],
-    "lat": [52.3676, 51.9244, 52.0907],
-    "lon": [4.9041, 4.4777, 5.1214]
-})
-
-# Maak een kaart met Plotly
-fig = px.scatter_geo(df,
-                     lat="lat",
-                     lon="lon",
-                     hover_name="stad",
-                     title="Locaties in Nederland",
-                     projection="natural earth")
-
-# Toon de kaart in Streamlit
-st.plotly_chart(fig)
-```
-</div>
-<div style="flex: 1; text-align: center;">
-  <img
-    src="images/hello_world.png"
-    alt="Streamlit Line Chart Example"
-    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
-  >
-  <p style="font-size: 0.8em; color: #666;">Resultaat: Kaart met locaties</p>
-</div>
-</div>
+## Streamlit Forms
 
 ---
-## 🎨 Deel 2: Aan de slag met Geavanceerde Visualisaties!
 
-<div style="font-size: 0.55em; line-height: 1.3; text-align: center;">
+## More Features
+(denk aan slides met: file_uploader(), dataframe(), selectbox(), multiselect(), slider(), metric(), plotly_chart(), tabs(), columns(), image(), download_button())
 
-**Wat gaan we doen?**
-Leer **complexe visualisaties** maken met:
-- **Plotly** (interactieve grafieken)
-- **Matplotlib** (histogrammen, staafdiagrammen)
-- **Geoplots** (kaarten en geografische data)
+### Query Params
 
-**📌 Opdracht:**
-1. Kies een dataset (bijv. weerdata, Pokémon API, gemeente data).
-2. Maak een visualisatie met **Plotly of Matplotlib**.
-3. Voeg **filters** toe (dropdowns, sliders).
-4. Maak een kaart met geodata!
+### On Change
 
-**💡 Tips:**
-✅ **Vragen?** Roep ons!
-✅ **Inspiratie nodig?** Kijk naar de voorbeelden.
-✅ **Vastgelopen?** We helpen je graag!
+### Collapsible Filter Sections
 
-**🚀 Tijd om te bouwen! Succes!** 🎉
-</div>
+### Add more advanced stuff here...
+
 ---
