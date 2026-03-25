@@ -40,7 +40,7 @@ theme: simple
 
 **Een Python framework om data scripts om te zetten in interactieve web apps**
 
-<div style="font-size: 0.7em; margin: 60px 0px 60px 0px;">
+<div style="font-size: 0.7em; margin: 60px 0px 60px 0px; text-align: left;">
 
 📚 **Streamlit Python-bibliotheek** - snel interactieve visualisaties en analyses<br>
 📊 **Geen HTML, CSS of JavaScript nodig** - focus op data en logica<br>
@@ -58,11 +58,39 @@ theme: simple
 ---
 
 ## Waarom Streamlit?
-<br>
 
-- **Streamlit** is een **Python-bibliotheek** om snel interactieve web-apps te bouwen voor data visualisatie en analyse.
-- **Geen frontend-kennis nodig** – focus op je data en logica.
-- **Out-of-the-box visualisaties** met minimale code.
+<div style="font-size: 0.45em; margin: 50px 0px 0px 0px; text-align: left;">
+
+### 👨‍🔬 **Voor Data Scientists**
+
+- Snel een prototype model kunnen tonen aan stakeholders
+- Exploratory data analysis delen met collega's
+- Geen wachten op frontend developers 😶
+
+</div>
+<div style="font-size: 0.45em; margin: 30px 0px 0px 0px; text-align: left;">
+
+### 👨‍💻 **Voor Software Engineers**  
+
+- Interne tools & dashboards in uren i.p.v. weken
+- MVPs en proof-of-concepts
+- Admin panels zonder React/Vue/Angular
+
+</div>
+<div style="font-size: 0.45em; margin: 30px 0px 40px 0px; text-align: left;">
+
+### 👥 **Voor Teams**
+
+- Beheer data access (iedereen kan je analyses gebruiken)
+- Live demos tijdens meetings
+- Self-service analytics platforms
+
+</div>
+<div style="font-size: 0.55em;">
+
+> ✅ **Perfect voor:** Internal tools, data apps, demos, prototypes, MVPs
+
+</div>
 
 ---
 
@@ -71,7 +99,7 @@ theme: simple
 
 <table>
 <tr>
-<td style="width: 60%; vertical-align: top; padding: 10px;">
+<td style="width: 50%; vertical-align: top; padding: 10px;">
 Snippet
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
@@ -79,12 +107,18 @@ Result
 </td>
 </tr>
 <tr>
-<td style="width: 60%; vertical-align: top; padding: 10px;">
+<td style="width: 40%; vertical-align: top; padding: 10px;">
 
+##### 📝 Code:
 ```python
 import streamlit as st
 st.title("Hallo, Streamlit!")
 st.line_chart([1, 2, 3, 4, 5])
+```
+
+##### 🏃 Run app:
+```bash
+streamlit run app.py
 ```
 
 </td>
@@ -101,6 +135,19 @@ st.line_chart([1, 2, 3, 4, 5])
 </td>
 </tr>
 </table>
+
+---
+
+## ⚠️ Wanneer NIET Streamlit?
+
+<div style="font-size: 0.7em; margin: 60px 0px 60px 0px; text-align: left;">
+
+❌ **High-traffic publieke apps** (veel concurrent users)  
+❌ **Complexe state management** (multi-user real-time collaboration)  
+❌ **Pixel-perfect custom UI** (complexe design specs)  
+❌ **Mobile-first apps** (responsive, maar niet optimaal)
+
+</div>
 
 ---
 
