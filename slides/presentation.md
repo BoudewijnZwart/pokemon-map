@@ -636,7 +636,7 @@ fig_pie = px.pie(
     names="type",
     title="Pokemon Type Distribution"
 )
-st.plotly_chart(fig_pie, use_container_width=True)
+st.plotly_chart(fig_pie, width="stretch")
 ```
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
