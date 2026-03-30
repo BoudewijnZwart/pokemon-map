@@ -667,7 +667,11 @@ st.plotly_chart(fig_pie, use_container_width=True)
 5. 💾 **Download**
 
 🎁 **Bonus Challenges** 
-
+TODO: Duidelijker doelen? (zoals in het docje?)
+laad de pokemon data (direct of via upload)
+laad de data in een dataframe
+maak 1 (of meer) visualisatie van de volgende opties: (pie chart, bar chart scatter plot, line_chart)
+Bonus:? tabs? filters? download?
 </div>
 
 ---
@@ -862,6 +866,7 @@ selected_type = st.selectbox("Type", types)
 filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
 st.dataframe(filtered_df)
 ```
+TODO: Code werkt niet (alle generaties zichtbaar altijd)
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
 
@@ -907,50 +912,6 @@ def load_data():
 
 pokemon_df = load_data()
 
-generations = st.multiselect("Generatie", [1, 2, 3])
-types = pokemon_df[pokemon_df["Generation"].isin(generations)]["Type 1"].unique()
-selected_type = st.selectbox("Type", types)
-filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
-st.dataframe(filtered_df)
-```
-TODO: Code werkt niet (alle generaties zijn altijd zichtbaar)
-</td>
-<td style="width: 40%; vertical-align: top; padding: 10px;">
-
-<div style="flex: 1; text-align: center;">
-  <img
-    src="images/deel2/multi_select.png"
-    alt="Streamlit Basic Widgets"
-    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
-  >
-</div>
-
-</td>
-</tr>
-</table>
-
----
-
-[comment]: <> (Use `on_change` to update filters dynamically.. TODO: Screenshot)
-
-## Callbacks
-
-### Dynamische Updates
-Gebruik `on_change` om filters direct te updaten:
-
-##### Voorbeeld: Callback
-```python
-import streamlit as st
-import pandas as pd
-
-# Load data
-@st.cache_data
-def load_data():
-    csv_path = 'Pokemon_Stats.csv'
-    return pd.read_csv(csv_path)
-
-pokemon_df = load_data()
-
 def update_types():
     st.session_state.types = pokemon_df[pokemon_df["Generation"].isin(st.session_state.generations)]["Type 1"].unique()
 
@@ -967,22 +928,63 @@ st.selectbox(
 )
 ```
 TODO: Code werkt niet
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+TODO
+  <!-- <img
+    src="images/deel2/multi_select.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  > -->
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 
-[comment]: <> (Improve UI organization with expanders. TODO: Screenshot)
+## 🧩 UX: Collapsible Filter Sections
 
-## UX: Collapsible Filter Sections
+Gebruik `on_change` om filters direct te updaten:
 
-### Expanders
-Verberg complexe filters achter een knop:
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
 
-##### Voorbeeld: Expander
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
 ```python
+import streamlit as st
+
 with st.expander("Geavanceerde filters"):
     hp_range = st.slider("HP Range", 0, 200, (50, 150))
     st.write(f"HP tussen {hp_range[0]} en {hp_range[1]}")
 ```
+
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+TODO
+  <img
+    src="images/deel2/advanced_filter.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 ## filters
@@ -1011,6 +1013,14 @@ with st.expander("Geavanceerde filters"):
 
 🎁 **Bonus Challenges** 
 
+TODO: Duidelijker doelen? (zoals in het docje?)
+laat pokemon tabel zien met een van de volgende (of meerdere) filters: type, hp, attack, defense, generatie, legendary.
+  - gebruik sessions state
+minimum stats threshold
+bonus: url paramter
 </div>
+
+---
+Deel 3: maak je eigen pokedex
 
 ---
