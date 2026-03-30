@@ -89,3 +89,4 @@ with tab_table:
             pokemon_show = pokemon_show[pokemon_show["Type 2"] == type_2_select]
 
     st.dataframe(pokemon_show, width='stretch')
+    # TODO: Add interaction button (to show session state)

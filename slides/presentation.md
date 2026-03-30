@@ -3,22 +3,22 @@ title: Streamlit Workshop - Deel 1
 theme: simple
 ---
 
-<h1 style="font-size: 1.3em;">Streamlit: Snel & Makkelijk Visualiseren</h1>
+<h1 style="font-size: 2.5rem;">Streamlit: Snel & Makkelijk Visualiseren</h1>
 
-<h3 style="font-size: 0.8em;">Deel 1: Overzicht van Streamlit</h3>
+<h3 style="font-size: 1.2rem;">Deel 1: Overzicht van Streamlit</h3>
 
 <br>
-<br>
-<div style="display: flex; justify-content: center; gap: 105px; font-size: 0.8em;">
-  <div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 5vw; font-size: 1.1rem; flex-wrap: wrap;">
+  <div style="text-align: center;">
     <strong>Sander Kools</strong><br>
     <i>Pokemon Trainer</i>
   </div>
-  <div>
+  <div style="text-align: center;">
     <strong>Dennis Stoel</strong><br>
     <i>Pokemon Professor</i>
   </div>
-  <div>
+  <div style="text-align: center;">
     <strong>Dervis van Leersum</strong><br>
     <i>Pokemon Gym Leader</i>
   </div>
@@ -30,7 +30,7 @@ theme: simple
   <img
     src="https://streamlit.io/images/brand/streamlit-mark-color.png"
     alt="Streamlit Logo"
-    style="max-width: 200px; height: auto; display: inline-block;"
+    style="max-width: 30vw; height: auto; display: inline-block;"
   >
 </div>
 
@@ -40,16 +40,17 @@ theme: simple
 
 **Een Python framework om data scripts om te zetten in interactieve web apps**
 
-<div style="font-size: 0.7em; margin: 60px 0px 60px 0px; text-align: left;">
+<div style="font-size: 1.1rem; margin: 8vh 0; text-align: left;">
 
-📚 **Streamlit Python-bibliotheek** - snel interactieve visualisaties en analyses<br>
-📊 **Geen HTML, CSS of JavaScript nodig** - focus op data en logica<br>
-⚡ **Van script naar shareable app in minuten**  - gemak<br>
-🐍 **Pure Python** – gebruik je bestaande skills<br>
-🔄 **Live updates** – elke code wijziging direct zichtbaar<br>
+📚 **Streamlit Python-bibliotheek** — snel interactieve visualisaties en analyses<br>
+📊 **Geen HTML, CSS of JavaScript nodig** — focus op data en logica<br>
+⚡ **Van script naar shareable app in minuten** — gemak<br>
+🐍 **Pure Python** — gebruik je bestaande skills<br>
+🔄 **Live updates** — elke code wijziging direct zichtbaar
 
 </div>
-<div style="font-size: 0.7em;">
+
+<div style="font-size: 1.1rem; font-style: italic; text-align: center; margin-top: 4vh;">
 
 > *"If you can write Python, you can build a web app"*
 
@@ -369,7 +370,7 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
   <img
     src="images/widgets-input.png"
     alt="Streamlit Basic Widgets"
-    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
 </div>
 
@@ -687,7 +688,22 @@ Streamlit herlaadt de app bij elke interactie. Met **`st.session_state`** kun je
 
 ---
 
-### Voorbeeld: Teller met Sessiebeheer
+## 🧩 Teller met sessie beheer
+
+📊 Data Weergeven TODO: Wat hier zetten?
+TODO: Erbij zetten dan het normaal op 1 blijft of dat gewoon zeggen?
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
 ```python
 import streamlit as st
 
@@ -702,17 +718,273 @@ if st.button("Klik mij!"):
 # Toon de huidige waarde
 st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 ```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel2/session_state_klik.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Query Params
+## 🧩 Query Params
+
+- Deel je app-state via de URL
+- Herstel filters bij het openen van een link
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+
+params = st.query_params
+
+if params:
+    st.success(f"Found {len(params)} parameter(s) in the URL!")
+    
+    for key, value in params.items():
+        st.write(f"**`{key}`** → `{value}`")
+
+if st.button("Set in URL"):
+    st.query_params["new_param"] = "value"
+    st.rerun()
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel2/query_params.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Streamlit Forms
+## 🧩 Forms
+
+- Groepeer inputs voor betere UX
+- Voorkom onnodige reruns
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+
+with st.form("pokemon_filter"):
+    type = st.selectbox("Type", ["Fire", "Water", "Grass"])
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+        st.write(f"Gefilterd op: {type}")
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel2/forms.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
 
 ---
 
+## 🧩 Geavanceerde Filters
+
+1. Filter op generatie → updates beschikbare types
+2. Filter op type → updates beschikbare Pokémon
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import pandas as pd
+
+# Load data
+@st.cache_data
+def load_data():
+    csv_path = 'Pokemon_Stats.csv'
+    return pd.read_csv(csv_path)
+
+pokemon_df = load_data()
+
+generations = st.multiselect("Generatie", [1, 2, 3])
+types = pokemon_df[pokemon_df["Generation"].isin(generations)]["Type 1"].unique()
+selected_type = st.selectbox("Type", types)
+filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
+st.dataframe(filtered_df)
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel2/multi_select.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Dynamische Updates
+
+Gebruik `on_change` om filters direct te updaten:
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
+
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+import streamlit as st
+import pandas as pd
+
+# Load data
+@st.cache_data
+def load_data():
+    csv_path = 'Pokemon_Stats.csv'
+    return pd.read_csv(csv_path)
+
+pokemon_df = load_data()
+
+generations = st.multiselect("Generatie", [1, 2, 3])
+types = pokemon_df[pokemon_df["Generation"].isin(generations)]["Type 1"].unique()
+selected_type = st.selectbox("Type", types)
+filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
+st.dataframe(filtered_df)
+```
+TODO: Code werkt niet (alle generaties zijn altijd zichtbaar)
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel2/multi_select.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+[comment]: <> (Use `on_change` to update filters dynamically.. TODO: Screenshot)
+
+## Callbacks
+
+### Dynamische Updates
+Gebruik `on_change` om filters direct te updaten:
+
+##### Voorbeeld: Callback
+```python
+import streamlit as st
+import pandas as pd
+
+# Load data
+@st.cache_data
+def load_data():
+    csv_path = 'Pokemon_Stats.csv'
+    return pd.read_csv(csv_path)
+
+pokemon_df = load_data()
+
+def update_types():
+    st.session_state.types = pokemon_df[pokemon_df["Generation"].isin(st.session_state.generations)]["Type 1"].unique()
+
+st.multiselect(
+    "Generatie",
+    [1, 2, 3],
+    key="generations",
+    on_change=update_types
+)
+st.selectbox(
+    "Type",
+    st.session_state.get("types", []),
+    key="type"
+)
+```
+TODO: Code werkt niet
+
+---
+
+[comment]: <> (Improve UI organization with expanders. TODO: Screenshot)
+
+## UX: Collapsible Filter Sections
+
+### Expanders
+Verberg complexe filters achter een knop:
+
+##### Voorbeeld: Expander
+```python
+with st.expander("Geavanceerde filters"):
+    hp_range = st.slider("HP Range", 0, 200, (50, 150))
+    st.write(f"HP tussen {hp_range[0]} en {hp_range[1]}")
+```
+
+---
 ## filters
 (denk aan slides met: file_uploader(), dataframe(), selectbox(), multiselect(), slider(), metric(), tabs(), columns(), image(), download_button())
 
@@ -723,5 +995,22 @@ st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 ### Collapsible Filter Sections
 
 ### Add more advanced stuff here...
+
+---
+
+### 🚀 Deel 2: Aan de slag met Streamlit
+
+<div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
+
+### Wat gaan we doen?
+1. 📡 **Dataset Uploaden**
+2. 📊 **Dataset Overview**
+3. 📉 **Data Preview & Filters**
+4. 👩‍🎨 **Visualiseren**
+5. 💾 **Download**
+
+🎁 **Bonus Challenges** 
+
+</div>
 
 ---
