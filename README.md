@@ -24,7 +24,7 @@ Welkom bij de Streamlit Workshop! In 4 uur leer je hoe je interactieve data-apps
 uv sync
 
 # Start je app
-uv run streamlit run app.py
+uv run streamlit run <path_to_app.py>
 ```
 
 Je browser opent automatisch op `http://localhost:8501` 🎉
@@ -57,28 +57,17 @@ Je browser opent automatisch op `http://localhost:8501` 🎉
 
 # 📗 Opdracht 1: Pokémon Data Explorer ⚡
 
-> **Doel:** Bouw een interactieve Pokédex-verkenner om je dataset te uploaden, te bekijken en te visualiseren.
+> **Doel:** Bouw een interactieve Pokédex-verkenner om de dataset te verkennen en te visualiseren.
 
 ## Wat ga je bouwen?
 
-Een app waarmee je de Pokémon dataset kunt uploaden, een overzicht krijgt en de data kunt visualiseren via grafieken.
+Een app waarmee je voor een gegeven Pokémon dataset kunt een overzicht kan krijgen en de data kunt visualiseren via grafieken.
 
 ---
 
-## ✅ Stap 1 — Dataset uploaden
+## ✅ Stap 1 — Dataset inladen
 
-- Voeg een **`st.file_uploader`** toe waarmee de gebruiker de `Pokemon_Stats.csv` kan uploaden
-- Laad de geüploade CSV in een **Pandas DataFrame**
-- Toon een foutmelding als er nog geen bestand is geüpload
-
-```python
-import streamlit as st
-import pandas as pd
-
-uploaded_file = st.file_uploader("Upload Pokemon_Stats.csv", type="csv")
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-```
+- 💾 Laad de CSV in data/Pokemon_Stats.csv in een **Pandas DataFrame**
 
 ---
 
@@ -95,43 +84,29 @@ Toon de volgende **4 metrics** bovenaan je app (tip: gebruik `st.columns` en `st
 
 ## ✅ Stap 3 — Visualisaties via tabs
 
-Gebruik **`st.tabs`** om drie visualisaties te scheiden:
+Gebruik **`st.tabs`** om vijf tab bladen te scheiden:
 
-### 📊 Tab 1: Type distributie
+### 🔢 Tab 1: Metrics
+- Verplaats de metrics uit stap 2 naar zijn eigen tab
+
+### 📊 Tab 2: Type distributie
 - Bar chart van hoeveel Pokémon per type (`Type 1`)
 - Gebruik `st.bar_chart` of Plotly
 
-### 💥 Tab 2: Attack vs Defense scatter plot
+### 💥 Tab 3: Attack vs Defense scatter plot
 - Scatter plot van `Attack` vs `Defense`
 - Filter op **één type** naar keuze (bijv. Water, Fire, Grass...)
 - Gebruik `st.scatter_chart` of Plotly
 
-### 🏅 Tab 3: Top 10 Pokémon
+### 🏅 Tab 4: Top 10 Pokémon
 - Laat de gebruiker kiezen welke stat ze willen ranken: `HP`, `Attack`, `Defense`, `Sp. Atk`, `Sp. Def`, `Speed`
 - Toon de top 10 Pokémon op basis van de gekozen stat
 - Gebruik een bar chart
 
----
-
-## ✅ Stap 4 — Download button
-
-- Voeg een **`st.download_button`** toe
-- Laat de gebruiker de (gefilterde) data downloaden als CSV
-
----
-
-## 🎁 Bonus Challenges
-
-- **Pokémon Cards:** Gebruik `st.columns` om Pokémon als kaartjes weer te geven (naam, type, stats)
-- **Pokémon Afbeeldingen:** Haal afbeeldingen op via de PokeAPI:
-  ```
-  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png
-  ```
-  Gebruik `st.image` om ze te tonen
-- **Stijling:** Gebruik `st.markdown` met CSS om je kaartjes op te maken als een echte Pokédex
-- **Pie chart:** Voeg een extra tab toe met een pie chart van de type-verdeling (via Plotly)
-
----
+### 🛡️⚡🔥💧🌿❄️ Tab 5: Random team creator
+- Maak een knop die de DataFrame index van een random pokemon kiest.
+- Voeg deze index toe aan een lijst (waarom is hier session state nodig?)
+- Laat met behulp van `st.dataframe` het gegenereerde team zien.
 
 ---
 
@@ -149,7 +124,7 @@ Een app met meerdere filters die elkaar beïnvloeden, waarbij de filterstand wor
 
 ### Stap 1: Laad de data en toon de tabel
 
-- Laad de dataset (direct of via upload)
+- Laad de CSV in data/Pokemon_Stats.csv in een **Pandas DataFrame**
 - Toon de Pokémon in een **interactieve tabel** met `st.dataframe`
 - Toon hoeveel Pokémon er na het filteren overblijven: `"X Pokémon gevonden"`
 
@@ -166,13 +141,15 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 | ⭐ Legendary | `st.radio` | Kies: Alle / Alleen Legendary / Geen Legendary |
 | 💪 Minimum stat | `st.slider` | Stel een minimum in voor een gekozen stat (bijv. HP ≥ 50) |
 
+- Toon hoeveel Pokémon er na het filteren overblijven: `"X Pokémon gevonden"`
+
 ---
 
 ### Stap 3: Session State vereisten
 
-- Elke filter **onthoudt zijn waarde** tussen reruns via `st.session_state`
 - Gebruik `key=` parameters op je widgets
-- Gebruik `on_change` callbacks om de volgende filter direct te updaten bij een wijziging
+- Gebruik `bind=`
+- Gebruik `on_change` callbacks om de volgende filter direct te updaten bij een wijziging <- NOT NEEDED
 
 ---
 
@@ -180,29 +157,20 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 
 ### Stap 1: Sla filters op in de URL
 
-- Bij elke filterwijziging → sla de huidige filterstand op als URL query parameters
-- Gebruik `st.query_params` om parameters te lezen én te schrijven
+- Voeg `key=` toe aan de widgets zodat elke filterwijziging opgeslagen wordt in de URL query parameters
+- Voeg `bind=` toe zodat de widget waardes uit de URL worden geladen
 
-```python
-# Schrijven naar URL
-st.query_params["type"] = st.session_state.selected_type
-
-# Lezen bij pagina load
-params = st.query_params
-if "type" in params:
-    st.session_state.selected_type = params["type"]
-```
 
 ### Stap 2: Share knop
 
-- Voeg een **"🔗 Kopieer link"** button toe
+- Voeg een **"🔗 Kopieer link"** button toe  <--- DONT KNOW HOW YET
 - Toon een `st.success` melding na het klikken
 
 ### Stap 3: Reset knop
 
 - Voeg een **"🔄 Reset filters"** button toe die:
-  - Alle filters terugzet naar de beginstand
-  - Alle URL parameters verwijdert
+  - Alle filters terugzet naar de beginstand  <--- NOT POSSIBLE WITH BIND?
+  - Alle URL parameters verwijdert <--- NOT POSSIBLE WITH BIND?
   - De pagina herlaadt met `st.rerun()`
 
 ---
@@ -356,3 +324,46 @@ st.cache_data               # Cache zware berekeningen
 ---
 
 Veel succes — en moge de beste trainer winnen! 🏆⚡
+
+
+scrapped readme:
+## ✅ Stap 1 — Dataset uploaden
+
+- Voeg een **`st.file_uploader`** toe waarmee de gebruiker de `Pokemon_Stats.csv` kan uploaden
+- Laad de geüploade CSV in een **Pandas DataFrame**
+- Toon een foutmelding als er nog geen bestand is geüpload
+
+```python
+import streamlit as st
+import pandas as pd
+
+uploaded_file = st.file_uploader("Upload Pokemon_Stats.csv", type="csv")
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+```
+
+---
+
+
+
+---
+
+## ✅ Stap 4 — Download button
+
+- Voeg een **`st.download_button`** toe
+- Laat de gebruiker de (gefilterde) data downloaden als CSV
+
+---
+
+## 🎁 Bonus Challenges
+
+- **Pokémon Cards:** Gebruik `st.columns` om Pokémon als kaartjes weer te geven (naam, type, stats)
+- **Pokémon Afbeeldingen:** Haal afbeeldingen op via de PokeAPI:
+  ```
+  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png
+  ```
+  Gebruik `st.image` om ze te tonen
+- **Stijling:** Gebruik `st.markdown` met CSS om je kaartjes op te maken als een echte Pokédex
+- **Pie chart:** Voeg een extra tab toe met een pie chart van de type-verdeling (via Plotly)
+
+---
