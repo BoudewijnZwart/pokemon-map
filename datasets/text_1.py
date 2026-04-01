@@ -1,0 +1,17 @@
+data = [
+    "Good job! You pressed a button!",
+    "If I needed anyone to press a button, I would hire you!",
+    "Incredible. Truly groundbreaking button-pressing technique.",
+    "Historians will remember this moment.",
+    "I think Sopra should give you a raise.",
+    "You may not be my son, but I am still proud of you.",
+    "Assignment completed, you can go home now.",
+    "5/7, a perfect score.",
+    "Your hair looks great today.",
+    "You're almost as awesome as my beard, and that says a lot.",
+    "Achievement unlocked: Button Masher I",
+    "Flawless execution. No notes.",
+    "Your ancestors are smiling upon you.",
+    "Promoted. Immediately.",
+    "You're making this look easy… because it is, but still.",
+]
