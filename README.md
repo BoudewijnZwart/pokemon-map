@@ -71,15 +71,6 @@ Een app waarmee je de Pokémon dataset kunt uploaden, een overzicht krijgt en de
 - Laad de geüploade CSV in een **Pandas DataFrame**
 - Toon een foutmelding als er nog geen bestand is geüpload
 
-```python
-import streamlit as st
-import pandas as pd
-
-uploaded_file = st.file_uploader("Upload Pokemon_Stats.csv", type="csv")
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-```
-
 ---
 
 ## ✅ Stap 2 — Dataset overzicht
@@ -182,16 +173,6 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 
 - Bij elke filterwijziging → sla de huidige filterstand op als URL query parameters
 - Gebruik `st.query_params` om parameters te lezen én te schrijven
-
-```python
-# Schrijven naar URL
-st.query_params["type"] = st.session_state.selected_type
-
-# Lezen bij pagina load
-params = st.query_params
-if "type" in params:
-    st.session_state.selected_type = params["type"]
-```
 
 ### Stap 2: Share knop
 
