@@ -10,7 +10,7 @@ st.title("Pokemon Streamlit workshop")
 # Load data
 @st.cache_data
 def load_data():
-    csv_path = 'Pokemon_Stats.csv'
+    csv_path = '/Users/diane/Code/Playground/2026-04-10-streamlit-workshop/data/Pokemon_Stats.csv'
     return pd.read_csv(csv_path)
 
 pokemon_df = load_data()
