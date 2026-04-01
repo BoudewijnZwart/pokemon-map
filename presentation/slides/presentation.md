@@ -127,7 +127,7 @@ streamlit run app.py
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/hello_world.png"
+    src="images/deel1/hello_world.png"
     alt="Streamlit Line Chart Example"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -310,7 +310,7 @@ in the top right corner
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/the_app_chrome.png"
+    src="images/deel1/the_app_chrome.png"
     alt="Streamlit App Chrome Example"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -368,7 +368,7 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/widgets-input.png"
+    src="images/deel1/widgets-input.png"
     alt="Streamlit Basic Widgets"
     style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
@@ -426,7 +426,7 @@ st.bar_chart(filtered_data.set_index("stad"))
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/bar-chart.png"
+    src="images/deel1/bar-chart.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -475,7 +475,7 @@ st.pyplot(fig)
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/pyplot.png"
+    src="images/deel1/pyplot.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -529,7 +529,7 @@ st.plotly_chart(fig)
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/plotly.png"
+    src="images/deel1/plotly.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -585,7 +585,7 @@ st.plotly_chart(fig)
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/scatter_geo.png"
+    src="images/deel1/scatter_geo.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >
@@ -643,7 +643,7 @@ st.plotly_chart(fig_pie, width="stretch")
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/pie-chart.png"
+    src="images/deel1/pie-chart.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >

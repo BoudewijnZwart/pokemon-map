@@ -1,3 +1,5 @@
+"""Assignment 1: Basic Streamlit App with Pokémon Data."""
+
 import streamlit as st
 import pandas as pd
 

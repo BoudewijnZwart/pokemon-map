@@ -170,6 +170,7 @@ venv.bak/
 
 # mkdocs documentation
 # mkslides slides
+*/site
 /site
 /site/
 /site/*
@@ -233,3 +234,4 @@ devenv.local.yaml
 
 .streamlit/
 local/
+.python-version
