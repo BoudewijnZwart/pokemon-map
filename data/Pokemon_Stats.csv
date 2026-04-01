@@ -799,3 +799,30 @@ Id,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,L
 720,HoopaHoopa Confined,Psychic,Ghost,600,80,110,60,150,130,70,6,True
 720,HoopaHoopa Unbound,Psychic,Dark,680,80,160,60,170,130,80,6,True
 721,Volcanion,Fire,Water,600,80,110,120,130,90,70,6,True
+722,Sandercooleon,Electric,Flying,520,70,85,65,95,75,130,7,True
+723,Dennisaur,Psychic,Normal,545,85,70,80,110,105,95,7,True
+724,Leersumander,Fighting,Rock,560,95,105,100,75,85,100,7,True
+725,Estharizard,Dragon,Fire,555,80,95,85,110,90,95,7,False
+726,Roderickchu,Electric,Steel,530,75,90,95,85,80,105,7,False
+727,Jooseptile,Grass,Dragon,540,70,100,75,95,85,115,7,False
+728,Wimpeterzard,Flying,Psychic,525,85,75,70,105,95,95,7,False
+729,Smuldersaur,Ground,Rock,550,100,110,105,65,70,100,7,False
+730,Lennartoise,Water,Ice,545,90,80,110,85,100,80,7,False
+731,Wesleeon,Normal,Fairy,515,80,70,65,90,95,115,7,False
+732,Scheepstraptor,Flying,Fighting,535,85,105,80,75,70,120,7,False
+733,Michalizard,Fire,Psychic,550,75,85,80,115,100,95,7,False
+734,Boudezard,Dark,Dragon,560,90,110,95,85,80,100,7,False
+735,Kokeon,Poison,Dark,520,70,85,75,100,90,100,7,False
+736,Kalleon,Fairy,Psychic,525,85,70,80,110,95,85,7,False
+737,Wangzard,Fighting,Fire,545,95,115,90,70,75,100,7,False
+738,Hoogentoise,Water,Steel,555,100,85,115,80,95,80,7,False
+739,Janheinite,Dragon,Psychic,565,85,95,90,110,100,85,7,False
+740,Baastoise,Water,Ground,540,95,90,105,75,85,90,7,False
+741,Sebazard,Fire,Flying,550,80,100,75,105,90,100,7,False
+742,Nutmeon,Psychic,Fairy,535,80,75,85,115,100,80,7,False
+743,Mikachu,Electric,Fairy,520,70,80,70,95,90,115,7,False
+744,Abuzarizard,Dark,Fire,560,85,110,85,100,90,90,7,False
+745,Adriaansaur,Grass,Poison,530,90,85,90,90,95,80,7,False
+746,Jaysaur,Grass,Flying,525,75,90,80,85,85,110,7,False
+747,Joeptoise,Water,Fighting,545,95,100,100,70,80,100,7,False
+748,Munschereon,Ice,Psychic,540,85,75,90,105,100,85,7,False
