@@ -913,11 +913,15 @@ if st.button("Set in URL"):
 
 ---
 
-## 🧩 Forms
+### 🧩 Forms
 
+<div style="font-size: 0.6em; margin: 20px 0px;">
+
+- Batch updates
 - Groepeer inputs voor betere UX
 - Voorkom onnodige reruns
 
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -928,27 +932,42 @@ if st.button("Set in URL"):
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.50em; width: 40%; vertical-align: top; padding: 10px;">
 
+#### 😫 **Het Probleem:**
 ```python
-import streamlit as st
-
-with st.form("pokemon_filter"):
-    type = st.selectbox(
-      "Type", ["Fire", "Water", "Grass"]
-    )
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        st.write(f"Gefilterd op: {type}")
+# Elke widget = rerun!
+name = st.text_input("Name")      # Rerun bij elke letter!
+hp = st.slider("HP", 0, 200)      # Rerun bij elke wijziging!
+attack = st.slider("Attack", 0, 200)  # Rerun!
 ```
-</td>
+
+→ 3 widgets = potentieel 100+ reruns terwijl je invult! 😱
+
+<br>
+
+#### ✅ **De Oplossing: Forms**
+```python
+with st.form("pokemon_form"):
+    name = st.text_input("Name")
+    hp = st.slider("HP", 0, 200)
+    attack = st.slider("Attack", 0, 200)
+    
+    submitted = st.form_submit_button("💾 Save Pokemon")
+    
+if submitted:
+    st.success(
+      f"Pokemon {name} saved! HP: {hp}, Attack: {attack}"
+    )
+    # Slechts 1 rerun bij submit!
+```
 <td style="width: 40%; vertical-align: top; padding: 10px;">
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/deel2/forms.png"
+    src="images/deel2/forms_multi.png"
     alt="Streamlit Basic Widgets"
-    style="width: 95%; max-width: 95%; height: auto; border: 1px solid #ddd;"
+    style="width: 85%; max-width: 85%; height: auto; border: 1px solid #ddd;"
   >
 </div>
 
@@ -958,11 +977,22 @@ with st.form("pokemon_filter"):
 
 ---
 
-## 🧩 Geavanceerde Filters
+#### 🧩 Forms - voorbeeld
+
+<div style="display: flex; font-size: 0.6em; margin: 20px 0px; justify-content: center;">
+<img src="images/deel2/forms-example.gif" width="500" alt="Streamlit demo" />
+</div>
+
+---
+
+## 🧩 Filters
+
+<div style="font-size: 0.6em; margin: 20px 0px;">
 
 1. Filter op generatie → updates beschikbare types
 2. Filter op type → updates beschikbare Pokémon
 
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -973,13 +1003,10 @@ with st.form("pokemon_filter"):
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.45em; width: 40%; vertical-align: top; padding: 10px;">
 
 ```python
-import streamlit as st
-import pandas as pd
-
-# Load data
+# Load and cache data
 @st.cache_data
 def load_data():
     csv_path = 'Pokemon_Stats.csv'
@@ -988,12 +1015,27 @@ def load_data():
 pokemon_df = load_data()
 
 generations = st.multiselect("Generatie", [1, 2, 3])
-types = pokemon_df[pokemon_df["Generation"].isin(generations)]["Type 1"].unique()
+
+# Filter by generation, or use all if none selected
+filtered_by_gen = (
+    pokemon_df[pokemon_df["Generation"].isin(generations)]
+    if generations
+    else pokemon_df
+)
+
+types = ["All"] + filtered_by_gen["Type 1"].unique().tolist()
 selected_type = st.selectbox("Type", types)
-filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
+
+# Filter by type, or use all if "All" selected
+filtered_df = (
+  filtered_by_gen
+  if selected_type == "All"
+  else filtered_by_gen[filtered_by_gen["Type 1"] == selected_type]
+)
+
+# Present filtered data
 st.dataframe(filtered_df)
 ```
-TODO: Code werkt niet (alle generaties zichtbaar altijd)
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
 
@@ -1011,10 +1053,14 @@ TODO: Code werkt niet (alle generaties zichtbaar altijd)
 
 ---
 
-## 🧩 Dynamische Updates
+### 🧩 Cascading Filters 
+##### dynamisch updaten
 
-Gebruik `on_change` om filters direct te updaten:
+<div style="font-size: 0.6em; margin: 20px 0px;">
 
+- Gebruik `on_change` om filters direct te updaten:
+
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -1025,12 +1071,9 @@ Gebruik `on_change` om filters direct te updaten:
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.40em; width: 20%; vertical-align: top; padding: 10px;">
 
 ```python
-import streamlit as st
-import pandas as pd
-
 # Load data
 @st.cache_data
 def load_data():
@@ -1040,33 +1083,39 @@ def load_data():
 pokemon_df = load_data()
 
 def update_types():
-    st.session_state.types = pokemon_df[pokemon_df["Generation"].isin(st.session_state.generations)]["Type 1"].unique()
+  st.session_state.types = (
+    pokemon_df[pokemon_df["Generation"]
+      .isin(st.session_state.generations)]["Type 1"]
+      .unique()
+      .tolist()
+  )
+
+def reset_filters():
+  st.session_state.generations = []
+  st.session_state.types = []
+  st.session_state.type = None
 
 st.multiselect(
-    "Generatie",
-    [1, 2, 3],
-    key="generations",
-    on_change=update_types
+  "Generatie",
+  [1, 2, 3, 4, 5, 6, 7],
+  key="generations",
+  on_change=update_types
 )
 st.selectbox(
-    "Type",
-    st.session_state.get("types", []),
-    key="type"
+  "Type",
+  st.session_state.get("types", []),
+  key="type"
+)
+st.button(
+  "🔄 Reset filters",
+  on_click=reset_filters  # on_click is on_change voor buttons
 )
 ```
-TODO: Code werkt niet
 </td>
-<td style="width: 40%; vertical-align: top; padding: 10px;">
-
+<td style="width: 55%; vertical-align: top; padding: 10px;">
 <div style="flex: 1; text-align: center;">
-TODO
-  <!-- <img
-    src="images/deel2/multi_select.png"
-    alt="Streamlit Basic Widgets"
-    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
-  > -->
+<img src="images/deel2/on-change.gif" width="700" alt="Streamlit demo" />
 </div>
-
 </td>
 </tr>
 </table>
