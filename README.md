@@ -145,14 +145,6 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 
 ---
 
-### Stap 3: Session State vereisten
-
-- Gebruik `key=` parameters op je widgets
-- Gebruik `bind=`
-- Gebruik `on_change` callbacks om de volgende filter direct te updaten bij een wijziging <- NOT NEEDED
-
----
-
 ## ✅ Part B — Shareable Filter Links 🔗
 
 ### Stap 1: Sla filters op in de URL
@@ -169,8 +161,7 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 ### Stap 3: Reset knop
 
 - Voeg een **"🔄 Reset filters"** button toe die:
-  - Alle filters terugzet naar de beginstand  <--- NOT POSSIBLE WITH BIND?
-  - Alle URL parameters verwijdert <--- NOT POSSIBLE WITH BIND?
+  - Alle filters terugzet naar een beginstand  
   - De pagina herlaadt met `st.rerun()`
 
 ---
@@ -190,8 +181,6 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 - Toon gecombineerde teamstatistieken (totale HP, Attack, Defense, enz.)
 - Visualiseer de **type coverage**: welke types heeft je team gedekt?
 - Sla het team op in `st.session_state` zodat het bewaard blijft
-
----
 
 ---
 
@@ -253,7 +242,7 @@ schade = max(1, aanvaller_attack - verdediger_defense // 2)
 
 ## ✅ Pagina 3 — Pokémon Management 📋
 
-- Zoek en bekijk Pokémon (met afbeeldingen via PokeAPI)
+- Zoek en bekijk Pokémon (met afbeeldingen via PokeAPI  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png)
 - Stel je team samen (max 6 Pokémon)
 - Toon teamstatistieken en type coverage
 - Sla je team op in `st.session_state`
@@ -324,46 +313,3 @@ st.cache_data               # Cache zware berekeningen
 ---
 
 Veel succes — en moge de beste trainer winnen! 🏆⚡
-
-
-scrapped readme:
-## ✅ Stap 1 — Dataset uploaden
-
-- Voeg een **`st.file_uploader`** toe waarmee de gebruiker de `Pokemon_Stats.csv` kan uploaden
-- Laad de geüploade CSV in een **Pandas DataFrame**
-- Toon een foutmelding als er nog geen bestand is geüpload
-
-```python
-import streamlit as st
-import pandas as pd
-
-uploaded_file = st.file_uploader("Upload Pokemon_Stats.csv", type="csv")
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-```
-
----
-
-
-
----
-
-## ✅ Stap 4 — Download button
-
-- Voeg een **`st.download_button`** toe
-- Laat de gebruiker de (gefilterde) data downloaden als CSV
-
----
-
-## 🎁 Bonus Challenges
-
-- **Pokémon Cards:** Gebruik `st.columns` om Pokémon als kaartjes weer te geven (naam, type, stats)
-- **Pokémon Afbeeldingen:** Haal afbeeldingen op via de PokeAPI:
-  ```
-  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png
-  ```
-  Gebruik `st.image` om ze te tonen
-- **Stijling:** Gebruik `st.markdown` met CSS om je kaartjes op te maken als een echte Pokédex
-- **Pie chart:** Voeg een extra tab toe met een pie chart van de type-verdeling (via Plotly)
-
----
