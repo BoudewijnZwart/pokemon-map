@@ -1,7 +1,8 @@
 """Assignment 1: Basic Streamlit App with Pokémon Data."""
-
+import os
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 # Page config and title
 st.set_page_config(layout="wide", page_title="Pokemon Streamlit workshop")
@@ -10,7 +11,8 @@ st.title("Pokemon Streamlit workshop")
 # Load data
 @st.cache_data
 def load_data():
-    csv_path = '/Users/diane/Code/Playground/2026-04-10-streamlit-workshop/data/Pokemon_Stats.csv'
+    project_path = Path(__file__).resolve().parent.parent.parent
+    csv_path = os.path.join(project_path, 'data', 'Pokemon_Stats.csv')
     return pd.read_csv(csv_path)
 
 pokemon_df = load_data()
@@ -91,4 +93,3 @@ with tab_table:
             pokemon_show = pokemon_show[pokemon_show["Type 2"] == type_2_select]
 
     st.dataframe(pokemon_show, width='stretch')
-    # TODO: Add interaction button (to show session state)
