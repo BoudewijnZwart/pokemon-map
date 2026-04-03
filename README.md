@@ -50,6 +50,8 @@ Je browser opent automatisch op `http://localhost:8501` 🎉
 | `Speed` | Snelheid |
 | `Generation` | Generatie (1–7) |
 | `Legendary` | Is het een legendarische Pokémon? |
+| `location` | POINT object met lat lon gegevens |
+| `Area (km)` | Oppervlak binnen POINT waarin pokemon te vinden is |
 
 ---
 
