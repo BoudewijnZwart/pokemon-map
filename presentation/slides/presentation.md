@@ -322,7 +322,7 @@ in the top right corner
 
 ---
 
-## 🧩 Core Widgets - display & Input
+### 🧩 Core Widgets - display & Input
 
 <table>
 <tr>
@@ -379,7 +379,7 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
 </table>
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -438,7 +438,7 @@ st.bar_chart(filtered_data.set_index("stad"))
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -487,7 +487,7 @@ st.pyplot(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -541,7 +541,7 @@ st.plotly_chart(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -597,7 +597,7 @@ st.plotly_chart(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -850,7 +850,7 @@ st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/deel2/session_state_klik.png"
+    src="images/deel2/click-session-state.gif"
     alt="Streamlit Basic Widgets"
     style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
@@ -1122,9 +1122,9 @@ st.button(
 
 ---
 
-## 🧩 UX: Collapsible Filter Sections
+### 🧩 UX: Collapsible Filter Sections
 
-Gebruik `on_change` om filters direct te updaten:
+#### 📂 **Organiseer complexe UI**
 
 <table>
 <tr>
@@ -1136,23 +1136,40 @@ Gebruik `on_change` om filters direct te updaten:
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.50em; width: 40%; vertical-align: top; padding: 10px;">
 
 ```python
 import streamlit as st
 
-with st.expander("Geavanceerde filters"):
-    hp_range = st.slider("HP Range", 0, 200, (50, 150))
-    st.write(f"HP tussen {hp_range[0]} en {hp_range[1]}")
+st.title("⚙️ Pokemon Filters")
+
+with st.expander("🔍 Basic Filters", expanded=True):
+    pokemon_type = st.selectbox(
+      "Type", ["Fire", "Water", "Grass"]
+    )
+    generation = st.slider(
+      "Generation", 1, 9, (1, 3)
+    )
+
+with st.expander("📊 Advanced Filters"):
+    min_hp = st.number_input("Minimum HP", 0, 255, 50)
+    min_attack = st.number_input(
+      "Minimum Attack", 0, 255, 50
+    )
+    only_legendary = st.checkbox("Only Legendaries")
+
+with st.expander("🎨 Display Options"):
+    show_images = st.checkbox("Show Pokemon Sprites", True)
+    items_per_page = st.slider(
+      "Items per page", 10, 100, 20
+    )
 ```
 
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
-
 <div style="flex: 1; text-align: center;">
-TODO
   <img
-    src="images/deel2/advanced_filter.png"
+    src="images/deel2/collapsible-sections.gif"
     alt="Streamlit Basic Widgets"
     style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
@@ -1329,6 +1346,61 @@ water_pokemon = get_pokemon_by_type("Water")  # Cache miss (andere param)
 
 ---
 
+### 🎨 Advanced Features Overview
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🚀 **Meer Streamlit Goodies**
+
+<div style="text-align: left; margin-left: 60px;">
+
+🎯 **st.spinner()** - Loading indicator tijdens slow operations  
+📊 **st.progress()** - Progress bar voor long tasks  
+🎈 **st.balloons() / st.snow()** - Celebratory animations!  
+📝 **st.toast()** - Temporary notification messages  
+🔔 **st.success/info/warning/error()** - Colored alert boxes  
+📸 **st.camera_input()** - Capture photos (Pokemon AR!)  
+🎤 **st.audio_input()** - Record audio  
+📍 **st.map()** - Display geospatial data  
+🎨 **st.color_picker()** - Select colors (Pokemon type colors!)  
+
+</div>
+
+</div>
+
+---
+
+## ⚡ Tips
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🏎️ **Maak je App Sneller**
+```python
+# ✅ GOED: Cache dure operaties
+@st.cache_data
+def load_data():
+    return pd.read_csv("large_file.csv")
+
+# ✅ GOED: Gebruik st.spinner voor UX
+with st.spinner("Loading Pokemon data..."):
+    df = load_expensive_data()
+
+# ✅ GOED: Fragmenteer heavy visualizations
+@st.fragment
+def render_chart():
+    # Alleen dit fragment rerun bij interactie
+    st.plotly_chart(create_heavy_chart())
+
+# ❌ SLECHT: Globale variabelen buiten functies
+pokemon_df = pd.read_csv("pokemon.csv")  # Laadt bij elke rerun!
+
+# ❌ SLECHT: Te veel widgets in een form (UX nightmare)
+```
+
+</div>
+
+---
+
 ### 🚀 Deel 2: Aan de slag met Streamlit
 
 <div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
@@ -1350,6 +1422,15 @@ bonus: url paramter
 </div>
 
 ---
-Deel 3: maak je eigen pokedex
+
+<h1 style="font-size: 1.3em;">Streamlit: Meer dan de basics</h1>
+
+<h3 style="font-size: 0.8em;">Deel 3: Let the games begin!</h3>
+
+---
+
+* Publishing
+* OAuth out of the box
+* Multiple pages
 
 ---
