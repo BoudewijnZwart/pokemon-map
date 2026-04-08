@@ -1,0 +1,7 @@
+index:
+  title: Streamlit Workshop
+  favicon: images/favicon/Streamlit.ico
+  enable_footer: true
+
+slides:
+  favicon: images/favicon/Streamlit.ico
