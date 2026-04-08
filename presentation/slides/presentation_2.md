@@ -711,13 +711,10 @@ pokemon_df = pd.read_csv("pokemon.csv")  # Laadt bij elke rerun!
 3. 📉 **Meer knoppem**
 4. 👩‍🎨 **Visualiseren**
 
-🎁 **Bonus Challenges** 
+🎁 **Bonus Challenges:** 
 
-TODO: Duidelijker doelen? (zoals in het docje?)
-laat pokemon tabel zien met een van de volgende (of meerdere) filters: type, hp, attack, defense, generatie, legendary.
-  - gebruik sessions state
-minimum stats threshold
-bonus: url paramter
+Er valt een prijs te winnen! Laat je fanatsie de vrije loop...
+
 </div>
 
 ---
