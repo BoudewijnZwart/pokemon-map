@@ -693,11 +693,11 @@ st.plotly_chart(fig_pie, width="stretch")
 </div>
 <div style="font-size: 0.7em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
 
-📁 GitLab: Starter code staat klaar in branch `exercise-1`
+📁 Innersource: Starter code staat klaar in branch `exercise-1`
 
 ```bash
 git checkout exercise-1
-streamlit run app.py
+uv run streamlit run app.py
 ```
 
 </div>

@@ -703,7 +703,7 @@ pokemon_df = pd.read_csv("pokemon.csv")  # Laadt bij elke rerun!
 
 ### 🚀 Deel 2: Aan de slag met Streamlit
 
-<div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
+<div style="font-size: 0.9em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
 
 ### Wat gaan we doen?
 1. 📡 **Filters toepassen**
@@ -711,9 +711,15 @@ pokemon_df = pd.read_csv("pokemon.csv")  # Laadt bij elke rerun!
 3. 📉 **Meer knoppem**
 4. 👩‍🎨 **Visualiseren**
 
-🎁 **Bonus Challenges:** 
+</div>
+<div style="font-size: 0.7em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
 
-Er valt een prijs te winnen! Laat je fanatsie de vrije loop...
+📁 InnerSource: Starter code staat klaar in branch `exercise-2`
+
+```bash
+git checkout exercise-2
+uv run streamlit run app.py
+```
 
 </div>
 
