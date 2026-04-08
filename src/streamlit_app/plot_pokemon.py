@@ -1,5 +1,8 @@
-import streamlit as st
+"""Streamlit app to plot Pokemon data."""
+
 import pandas as pd
+import streamlit as st
+
 
 # Initialize state
 if "data" not in st.session_state:
