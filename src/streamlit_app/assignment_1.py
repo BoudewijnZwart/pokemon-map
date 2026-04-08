@@ -1,8 +1,10 @@
 """Assignment 1: Basic Streamlit App with Pokémon Data."""
+
 import os
 import streamlit as st
 import pandas as pd
 from pathlib import Path
+
 
 # Page config and title
 st.set_page_config(layout="wide", page_title="Pokemon Streamlit workshop")
