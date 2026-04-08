@@ -1,0 +1,828 @@
+Id;Name;Type 1;Type 2;Total;HP;Attack;Defense;Sp. Atk;Sp. Def;Speed;Generation;Legendary;location;area size (km)
+1;Bulbasaur;Grass;Poison;318;45;49;49;65;65;45;1;FALSE;POINT (-75.7447999 -14.0818916),South America,Peru,,Ica,pe;54,45749377
+2;Ivysaur;Grass;Poison;405;60;62;63;80;80;60;1;FALSE;POINT (-75.7173894 -14.080809),South America,Peru,,Ica,pe;486,539931
+3;Venusaur;Grass;Poison;525;80;82;83;100;100;80;1;FALSE;POINT (-75.7482674 -14.0690148),South America,Peru,,Ica,pe;327,0823923
+3;VenusaurMega Venusaur;Grass;Poison;625;80;100;123;122;120;80;1;FALSE;POINT (-58.811011 -27.4808851),South America,Argentina,,Corrientes,ar;177,5420116
+4;Charmander;Fire;;309;39;52;43;60;50;65;1;FALSE;POINT (-58.8216488 -27.4847848),South America,Argentina,,Corrientes,ar;253,7147073
+5;Charmeleon;Fire;;405;58;64;58;80;65;80;1;FALSE;POINT (-66.8996068 10.4759818),South America,Venezuela,,Caracas,ve;430,3091211
+6;Charizard;Fire;Flying;534;78;84;78;109;85;100;1;FALSE;POINT (-66.9394752 10.4883743),South America,Venezuela,,Caracas,ve;278,1542224
+6;CharizardMega Charizard X;Fire;Dragon;634;78;130;111;130;85;100;1;FALSE;POINT (-66.8952212 10.4784882),South America,Venezuela,,Caracas,ve;469,9055333
+6;CharizardMega Charizard Y;Fire;Flying;634;78;104;78;159;115;100;1;FALSE;POINT (-68.1316988 -16.4960192),South America,Bolivia,,La Paz,bo;463,7657009
+7;Squirtle;Water;;314;44;48;65;50;64;43;1;FALSE;POINT (-68.1245806 -16.5233355),South America,Bolivia,,La Paz,bo;257,1108988
+8;Wartortle;Water;;405;59;63;80;65;80;58;1;FALSE;POINT (-68.1523099 -16.5039081),South America,Bolivia,,La Paz,bo;132,1767492
+9;Blastoise;Water;;530;79;83;100;85;105;78;1;FALSE;POINT (-55.1946049 5.8364584),South America,Suriname,,Paramaribo,sr;101,5537153
+9;BlastoiseMega Blastoise;Water;;630;79;103;120;135;115;78;1;FALSE;POINT (-56.1702659 -34.892261),South America,Uruguay,,Montevideo,uy;165,2619756
+10;Caterpie;Bug;;195;45;30;35;20;20;45;1;FALSE;POINT (-73.3575606 5.5410855),South America,Colombia,,Tunja,co;81,03150857
+11;Metapod;Bug;;205;50;20;55;25;25;30;1;FALSE;POINT (-77.0473644 -12.0649697),South America,Peru,,Lima,pe;151,2560887
+12;Butterfree;Bug;Flying;395;60;45;50;90;80;70;1;FALSE;POINT (-58.3945883 -34.5960796),South America,Argentina,,Buenos Aires,ar;455,2014091
+13;Weedle;Bug;Poison;195;40;35;30;20;20;50;1;FALSE;POINT (-54.4603461 -27.8727583),South America,Brazil,,Santa Rosa,br;394,5784323
+14;Kakuna;Bug;Poison;205;45;25;50;25;25;35;1;FALSE;POINT (-57.5933864 -25.2642961),South America,Paraguay,,Asuncion,py;89,35393118
+15;Beedrill;Bug;Poison;395;65;90;40;45;80;75;1;FALSE;POINT (-57.5610983 -25.2862593),South America,Paraguay,,Asuncion,py;352,6848453
+15;BeedrillMega Beedrill;Bug;Poison;495;65;150;40;15;80;145;1;FALSE;POINT (-57.5799912 -25.2844044),South America,Paraguay,,Asuncion,py;375,5041246
+16;Pidgey;Normal;Flying;251;40;45;40;35;35;56;1;FALSE;POINT (-58.1383199 6.8182055),South America,Guyana,,Georgetown,gy;137,0233204
+17;Pidgeotto;Normal;Flying;349;63;60;55;50;50;71;1;FALSE;POINT (-58.1429917 6.7942211),South America,Guyana,,Georgetown,gy;58,37276525
+18;Pidgeot;Normal;Flying;479;83;80;75;70;70;101;1;FALSE;POINT (-58.1551888 6.7854341),South America,Guyana,,Georgetown,gy;276,4778169
+18;PidgeotMega Pidgeot;Normal;Flying;579;83;80;80;135;80;121;1;FALSE;POINT (-73.2441897 -39.8156158),South America,Chile,,Valdivia,cl;269,7362419
+19;Rattata;Normal;;253;30;56;35;25;35;72;1;FALSE;POINT (-60.6749301 -32.9604145),South America,Argentina,,Rosario,ar;368,518215
+20;Raticate;Normal;;413;55;81;60;50;70;97;1;FALSE;POINT (-57.5536617 -38.0309121),South America,Argentina,,Mar del Plata,ar;497,8486178
+21;Spearow;Normal;Flying;262;40;60;30;31;31;70;1;FALSE;POINT (-56.0064247 -28.6724995),South America,Brazil,,São Borja,br;67,80298144
+22;Fearow;Normal;Flying;442;65;90;65;61;61;100;1;FALSE;POINT (-48.4841012 -1.4076073),South America,Brazil,,Belem,br;372,3258459
+23;Ekans;Poison;;288;35;60;44;40;54;55;1;FALSE;POINT (-38.9404534 -12.2541277),South America,Brazil,,Feira de Santana,br;82,34874588
+24;Arbok;Poison;;438;60;85;69;65;79;80;1;FALSE;POINT (-51.1823632 -30.0508508),South America,Brazil,,Porto Alegre,br;118,8700144
+25;Pikachu;Electric;;320;35;55;40;50;50;90;1;FALSE;POINT (-51.1417395 -23.3056741),South America,Brazil,,Londrina,br;302,2547156
+26;Raichu;Electric;;485;60;90;55;90;80;110;1;FALSE;POINT (-67.97135 10.1775808),South America,Venezuela,,Valencia,ve;351,4155402
+27;Sandshrew;Ground;;300;50;75;85;20;30;40;1;FALSE;POINT (-67.9475486 10.1643407),South America,Venezuela,,Valencia,ve;236,7710293
+28;Sandslash;Ground;;450;75;100;110;45;55;65;1;FALSE;POINT (-67.9782279 10.1462867),South America,Venezuela,,Valencia,ve;207,9719701
+29;Nidoranâ™€;Poison;;275;55;47;52;40;40;41;1;FALSE;POINT (-57.0933412 -29.7636962),South America,Brazil,,Uruguaiana,br;185,7021588
+30;Nidorina;Poison;;365;70;62;67;55;55;56;1;FALSE;POINT (-43.8762649 -16.7032734),South America,Brazil,,Montes Claros,br;290,9891165
+31;Nidoqueen;Poison;Ground;505;90;92;87;75;85;76;1;FALSE;POINT (-66.1815834 -17.4177198),South America,Bolivia,,Cochabamba,bo;356,1436964
+32;Nidoranâ™‚;Poison;;273;46;57;40;40;40;50;1;FALSE;POINT (-66.1470865 -17.4176381),South America,Bolivia,,Cochabamba,bo;390,1995862
+33;Nidorino;Poison;;365;61;72;57;55;55;65;1;FALSE;POINT (-66.1922551 -17.3802906),South America,Bolivia,,Cochabamba,bo;339,1861176
+34;Nidoking;Poison;Ground;505;81;102;77;85;75;85;1;FALSE;POINT (-77.2929664 1.2073508),South America,Colombia,,Pasto,co;460,2582969
+35;Clefairy;Fairy;;323;70;45;48;60;65;35;1;FALSE;POINT (-59.9508626 -3.0018599),South America,Brazil,,Manaus,br;150,5180113
+36;Clefable;Fairy;;483;95;70;73;95;90;60;1;FALSE;POINT (-75.1846916 -12.0868288),South America,Peru,,Huancayo,pe;257,4810585
+37;Vulpix;Fire;;299;38;41;40;50;65;65;1;FALSE;POINT (-74.8155649 10.9945198),South America,Colombia,,Barranquilla,co;471,7430887
+38;Ninetales;Fire;;505;73;76;75;81;100;100;1;FALSE;POINT (-73.1238822 7.1181522),South America,Colombia,,Bucaramanga,co;286,4764475
+39;Jigglypuff;Normal;Fairy;270;115;45;20;45;25;20;1;FALSE;POINT (-73.2693404 10.4826987),South America,Colombia,,Valledupar,co;196,9146968
+40;Wigglytuff;Normal;Fairy;435;140;70;45;85;50;45;1;FALSE;POINT (-78.4763216 -0.2375787),South America,Ecuador,,Quito,ec;355,3256351
+41;Zubat;Poison;Flying;245;40;45;35;30;40;55;1;FALSE;POINT (-71.6395632 -35.4176484),South America,Chile,,Talca,cl;384,5994356
+42;Golbat;Poison;Flying;455;75;80;70;65;75;90;1;FALSE;POINT (-38.533407 -3.7655693),South America,Brazil,,Fortaleza,br;394,3486009
+43;Oddish;Grass;Poison;320;45;50;55;75;65;30;1;FALSE;POINT (-38.322007 -12.7045455),South America,Brazil,,Camaçari,br;177,4751741
+44;Gloom;Grass;Poison;395;60;65;70;85;75;40;1;FALSE;POINT (-64.1471664 -31.4400638),South America,Argentina,,Córdoba,ar;464,7881203
+45;Vileplume;Grass;Poison;490;75;80;85;110;90;50;1;FALSE;POINT (149.5757575 -33.4104778),Oceania,Australia,New South Wales,Bathurst,au;198,5176293
+46;Paras;Bug;Grass;285;35;70;55;45;55;25;1;FALSE;POINT (-172.6270398 -13.5086657),Oceania,Samoa,,Asau,ws;261,2133875
+47;Parasect;Bug;Grass;405;60;95;80;60;80;30;1;FALSE;POINT (-169.9104016 -19.1251786),Oceania,Niue,,Avatele,nu;168,804026
+48;Venonat;Bug;Poison;305;60;55;50;40;55;45;1;FALSE;POINT (134.4817188 7.3410187),Oceania,Palau,,Koror,pw;130,6045022
+49;Venomoth;Bug;Poison;450;70;65;60;90;75;90;1;FALSE;POINT (134.4896478 7.3431078),Oceania,Palau,,Koror,pw;289,4424756
+50;Diglett;Ground;;265;10;55;25;35;45;95;1;FALSE;POINT (166.92996 -0.5123121),Oceania,Nauru,,Baiti,nr;308,760999
+51;Dugtrio;Ground;;405;35;80;50;50;70;120;1;FALSE;POINT (170.5035499 -45.8684384),Oceania,New Zealand,,Dunedin,nz;149,7663659
+52;Meowth;Normal;;290;40;45;35;40;40;90;1;FALSE;POINT (153.2597552 -27.8221322),Oceania,Australia,Queensland,Gold Coast,au;160,6936661
+53;Persian;Normal;;440;65;70;60;65;65;115;1;FALSE;POINT (-173.7902313 -15.955028),Oceania,Tonga,,Hihifo,to;329,047541
+54;Psyduck;Water;;320;50;52;48;65;50;55;1;FALSE;POINT (168.3166415 -46.41245),Oceania,New Zealand,,Invercargill,nz;486,7442025
+55;Golduck;Water;;500;80;82;78;95;80;85;1;FALSE;POINT (166.9497757 -0.5106828),Oceania,Nauru,,Anabar,nr;301,3883197
+56;Mankey;Fighting;;305;40;80;35;35;45;70;1;FALSE;POINT (151.6688505 -32.9499264),Oceania,Australia,New South Wales,Newcastle,au;114,4742308
+57;Primeape;Fighting;;455;65;105;60;60;70;95;1;FALSE;POINT (-171.7860012 -13.8367422),Oceania,Samoa,,Apia,ws;91,70889478
+58;Growlithe;Fire;;350;55;70;45;70;50;60;1;FALSE;POINT (166.8278891 9.3267801),Oceania,Marshall Islands,,Ebaye,mh;224,5665826
+59;Arcanine;Fire;;555;90;110;80;100;80;95;1;FALSE;POINT (-175.2151649 -21.1363929),Oceania,Tonga,,Nuku'alofa,to;75,60251579
+60;Poliwag;Water;;300;40;50;40;40;40;90;1;FALSE;POINT (145.7600956 -16.9305845),Oceania,Australia,Queensland,Cairns,au;264,202541
+61;Poliwhirl;Water;;385;65;65;65;50;50;90;1;FALSE;POINT (167.1732768 -15.5111192),Oceania,Vanuatu,,Luganville,vu;405,5233369
+62;Poliwrath;Water;Fighting;510;90;95;95;70;90;70;1;FALSE;POINT (178.45165 -18.1390608),Oceania,Fiji,,Suva,fj;294,2242852
+63;Abra;Psychic;;310;25;20;15;105;55;90;1;FALSE;POINT (115.7171343 -31.6737313),Oceania,Australia,Western Australia,Perth,au;139,3462379
+64;Kadabra;Psychic;;400;40;35;30;120;70;105;1;FALSE;POINT (144.4431588 -38.201468),Oceania,Australia,Victoria,Geelong,au;92,86143074
+65;Alakazam;Psychic;;500;55;50;45;135;95;120;1;FALSE;POINT (168.32147 -17.728635),Oceania,Vanuatu,,Port Vila,vu;170,4373581
+65;AlakazamMega Alakazam;Psychic;;590;55;50;65;175;95;150;1;FALSE;POINT (166.9213893 -0.5441326),Oceania,Nauru,,Yaren,nr;87,95705015
+66;Machop;Fighting;;305;70;80;50;35;35;35;1;FALSE;POINT (166.9245606 -0.5468721),Oceania,Nauru,,Yaren,nr;169,334082
+67;Machoke;Fighting;;405;80;100;70;50;60;45;1;FALSE;POINT (166.9230299 -0.5442626),Oceania,Nauru,,Yaren,nr;318,5264708
+68;Machamp;Fighting;;505;90;130;80;65;85;55;1;FALSE;POINT (134.254277 7.0392632),Oceania,Palau,,Kloulklubed,pw;395,7806561
+69;Bellsprout;Grass;Poison;300;50;75;35;70;30;40;1;FALSE;POINT (134.2542224 7.0419213),Oceania,Palau,,Kloulklubed,pw;311,6916701
+70;Weepinbell;Grass;Poison;390;65;90;50;85;45;55;1;FALSE;POINT (134.2556215 7.0408857),Oceania,Palau,,Kloulklubed,pw;223,4603243
+71;Victreebel;Grass;Poison;490;80;105;65;100;70;70;1;FALSE;POINT (179.1984626 -8.5200545),Oceania,Tuvalu,,Funafuti,tv;366,592903
+72;Tentacool;Water;Poison;335;40;40;35;50;100;70;1;FALSE;POINT (179.1963217 -8.5247238),Oceania,Tuvalu,,Funafuti,tv;453,111053
+73;Tentacruel;Water;Poison;515;80;70;65;80;120;100;1;FALSE;POINT (179.1974413 -8.5209743),Oceania,Tuvalu,,Funafuti,tv;343,1944352
+74;Geodude;Rock;Ground;300;40;80;100;30;30;20;1;FALSE;POINT (145.0410987 -38.2426801),Oceania,Australia,Victoria,Melbourne,au;166,5179409
+75;Graveler;Rock;Ground;390;55;95;115;45;45;35;1;FALSE;POINT (158.1657381 6.9354456),Oceania,Micronesia,,Palikir,fm;60,65756321
+76;Golem;Rock;Ground;495;80;120;130;55;65;45;1;FALSE;POINT (158.1665894 6.9150045),Oceania,Micronesia,,Palikir,fm;108,0924388
+77;Ponyta;Fire;;410;50;85;55;65;65;90;1;FALSE;POINT (158.1605329 6.9310427),Oceania,Micronesia,,Palikir,fm;54,00175213
+78;Rapidash;Fire;;500;65;100;70;80;80;105;1;FALSE;POINT (-172.043321 -13.8457323),Oceania,Samoa,,Mulifanua,ws;473,7722122
+79;Slowpoke;Water;Psychic;315;90;65;65;40;40;15;1;FALSE;POINT (160.6997931 -8.7672582),Oceania,Solomon Islands,,Auki,sb;258,5328154
+80;Slowbro;Water;Psychic;490;95;75;110;100;80;30;1;FALSE;POINT (160.6979816 -8.7712315),Oceania,Solomon Islands,,Auki,sb;95,39784158
+80;SlowbroMega Slowbro;Water;Psychic;590;95;75;180;130;80;30;1;FALSE;POINT (160.699064 -8.7710474),Oceania,Solomon Islands,,Auki,sb;483,6058958
+81;Magnemite;Electric;Steel;325;25;35;70;95;55;45;1;FALSE;POINT (177.9903664 -38.6678196),Oceania,New Zealand,,Gisborne,nz;386,9518793
+82;Magneton;Electric;Steel;465;50;60;95;120;70;70;1;FALSE;POINT (176.2265299 -38.1494627),Oceania,New Zealand,,Rotorua,nz;220,6192135
+83;Farfetch'd;Normal;Flying;352;52;65;55;58;62;60;1;FALSE;POINT (-173.9787293 -18.649505),Oceania,Tonga,,Neiafu,to;355,1313087
+84;Doduo;Normal;Flying;310;35;85;45;35;35;75;1;FALSE;POINT (171.2935721 7.069356),Oceania,Marshall Islands,,Majuro,mh;90,89779983
+85;Dodrio;Normal;Flying;460;60;110;70;60;60;100;1;FALSE;POINT (174.8669192 -37.0157547),Oceania,New Zealand,,Auckland,nz;257,643199
+86;Seel;Water;;325;65;45;55;45;70;45;1;FALSE;POINT (174.736778 -36.8015477),Oceania,New Zealand,,Auckland,nz;118,8651393
+87;Dewgong;Water;Ice;475;90;70;80;70;95;70;1;FALSE;POINT (170.957099 -45.1091611),Oceania,New Zealand,,Omaru,nz;96,34021773
+88;Grimer;Poison;;325;80;80;50;40;50;25;1;FALSE;POINT (-171.8517545 -13.7990757),Oceania,Samoa,,Afega,ws;202,7868392
+89;Muk;Poison;;500;105;105;75;65;100;50;1;FALSE;POINT (152.995082 -30.6483447),Oceania,Australia,New South Wales,Nambucca,au;171,03476
+90;Shellder;Water;;305;30;65;100;45;25;40;1;FALSE;POINT (147.3453183 -42.9190282),Oceania,Australia,Tasmania,Hobart,au;427,8287846
+91;Cloyster;Water;Ice;525;50;95;180;85;45;70;1;FALSE;POINT (159.6248704 -8.1667646),Oceania,Solomon Islands,,Buala,sb;245,80599
+92;Gastly;Ghost;Poison;310;30;35;30;100;35;80;1;FALSE;POINT (159.6242109 -8.1702315),Oceania,Solomon Islands,,Buala,sb;59,7355527
+93;Haunter;Ghost;Poison;405;45;50;45;115;55;95;1;FALSE;POINT (14.5315122 -22.680518),Africa,Namibia,,Swakopmund,na;369,1812526
+94;Gengar;Ghost;Poison;500;60;65;60;130;75;110;1;FALSE;POINT (16.133807 29.1667312),Africa,Libya,,Waddan,ly;147,1950308
+94;GengarMega Gengar;Ghost;Poison;600;60;65;80;170;95;130;1;FALSE;POINT (26.214586 -29.1599681),Africa,South Africa,,Bloemfontein,za;123,1933132
+95;Onix;Rock;Ground;385;35;45;160;30;45;70;1;FALSE;POINT (32.6133148 -25.9380063),Africa,Mozambique,,Maputo,mz;454,8320359
+96;Drowzee;Psychic;;328;60;48;45;43;90;42;1;FALSE;POINT (23.0684482 -34.0372623),Africa,South Africa,,Knysna,za;389,6584034
+97;Hypno;Psychic;;483;85;73;70;73;115;67;1;FALSE;POINT (29.8830288 31.1727027),Africa,Egypt,,Alexandria,eg;313,9608473
+98;Krabby;Water;;325;30;105;90;25;25;50;1;FALSE;POINT (18.454618 -33.9624562),Africa,South Africa,,Cape Town,za;439,0129803
+99;Kingler;Water;;475;55;130;115;50;50;75;1;FALSE;POINT (25.3987123 -33.7579509),Africa,South Africa,,Kariega,za;401,5094677
+100;Voltorb;Electric;;330;40;30;50;55;55;100;1;FALSE;POINT (32.9223229 24.0793549),Africa,Egypt,,Aswan,eg;467,2282416
+101;Electrode;Electric;;480;60;50;70;80;80;140;1;FALSE;POINT (47.5573224 -18.9082852),Africa,Madagascar,,Antananarivo,mg;276,8955693
+102;Exeggcute;Grass;Psychic;325;60;40;80;60;45;40;1;FALSE;POINT (35.7555854 -6.1788502),Africa,Tanzania,,Dodoma,tz;59,38724682
+103;Exeggutor;Grass;Psychic;520;95;95;85;125;65;55;1;FALSE;POINT (35.7310417 -6.164334),Africa,Tanzania,,Dodoma,tz;423,0066979
+104;Cubone;Ground;;320;50;50;95;40;50;35;1;FALSE;POINT (35.7534333 -6.1832285),Africa,Tanzania,,Dodoma,tz;127,1081772
+105;Marowak;Ground;;425;60;80;110;50;80;45;1;FALSE;POINT (17.0680794 -29.6763599),Africa,South Africa,,Kleinsee,za;470,0737176
+106;Hitmonlee;Fighting;;455;50;120;53;35;110;87;1;FALSE;POINT (5.4433701 22.8099884),Africa,Algeria,,Tamanrasset,dz;361,5895776
+107;Hitmonchan;Fighting;;455;50;105;79;35;110;76;1;FALSE;POINT (38.7378203 8.9860876),Africa,Ethiopia,,Addis Ababa,et;195,8232192
+108;Lickitung;Normal;;385;90;55;75;60;75;30;1;FALSE;POINT (32.5159795 15.587198),Africa,Sudan,,Khartoum,sd;440,8129394
+109;Koffing;Poison;;340;40;65;95;60;45;35;1;FALSE;POINT (10.1684099 36.7989823),Africa,Tunisia,,Tunis,tn;133,2501607
+110;Weezing;Poison;;490;65;90;120;85;70;60;1;FALSE;POINT (-15.9583601 18.0538788),Africa,Mauritania,,Nouakchott,mr;250,0489364
+111;Rhyhorn;Ground;Rock;345;80;85;95;30;30;25;1;FALSE;POINT (23.3061277 24.1793435),Africa,Libya,,Al Jawf,ly;301,8473226
+112;Rhydon;Ground;Rock;485;105;130;120;45;45;40;1;FALSE;POINT (31.319758 30.0322854),Africa,Egypt,,Cairo,eg;71,01880144
+113;Chansey;Normal;;450;250;5;5;35;105;50;1;FALSE;POINT (14.4981746 24.8320184),Africa,Libya,,Al Bakki,ly;106,1853165
+114;Tangela;Grass;;435;65;55;115;100;40;60;1;FALSE;POINT (-0.1659341 5.6633827),Africa,Ghana,,Accra,gh;241,7224685
+115;Kangaskhan;Normal;;490;105;95;80;40;80;90;1;FALSE;POINT (15.2601315 -4.3550949),Africa,Democratic Republic of the Congo,,Kinshasa,cd;409,4927362
+115;KangaskhanMega Kangaskhan;Normal;;590;105;125;100;60;100;100;1;FALSE;POINT (7.9804235 16.9734187),Africa,Niger,,Agadez,ne;427,1601654
+116;Horsea;Water;;295;30;40;70;70;25;60;1;FALSE;POINT (28.2683278 -15.4260214),Africa,Zambia,,Lusaka,zm;498,6247484
+117;Seadra;Water;;440;55;65;95;95;45;85;1;FALSE;POINT (28.3287791 -15.457668),Africa,Zambia,,Lusaka,zm;173,9336007
+118;Goldeen;Water;;320;45;67;60;35;50;63;1;FALSE;POINT (28.260718 -15.3804424),Africa,Zambia,,Lusaka,zm;153,2831118
+119;Seaking;Water;;450;80;92;65;65;80;68;1;FALSE;POINT (30.0461509 -1.9823958),Africa,Rwanda,,Kigali,rw;315,1724999
+120;Staryu;Water;;340;30;45;55;70;55;85;1;FALSE;POINT (25.327075 13.6222234),Africa,Sudan,,Al Fashir,sd;374,351992
+121;Starmie;Water;Psychic;520;60;75;85;100;85;115;1;FALSE;POINT (13.2713205 32.8210765),Africa,Libya,,Tripoli,ly;110,9094886
+122;Mr. Mime;Psychic;Fairy;460;40;45;65;100;120;90;1;FALSE;POINT (20.6226883 -28.7806902),Africa,South Africa,,Kakamas,za;309,23517
+123;Scyther;Bug;Flying;500;70;110;80;55;80;105;1;FALSE;POINT (8.5332629 11.9417158),Africa,Nigeria,,Kano,ng;134,9680879
+124;Jynx;Ice;Psychic;455;65;50;35;115;95;95;1;FALSE;POINT (27.8521588 -26.2251382),Africa,South Africa,,Soweto,za;267,9754528
+125;Electabuzz;Electric;;490;65;83;57;95;85;105;1;FALSE;POINT (-5.0053249 34.024842),Africa,Morocco,,Fes,ma;333,2941022
+126;Magmar;Fire;;495;65;95;57;100;85;93;1;FALSE;POINT (15.7819663 29.0699508),Africa,Libya,,Sawknah,ly;84,26837883
+127;Pinsir;Bug;;500;65;125;100;55;70;85;1;FALSE;POINT (24.9076724 12.0306518),Africa,Sudan,,Nyala,sd;224,5401197
+127;PinsirMega Pinsir;Bug;Flying;600;65;155;120;65;90;105;1;FALSE;POINT (22.4256214 -33.9870559),Africa,South Africa,,George,za;459,1730019
+128;Tauros;Normal;;490;75;100;95;40;70;110;1;FALSE;POINT (3.0360695 36.7111994),Africa,Algeria,,Algiers,dz;78,13821351
+129;Magikarp;Water;;200;20;10;55;15;20;80;1;FALSE;POINT (-6.8595498 34.0025362),Africa,Morocco,,Rabat,ma;299,0616555
+130;Gyarados;Water;Flying;540;95;125;79;60;100;81;1;FALSE;POINT (13.2233121 -8.8302639),Africa,Angola,,Luanda,ao;216,775169
+130;GyaradosMega Gyarados;Water;Dark;640;95;155;109;70;130;81;1;FALSE;POINT (23.7655666 -29.0595822),Africa,South Africa,,Douglas,za;179,5192193
+131;Lapras;Water;Ice;535;130;85;80;85;95;60;1;FALSE;POINT (39.4831298 1.0229931),Africa,Kenya,,Habaswein,ke;371,2600002
+132;Ditto;Normal;;288;48;48;48;48;48;48;1;FALSE;POINT (31.0165991 -17.7927891),Africa,Zimbabwe,,Harare,zw;489,5432337
+133;Eevee;Normal;;325;55;55;50;45;65;55;1;FALSE;POINT (7.3785335 9.0174804),Africa,Nigeria,,Abuja,ng;102,372914
+134;Vaporeon;Water;;525;130;65;60;110;95;65;1;FALSE;POINT (2.0860857 13.5321809),Africa,Niger,,Niamey,ne;113,600571
+135;Jolteon;Electric;;525;65;65;60;110;95;130;1;FALSE;POINT (32.5498968 0.3390283),Africa,Uganda,,Kampala,ug;428,2435767
+136;Flareon;Fire;;525;65;130;60;95;110;65;1;FALSE;POINT (15.0790596 12.1597006),Africa,Chad,,N'Djamena,td;64,79312475
+137;Porygon;Normal;;395;65;60;70;85;75;40;1;FALSE;POINT (30.8419792 29.3173581),Africa,Egypt,,Faiyum,eg;159,9006466
+138;Omanyte;Rock;Water;355;35;40;100;90;55;35;1;FALSE;POINT (-7.570813 33.5484003),Africa,Morocco,,Casablanca,ma;404,4078098
+139;Omastar;Rock;Water;495;70;60;125;115;70;55;1;FALSE;POINT (73.0101866 33.6003078),Asia,Pakistan,Punjab,Rawalpindi,pk;336,8371947
+140;Kabuto;Rock;Water;355;30;80;90;55;45;55;1;FALSE;POINT (77.0206325 28.4672406),Asia,India,Haryana,Gurugram,in;483,8950662
+141;Kabutops;Rock;Water;495;60;115;105;65;70;80;1;FALSE;POINT (50.5922413 26.2098422),Asia,Bahrain,,Manama,bh;451,0721762
+142;Aerodactyl;Rock;Flying;515;80;105;65;60;75;130;1;FALSE;POINT (114.9825324 4.9657438),Asia,Brunei,,Brunei,bn;122,341952
+142;AerodactylMega Aerodactyl;Rock;Flying;615;80;135;85;70;95;150;1;FALSE;POINT (73.505326 4.1721692),Asia,Maldives,,Malé,mv;217,4608431
+143;Snorlax;Normal;;540;160;110;65;65;110;30;1;FALSE;POINT (139.60837 35.4326121),Asia,Japan,,Yokohama,jp;212,9934456
+144;Articuno;Ice;Flying;580;90;85;100;95;125;85;1;TRUE;POINT (39.8969123 21.46146),Asia,Saudi Arabia,,Mecca,sa;216,9075703
+145;Zapdos;Electric;Flying;580;90;90;85;125;90;100;1;TRUE;POINT (67.0103825 39.6360226),Asia,Uzbekistan,,Samarkand,uz;428,0095172
+146;Moltres;Fire;Flying;580;90;100;90;125;85;90;1;TRUE;POINT (80.2736325 41.139338),Asia,China,,Aksu Prefecture,cn;79,78009747
+147;Dratini;Dragon;;300;41;64;45;50;50;50;1;FALSE;POINT (71.5351134 32.5727586),Asia,Pakistan,Punjab,Mianwali,pk;485,9022929
+148;Dragonair;Dragon;;420;61;84;65;70;70;70;1;FALSE;POINT (34.2918593 31.330177),Asia,Palestine,,Khan Yunis,ps;461,9159544
+149;Dragonite;Dragon;Flying;600;91;134;95;100;100;80;1;FALSE;POINT (121.6482182 38.9090805),Asia,China,,Dalian,cn;198,5446273
+150;Mewtwo;Psychic;;680;106;110;90;154;90;130;1;TRUE;POINT (67.850382 29.570111),Asia,Pakistan,Baluchistan,Sibi,pk;142,6227675
+150;MewtwoMega Mewtwo X;Psychic;Fighting;780;106;190;100;154;100;130;1;TRUE;POINT (113.5103559 22.2532393),Asia,China,,Zhuhai,cn;80,988016
+150;MewtwoMega Mewtwo Y;Psychic;;780;106;150;70;194;120;140;1;TRUE;POINT (73.7384366 27.200506),Asia,India,Rajasthan,Nagaur,in;76,42579204
+151;Mew;Psychic;;600;100;100;100;100;100;100;1;FALSE;POINT (72.3611814 30.0620117),Asia,Pakistan,Punjab,Vehari,pk;339,7189174
+152;Chikorita;Grass;;318;45;49;65;49;65;45;2;FALSE;POINT (118.0581214 5.8599709),Asia,Malaysia,,Sandakan,my;328,0496339
+153;Bayleef;Grass;;405;60;62;80;63;80;60;2;FALSE;POINT (64.46368 39.74236),Asia,Uzbekistan,,Bukhara,uz;398,7916828
+154;Meganium;Grass;;525;80;82;100;83;100;80;2;FALSE;POINT (91.5561014 24.7735048),Asia,Bangladesh,,Jagannathpur,bd;96,88464721
+155;Cyndaquil;Fire;;309;39;52;43;60;50;65;2;FALSE;POINT (87.6262037 43.7878466),Asia,China,,Urumqi,cn;473,8417726
+156;Quilava;Fire;;405;58;64;58;80;65;80;2;FALSE;POINT (112.9995099 28.0879856),Asia,China,,Changsha,cn;292,7851623
+157;Typhlosion;Fire;;534;78;84;78;109;85;100;2;FALSE;POINT (69.2191134 41.3196854),Asia,Uzbekistan,,Tashkent,uz;176,1524955
+158;Totodile;Water;;314;50;65;64;44;48;43;2;FALSE;POINT (129.304134 35.5380182),Asia,South Korea,,Ulsan,kr;86,88786695
+159;Croconaw;Water;;405;65;80;80;59;63;58;2;FALSE;POINT (88.4715527 26.0329469),Asia,Bangladesh,,Thakurgaon,bd;307,6145008
+160;Feraligatr;Water;;530;85;105;100;79;83;78;2;FALSE;POINT (102.8194295 24.8803856),Asia,China,,Kunming,cn;431,1084705
+161;Sentret;Normal;;215;35;46;34;35;45;20;2;FALSE;POINT (73.0735905 19.1955215),Asia,India,Maharashtra,Dombivali,in;158,8473893
+162;Furret;Normal;;415;85;76;64;45;55;90;2;FALSE;POINT (106.2523935 38.4936251),Asia,China,,Yinchuan,cn;328,6773324
+163;Hoothoot;Normal;Flying;262;60;30;30;36;56;50;2;FALSE;POINT (103.8309858 1.2585601),Asia,Singapore,,Singapore,sg;314,619448
+164;Noctowl;Normal;Flying;442;100;50;50;76;96;70;2;FALSE;POINT (56.4451718 24.7379527),Asia,Oman,,Shinas,om;376,5697358
+165;Ledyba;Bug;Flying;265;40;20;30;40;80;55;2;FALSE;POINT (89.4320695 26.3201441),Asia,India,West Bengal,Cooch Behar,in;148,4661138
+166;Ledian;Bug;Flying;390;55;35;50;55;110;85;2;FALSE;POINT (81.660347 21.2564863),Asia,India,Jharkhand,Raipur,in;87,10701558
+167;Spinarak;Bug;Poison;250;40;60;40;40;40;30;2;FALSE;POINT (54.3521242 24.4562828),Asia,United Arab Emirates,,Abu Dhabi,ae;231,5626902
+168;Ariados;Bug;Poison;390;70;90;70;60;60;40;2;FALSE;POINT (113.066151 3.1828604),Asia,Malaysia,,Bintulu,my;127,7788706
+169;Crobat;Poison;Flying;535;85;90;80;70;80;130;2;FALSE;POINT (125.5456237 -8.5711855),Asia,Timor-Leste,,Dili,tl;429,6977305
+170;Chinchou;Water;Electric;330;75;38;38;56;56;67;2;FALSE;POINT (58.5562422 22.7223234),Asia,Oman,,Ibra,om;180,9470145
+171;Lanturn;Water;Electric;460;125;58;58;76;76;67;2;FALSE;POINT (68.4581008 28.288153),Asia,Pakistan,Sindh,Jacobabad,pk;173,606196
+172;Pichu;Electric;;205;20;40;15;35;35;60;2;FALSE;POINT (107.0208077 47.917494),Asia,Mongolia,,Ulaanbaatar,mn;458,5890691
+173;Cleffa;Fairy;;218;50;25;28;45;55;15;2;FALSE;POINT (71.3784737 51.1154503),Asia,Kazakhstan,,Astana,kz;418,5691214
+174;Igglybuff;Normal;Fairy;210;90;30;15;40;20;15;2;FALSE;POINT (79.8601287 7.222708),Asia,Sri Lanka,,Negombo,lk;152,8402848
+175;Togepi;Fairy;;245;35;20;65;40;65;20;2;FALSE;POINT (118.1038164 24.4653004),Asia,China,,Xiamen,cn;74,35032117
+176;Togetic;Fairy;Flying;405;55;40;85;80;105;40;2;FALSE;POINT (74.8759735 31.5692367),Asia,India,Punjab,Amritsar,in;287,9057039
+177;Natu;Psychic;Flying;320;40;50;45;70;45;70;2;FALSE;POINT (80.23548 6.0406476),Asia,Sri Lanka,,Gale,lk;183,9534548
+178;Xatu;Psychic;Flying;470;65;75;70;95;70;95;2;FALSE;POINT (87.283002 43.9706016),Asia,China,,Changi Hui Autonomous Prefecture,cn;448,9935914
+179;Mareep;Electric;;280;55;40;40;65;45;35;2;FALSE;POINT (72.4941215 23.0746502),Asia,India,Gujarat,Ahmedabad,in;219,3563978
+180;Flaaffy;Electric;;365;70;55;55;80;60;45;2;FALSE;POINT (55.9793361 25.6682388),Asia,United Arab Emirates,,Ras Al Khaimah,ae;69,9759111
+181;Ampharos;Electric;;510;90;75;85;115;90;55;2;FALSE;POINT (78.1217534 18.6797961),Asia,India,Telangana,Nizamabad,in;425,5281192
+181;AmpharosMega Ampharos;Electric;Dragon;610;90;95;105;165;110;45;2;FALSE;POINT (35.5308073 33.8386374),Asia,Lebanon,,Beirut,lb;342,1351578
+182;Bellossom;Grass;;490;75;80;95;90;100;50;2;FALSE;POINT (100.9377916 12.9387245),Asia,Thailand,,Pattaya City,th;372,9719688
+183;Marill;Water;Fairy;250;70;20;50;20;50;40;2;FALSE;POINT (65.7609683 31.6464181),Asia,Afghanistan,,Kandahar,af;353,8745718
+184;Azumarill;Water;Fairy;420;100;50;80;60;80;50;2;FALSE;POINT (78.546254 25.4567458),Asia,India,Uttar Pradesh,Jhansi,in;197,7805102
+185;Sudowoodo;Rock;;410;70;100;115;30;65;30;2;FALSE;POINT (49.8596482 40.5304871),Asia,Azerbaijan,,Baku,az;470,92833
+186;Politoed;Water;;500;90;75;75;90;100;70;2;FALSE;POINT (106.8381783 -6.1915735),Asia,Indonesia,,Jakarta,id;103,6100029
+187;Hoppip;Grass;Flying;250;35;35;40;35;55;50;2;FALSE;POINT (119.0272619 33.5583917),Asia,China,,Huaian,cn;178,7063964
+188;Skiploom;Grass;Flying;340;55;45;50;45;65;80;2;FALSE;POINT (130.8437568 33.8612544),Asia,Japan,,Kitakyushu,jp;69,05500136
+189;Jumpluff;Grass;Flying;460;75;55;70;55;95;110;2;FALSE;POINT (89.4067029 23.4903683),Asia,Bangladesh,,Magura,bd;62,10313873
+190;Aipom;Normal;;360;55;70;55;40;55;85;2;FALSE;POINT (102.6437259 17.9882197),Asia,Laos,,Vientiane,la;493,2897015
+191;Sunkern;Grass;;180;30;30;30;30;30;30;2;FALSE;POINT (66.9365989 30.2287407),Asia,Pakistan,Baluchistan,Quetta,pk;119,739657
+192;Sunflora;Grass;;425;75;75;55;105;85;30;2;FALSE;POINT (112.6453994 -7.919254),Asia,Indonesia,,Malang,id;389,889916
+193;Yanma;Bug;Flying;390;65;65;45;75;45;95;2;FALSE;POINT (105.8404481 21.0019215),Asia,Vietnam,,Hanoi,vn;264,9351619
+194;Wooper;Water;Ground;210;55;45;45;25;25;15;2;FALSE;POINT (56.2727653 25.5973204),Asia,United Arab Emirates,,Dibba,ae;409,9756198
+195;Quagsire;Water;Ground;430;95;85;85;65;65;35;2;FALSE;POINT (75.6426984 32.2543659),Asia,India,Punjab,Pathankot,in;393,5907821
+196;Espeon;Psychic;;525;65;65;60;130;95;110;2;FALSE;POINT (51.3507044 35.7522266),Asia,Iran,,Tehran,ir;248,5922853
+197;Umbreon;Dark;;525;95;65;110;60;130;65;2;FALSE;POINT (47.958341 29.2879594),Asia,Kuwait,,Al Farwaniya,kw;480,7801461
+198;Murkrow;Dark;Flying;405;60;85;42;85;42;91;2;FALSE;POINT (74.1087818 32.4075329),Asia,Pakistan,Punjab,Wazirabad,pk;468,3732512
+199;Slowking;Water;Psychic;490;95;75;80;100;110;30;2;FALSE;POINT (34.6496908 31.7867461),Asia,Israel,,Ashdod,il;407,9855831
+200;Misdreavus;Ghost;;435;60;60;60;85;85;85;2;FALSE;POINT (48.0918855 29.0914235),Asia,Kuwait,,Ahmadi,kw;248,835495
+201;Unown;Psychic;;336;48;72;48;72;48;48;2;FALSE;POINT (120.5830167 16.4268657),Asia,Philippines,,Baguio,ph;284,8499167
+202;Wobbuffet;Psychic;;405;190;33;58;33;58;33;2;FALSE;POINT (101.5731386 25.0554355),Asia,China,,Chuxiong Yi Autonomous Prefecture,cn;244,4516147
+203;Girafarig;Normal;Psychic;455;70;80;65;90;65;85;2;FALSE;POINT (125.2954717 43.9207509),Asia,China,,Changchun,cn;155,8453807
+204;Pineco;Bug;;290;50;65;90;35;35;15;2;FALSE;POINT (58.1409724 23.6594248),Asia,Oman,,Seeb,om;229,0204777
+205;Forretress;Bug;Steel;465;75;90;140;60;60;40;2;FALSE;POINT (110.4050927 -7.0026543),Asia,Indonesia,,Semarang,id;406,9032827
+206;Dunsparce;Normal;;415;100;70;70;65;65;45;2;FALSE;POINT (93.5450094 42.8505385),Asia,China,,Hami,cn;176,2791328
+207;Gligar;Ground;Flying;430;65;75;105;35;65;85;2;FALSE;POINT (65.7854636 38.8604306),Asia,Uzbekistan,,Qarshi,uz;263,7238084
+208;Steelix;Steel;Ground;510;75;85;200;55;65;30;2;FALSE;POINT (110.3654092 -7.8611018),Asia,Indonesia,,Yogyakarta,id;339,8375285
+208;SteelixMega Steelix;Steel;Ground;610;75;125;230;55;95;30;2;FALSE;POINT (104.8399396 11.5518378),Asia,Cambodia,,Phnom Penh,kh;291,4406085
+209;Snubbull;Fairy;;300;60;80;50;40;40;30;2;FALSE;POINT (116.1228919 39.9182305),Asia,China,,Beijing,cn;402,2931661
+210;Granbull;Fairy;;450;90;120;75;60;60;45;2;FALSE;POINT (139.5910497 35.5545547),Asia,Japan,,Kawasaki,jp;158,597573
+211;Qwilfish;Water;Poison;430;65;95;75;55;55;85;2;FALSE;POINT (47.9838039 29.3737786),Asia,Kuwait,,Kuwait City,kw;356,7613823
+212;Scizor;Bug;Steel;500;70;130;100;55;80;65;2;FALSE;POINT (85.295718 27.6888559),Asia,Nepal,,Kathmandu,np;91,88129704
+212;ScizorMega Scizor;Bug;Steel;600;70;150;140;65;100;75;2;FALSE;POINT (97.3607902 25.3777856),Asia,China,,Myitkyina,cn;288,962094
+213;Shuckle;Bug;Rock;505;20;10;230;10;230;5;2;FALSE;POINT (44.4659647 33.3591121),Asia,Iraq,,Baghdad,iq;336,0398489
+214;Heracross;Bug;Fighting;500;80;125;75;40;95;85;2;FALSE;POINT (83.1729837 26.0468632),Asia,India,Uttar Pradesh,Azamgarh,in;233,9158994
+214;HeracrossMega Heracross;Bug;Fighting;600;80;185;115;40;105;75;2;FALSE;POINT (129.0685212 35.1506406),Asia,South Korea,,Busan,kr;207,3022381
+215;Sneasel;Dark;Ice;430;55;95;55;35;75;115;2;FALSE;POINT (139.789824 35.6750976),Asia,Japan,,Tokyo,jp;186,0115242
+216;Teddiursa;Normal;;330;60;80;50;50;50;40;2;FALSE;POINT (78.1386567 9.9103604),Asia,India,Tamil Nadu,Madurai,in;459,2953908
+217;Ursaring;Normal;;500;90;130;75;75;75;55;2;FALSE;POINT (78.0414257 30.308411),Asia,India,Uttarakhand,Dehradun,in;188,8838695
+218;Slugma;Fire;;250;40;40;40;70;40;20;2;FALSE;POINT (69.139396 34.5004215),Asia,Afghanistan,,Kabul,af;126,8744259
+219;Magcargo;Fire;Rock;410;50;50;120;80;80;30;2;FALSE;POINT (72.9942347 31.3744773),Asia,Pakistan,Punjab,Faisalabad,pk;360,0676508
+220;Swinub;Ice;Ground;250;50;50;40;30;30;50;2;FALSE;POINT (58.3008123 37.9289634),Asia,Turkmenistan,,Ashgabat,tm;264,0491822
+221;Piloswine;Ice;Ground;450;100;100;80;60;60;50;2;FALSE;POINT (121.0605604 13.7595457),Asia,Philippines,,Batangas,ph;439,5247332
+222;Corsola;Water;Rock;380;55;55;85;65;85;35;2;FALSE;POINT (115.1564791 -8.6496815),Asia,Indonesia,,Denpasar,id;71,44626125
+223;Remoraid;Water;;300;35;65;35;65;35;65;2;FALSE;POINT (51.556181 25.0039965),Asia,Qatar,,Mesaieed,qa;178,8782954
+224;Octillery;Water;;480;75;105;75;105;75;45;2;FALSE;POINT (113.8184072 23.0031593),Asia,China,,Dongguan,cn;99,23179786
+225;Delibird;Ice;Flying;330;45;55;45;65;45;75;2;FALSE;POINT (108.3418034 22.8319429),Asia,China,,Nanning,cn;337,007171
+226;Mantine;Water;Flying;465;65;40;70;80;140;70;2;FALSE;POINT (80.4289256 5.9778402),Asia,Sri Lanka,,Weligama,lk;285,3775583
+227;Skarmory;Steel;Flying;465;65;80;140;40;70;70;2;FALSE;POINT (127.0526008 37.2829537),Asia,South Korea,,Suwon,kr;136,4644208
+228;Houndour;Dark;Fire;330;45;60;30;80;50;65;2;FALSE;POINT (100.7518562 13.551412),Asia,Thailand,,Samut Prakan,th;437,4789381
+229;Houndoom;Dark;Fire;500;75;90;50;110;80;95;2;FALSE;POINT (74.6102918 42.8895001),Asia,Kyrgyzstan,,Bishkek,kg;461,9600257
+229;HoundoomMega Houndoom;Dark;Fire;600;75;90;90;140;90;115;2;FALSE;POINT (57.9569585 23.3098119),Asia,Oman,,Samail,om;484,1897805
+230;Kingdra;Water;Dragon;540;75;95;95;95;95;85;2;FALSE;POINT (106.6154148 26.6744116),Asia,China,,Guiyang,cn;367,0784756
+231;Phanpy;Ground;;330;90;60;60;40;40;40;2;FALSE;POINT (-6.4923047 52.3246785),Europe,Ireland,,Wexford,ie;276,3847083
+232;Donphan;Ground;;500;90;120;120;60;60;50;2;FALSE;POINT (13.5204729 59.3966462),Europe,Sweden,,Karlstad,se;171,5728197
+233;Porygon2;Normal;;515;85;80;90;105;95;60;2;FALSE;POINT (-2.4045918 57.2894732),Europe,Scotland,,Inverurie,gb-sct;349,797426
+234;Stantler;Normal;;465;73;95;62;85;65;85;2;FALSE;POINT (-3.3139773 52.5127126),Europe,Wales,,Newtown,gb-wls;421,75197
+235;Smeargle;Normal;;250;55;20;35;20;45;75;2;FALSE;POINT (-19.0048672 63.4201207),Europe,Iceland,,Vík,is;344,8069182
+236;Tyrogue;Fighting;;210;35;35;35;35;35;35;2;FALSE;POINT (14.5138355 35.8996591),Europe,Malta,,Valleta,mt;239,9532986
+237;Hitmontop;Fighting;;455;50;95;95;35;110;70;2;FALSE;POINT (7.0296002 51.4465006),Europe,Germany,,Essen,de;436,6755715
+238;Smoochum;Ice;Psychic;305;45;30;15;85;65;65;2;FALSE;POINT (4.6801447 51.7948315),Europe,Netherlands,,Dordrecht,nl;361,8322764
+239;Elekid;Electric;;360;45;63;37;65;55;95;2;FALSE;POINT (10.7400023 47.235771),Europe,Austria,,Imst,at;101,5851346
+240;Magby;Fire;;365;45;75;37;70;55;83;2;FALSE;POINT (19.9684196 50.0569418),Europe,Poland,,Krakow,pl;497,8064441
+241;Miltank;Normal;;490;95;80;105;40;70;100;2;FALSE;POINT (20.9294666 52.2330438),Europe,Poland,,Warsaw,pl;265,4283543
+242;Blissey;Normal;;540;255;10;10;75;135;55;2;FALSE;POINT (-8.9174662 53.7932697),Europe,Ireland,,Knock,ie;212,7104441
+243;Raikou;Electric;;580;90;85;75;115;100;115;2;TRUE;POINT (5.8155889 49.6791954),Europe,Belgium,,Arlon,be;285,4745793
+244;Entei;Fire;;580;115;115;85;90;75;100;2;TRUE;POINT (30.5020946 50.4352295),Europe,Ukraine,,Kyiv,ua;277,684155
+245;Suicune;Water;;580;100;75;115;90;115;85;2;TRUE;POINT (19.0752496 47.4188177),Europe,Hungary,,Budapest,hu;55,67077593
+246;Larvitar;Rock;Ground;300;50;64;50;45;50;41;2;FALSE;POINT (16.385951 39.4978033),Europe,Italy,,Acri,it;264,2819477
+247;Pupitar;Rock;Ground;410;70;84;70;65;70;51;2;FALSE;POINT (3.2167887 50.7466214),Europe,Belgium,,Mouscron,be;196,1161423
+248;Tyranitar;Rock;Dark;600;100;134;110;95;100;61;2;FALSE;POINT (15.4369486 47.0372835),Europe,Austria,,Graz,at;179,1874272
+248;TyranitarMega Tyranitar;Rock;Dark;700;100;164;150;95;120;71;2;FALSE;POINT (19.806476 41.3446175),Europe,Albania,,Tirane,al;98,2826384
+249;Lugia;Psychic;Flying;680;106;90;130;90;154;110;2;TRUE;POINT (14.5664645 35.8614844),Europe,Malta,,Marsaskala,mt;97,8268476
+250;Ho-oh;Fire;Flying;680;106;130;90;110;154;90;2;TRUE;POINT (23.7458645 37.9951579),Europe,Greece,,Athens,gr;206,8012172
+251;Celebi;Psychic;Grass;600;100;100;100;100;100;100;2;FALSE;POINT (25.6961209 66.4980287),Europe,Finland,,Rovaniemi,fi;401,6315464
+252;Treecko;Grass;;310;40;45;35;65;55;70;3;FALSE;POINT (9.8571293 57.0933635),Europe,Denmark,,Aalborg,dk;254,2720319
+253;Grovyle;Grass;;405;50;65;45;85;65;95;3;FALSE;POINT (9.0004849 44.4086116),Europe,Italy,,Genoa,it;308,50144
+254;Sceptile;Grass;;530;70;85;65;105;85;120;3;FALSE;POINT (18.3558894 43.8844515),Europe,Bosnia and Herzegovina,,Sarajevo,ba;486,6119474
+254;SceptileMega Sceptile;Grass;Dragon;630;70;110;75;145;85;145;3;FALSE;POINT (23.3773747 42.6795865),Europe,Bulgaria,,Sofia,bg;156,4179253
+255;Torchic;Fire;;310;45;60;40;70;50;45;3;FALSE;POINT (9.5202772 46.8475473),Europe,Switzerland,,Chur,ch;94,96103808
+256;Combusken;Fire;Fighting;405;60;85;60;85;60;55;3;FALSE;POINT (9.682477 45.037787),Europe,Italy,,Piacenza,it;388,9283732
+257;Blaziken;Fire;Fighting;530;80;120;70;110;70;80;3;FALSE;POINT (-5.5435048 50.1203991),Europe,England,,Penzance,gb-eng;338,7080141
+257;BlazikenMega Blaziken;Fire;Fighting;630;80;160;80;130;80;100;3;FALSE;POINT (6.8029639 52.2645507),Europe,Netherlands,,Hengelo,nl;133,5491321
+258;Mudkip;Water;;310;50;70;50;50;50;40;3;FALSE;POINT (-7.7814393 54.7987447),Europe,Ireland,,Ballybofey,ie;357,9297605
+259;Marshtomp;Water;Ground;405;70;85;70;60;70;50;3;FALSE;POINT (25.263956 60.3789595),Europe,Finland,,Sipoo,fi;301,4463117
+260;Swampert;Water;Ground;535;100;110;90;85;90;60;3;FALSE;POINT (30.3356771 60.0088842),Europe,Russia,,Saint Petersburg,ru;193,3052396
+260;SwampertMega Swampert;Water;Ground;635;100;150;110;95;110;70;3;FALSE;POINT (24.1266031 56.9683394),Europe,Latvia,,Riga,lv;143,4934992
+261;Poochyena;Dark;;220;35;55;35;30;30;35;3;FALSE;POINT (-2.4415419 36.8380626),Europe,Spain,,Almería,es;156,9686503
+262;Mightyena;Dark;;420;70;90;70;60;60;70;3;FALSE;POINT (4.6359763 52.3799067),Europe,Netherlands,,Haarlem,nl;253,3581922
+263;Zigzagoon;Normal;;240;38;30;41;30;41;60;3;FALSE;POINT (27.5196654 53.9179789),Europe,Belarus,,Minsk,by;458,8128699
+264;Linoone;Normal;;420;78;70;61;50;61;100;3;FALSE;POINT (-6.4163812 54.3589476),Europe,Northern Ireland,,Tandragee,gb-nir;227,9367067
+265;Wurmple;Bug;;195;45;45;35;20;30;20;3;FALSE;POINT (9.0239105 46.1892484),Europe,Switzerland,,Bellinzona,ch;269,9827938
+266;Silcoon;Bug;;205;50;35;55;25;25;15;3;FALSE;POINT (7.1427587 51.2643884),Europe,Germany,,Wuppertal,de;246,2320847
+267;Beautifly;Bug;Flying;395;60;70;50;100;50;65;3;FALSE;POINT (-9.0475865 53.273883),Europe,Ireland,,Galway,ie;132,7726741
+268;Cascoon;Bug;;205;50;35;55;25;25;15;3;FALSE;POINT (10.9149013 56.4125233),Europe,Denmark,,Grenaa,dk;182,9720867
+269;Dustox;Bug;Poison;385;60;50;70;50;90;65;3;FALSE;POINT (5.8487701 50.5945374),Europe,Belgium,,Verviers,be;452,9280534
+270;Lotad;Water;Grass;220;40;30;30;40;50;30;3;FALSE;POINT (-0.5279179 53.2250221),Europe,England,,Lincoln,gb-eng;219,5260311
+271;Lombre;Water;Grass;340;60;50;50;60;70;50;3;FALSE;POINT (13.0416458 48.2543606),Europe,Austria,,Braunau am Inn,at;433,6775655
+272;Ludicolo;Water;Grass;480;80;70;70;90;100;70;3;FALSE;POINT (20.4609367 44.8012212),Europe,Serbia,,Belgrade,rs;442,0089177
+273;Seedot;Grass;;220;40;40;50;30;30;30;3;FALSE;POINT (24.7264239 59.435988),Europe,Estonia,,Tallinn,ee;104,8414357
+274;Nuzleaf;Grass;Dark;340;70;70;40;60;40;60;3;FALSE;POINT (6.1359978 49.6118961),Europe,Luxembourg,,Luxembourg,lu;152,925984
+275;Shiftry;Grass;Dark;480;90;100;60;90;60;80;3;FALSE;POINT (-4.2227002 57.4713009),Europe,Scotland,,Inverness,gb-sct;390,8358962
+276;Taillow;Normal;Flying;270;40;55;30;30;30;85;3;FALSE;POINT (13.9336608 56.8363799),Europe,Sweden,,Ljungby,se;305,2404462
+277;Swellow;Normal;Flying;430;60;85;60;50;50;125;3;FALSE;POINT (19.2448731 42.4197614),Europe,Montenegro,,Podgorica,me;456,8867832
+278;Wingull;Water;Flying;270;40;30;30;55;30;85;3;FALSE;POINT (3.6093573 51.5062008),Europe,Netherlands,,Middelburg,nl;411,3762017
+279;Pelipper;Water;Flying;430;60;50;100;85;70;65;3;FALSE;POINT (-5.8288415 54.4574315),Europe,Northern Ireland,,Saintfield,gb-nir;397,1780826
+280;Ralts;Psychic;Fairy;198;28;25;25;45;35;40;3;FALSE;POINT (9.6501631 47.3362573),Europe,Austria,,Götzis,at;283,1216479
+281;Kirlia;Psychic;Fairy;278;38;35;35;65;55;50;3;FALSE;POINT (8.2534368 56.0871682),Europe,Denmark,,Ringkøbing,dk;262,0137556
+282;Gardevoir;Psychic;Fairy;518;68;65;65;125;115;80;3;FALSE;POINT (-8.2029582 39.4571758),Europe,Portugal,,Abrantes,pt;330,1506599
+282;GardevoirMega Gardevoir;Psychic;Fairy;618;68;85;65;165;135;100;3;FALSE;POINT (9.746975 47.4124685),Europe,Austria,,Dornbirn,at;290,8255075
+283;Surskit;Bug;Water;269;40;30;32;50;52;65;3;FALSE;POINT (7.4206457 43.7326432),Europe,Monaco,,Monaco,mc;483,7380636
+284;Masquerain;Bug;Flying;414;70;60;62;80;82;60;3;FALSE;POINT (33.3343346 35.154506),Europe,Cyprus,,Nicosia,cy;310,2835951
+285;Shroomish;Grass;;295;60;40;60;40;60;35;3;FALSE;POINT (-8.4197795 40.2119593),Europe,Portugal,,Coimbra,pt;387,4217197
+286;Breloom;Grass;Fighting;460;60;130;80;60;60;70;3;FALSE;POINT (-3.521563 58.5940593),Europe,Scotland,,Thurso,gb-sct;196,8302473
+287;Slakoth;Normal;;280;60;60;60;35;35;30;3;FALSE;POINT (28.8506145 41.0018171),Europe,Türkiye,,Istanbul,tr;342,0128612
+288;Vigoroth;Normal;;440;80;80;80;55;55;90;3;FALSE;POINT (15.9815686 45.8003885),Europe,Croatia,,Zagreb,hr;59,74094694
+289;Slaking;Normal;;670;150;160;100;95;65;100;3;FALSE;POINT (36.3107821 41.2805603),Europe,Türkiye,,Samsun,tr;91,08014481
+290;Nincada;Bug;Ground;266;31;45;90;30;30;40;3;FALSE;POINT (1.0752933 51.2849),Europe,England,,Canterbury,gb-eng;337,346803
+291;Ninjask;Bug;Flying;456;61;90;45;50;50;160;3;FALSE;POINT (82.6373816 55.0080315),Europe,Russia,,Novosibirsk,ru;131,835545
+292;Shedinja;Bug;Ghost;236;1;90;45;30;30;40;3;FALSE;POINT (-0.3666342 51.4638361),Europe,England,,London,gb-eng;58,8288425
+293;Whismur;Normal;;240;64;51;23;51;23;28;3;FALSE;POINT (8.8115816 53.0865907),Europe,Germany,,Bremen,de;182,4638451
+294;Loudred;Normal;;360;84;71;43;71;43;48;3;FALSE;POINT (-1.1183825 46.171244),Europe,France,,La Rochelle,fr;437,815597
+295;Exploud;Normal;;490;104;91;63;91;73;68;3;FALSE;POINT (6.8427274 51.2358379),Europe,Germany,,Düsseldorf,de;232,9150587
+296;Makuhita;Fighting;;237;72;60;30;20;30;25;3;FALSE;POINT (4.3217532 50.0505157),Europe,Belgium,,Chimay,be;465,7116628
+297;Hariyama;Fighting;;474;144;120;60;40;60;50;3;FALSE;POINT (14.5321085 50.0570679),Europe,Czech Republic,,Prague,cz;131,6362267
+298;Azurill;Normal;Fairy;190;50;20;40;20;40;20;3;FALSE;POINT (4.2676214 50.8245476),Europe,Belgium,,Brussels,be;436,598465
+299;Nosepass;Rock;;375;30;45;135;45;90;30;3;FALSE;POINT (34.6309356 36.8318759),Europe,Türkiye,,Mersin,tr;326,5258837
+300;Skitty;Normal;;260;50;45;45;35;35;50;3;FALSE;POINT (5.3203587 60.3883228),Europe,Norway,,Bergen,no;339,5511488
+301;Delcatty;Normal;;380;70;65;65;55;55;70;3;FALSE;POINT (12.4500936 41.9044153),Europe,Vatican City,,Vatican City,va;73,09011554
+302;Sableye;Dark;Ghost;380;50;75;75;65;65;50;3;FALSE;POINT (-9.338124 52.9301944),Europe,Ireland,,Lahinch,ie;91,831113
+302;SableyeMega Sableye;Dark;Ghost;480;50;85;125;85;115;20;3;FALSE;POINT (-5.9397044 54.592491),Europe,Northern Ireland,,Belfast,gb-nir;453,0335928
+303;Mawile;Steel;Fairy;380;50;85;85;55;55;50;3;FALSE;POINT (-8.9945636 52.8529661),Europe,Ireland,,Ennis,ie;265,3974887
+303;MawileMega Mawile;Steel;Fairy;480;50;105;125;55;95;50;3;FALSE;POINT (-7.3025484 54.5992047),Europe,Northern Ireland,,Omagh,gb-nir;217,9066186
+304;Aron;Steel;Rock;330;50;70;100;40;40;30;3;FALSE;POINT (12.392396 55.6688768),Europe,Denmark,,Copenhagen,dk;338,1012627
+305;Lairon;Steel;Rock;430;60;90;140;50;50;40;3;FALSE;POINT (-21.9119386 64.5444269),Europe,Iceland,,Borgarnes,is;66,84800555
+306;Aggron;Steel;Rock;530;70;110;180;60;60;50;3;FALSE;POINT (10.5170364 57.4435905),Europe,Denmark,,Frederikshavn,dk;439,5568313
+306;AggronMega Aggron;Steel;;630;70;140;230;60;80;50;3;FALSE;POINT (44.7422202 41.7276274),Europe,Georgia,,Tbilisi,ge;108,3827013
+307;Meditite;Fighting;Psychic;280;30;40;55;40;55;60;3;FALSE;POINT (-1.20279 54.5664021),Europe,England,,Middlesbrough,gb-eng;108,7904763
+308;Medicham;Fighting;Psychic;410;60;60;75;60;75;80;3;FALSE;POINT (12.4599326 43.9404131),Europe,San Marino,,San Marino,sm;436,0007799
+308;MedichamMega Medicham;Fighting;Psychic;510;60;100;85;80;85;100;3;FALSE;POINT (1.5274506 42.5031395),Europe,Andorra,,Andorra la Vella,ad;337,9082257
+309;Electrike;Electric;;295;40;45;40;65;40;65;3;FALSE;POINT (4.4757086 52.155287),Europe,Netherlands,,Leiden,nl;51,40646211
+310;Manectric;Electric;;475;70;75;60;105;60;105;3;FALSE;POINT (10.5134121 57.3241142),Europe,Denmark,,Sæby,dk;145,9205991
+310;ManectricMega Manectric;Electric;;575;70;75;80;135;80;135;3;FALSE;POINT (44.5667071 40.1638721),Europe,Armenia,,Yerevan,am;197,8311262
+311;Plusle;Electric;;405;60;50;40;85;75;95;3;FALSE;POINT (14.153209 66.3092245),Europe,Norway,,Mo i Rana,no;459,3790791
+312;Minun;Electric;;405;60;40;50;75;85;95;3;FALSE;POINT (5.3835574 43.3380727),Europe,France,,Marseille,fr;104,1393786
+313;Volbeat;Bug;;400;65;73;55;47;75;85;3;FALSE;POINT (-3.0123016 51.590703),Europe,Wales,,Newport,gb-wls;316,3566986
+314;Illumise;Bug;;400;65;47;55;73;75;85;3;FALSE;POINT (25.4733637 65.0045479),Europe,Finland,,Oulu,fi;424,2608114
+315;Roselia;Grass;Poison;400;50;60;45;100;80;65;3;FALSE;POINT (-3.8758883 57.5791592),Europe,Scotland,,Nairn,gb-sct;348,7459982
+316;Gulpin;Poison;;302;70;43;53;43;53;40;3;FALSE;POINT (21.3701919 42.0118961),Europe,North Macedonia,,Skopje,mk;255,1579368
+317;Swalot;Poison;;467;100;73;83;73;83;55;3;FALSE;POINT (14.3119075 48.2988842),Europe,Austria,,Linz,at;386,2672951
+318;Carvanha;Water;Dark;305;45;90;20;65;20;65;3;FALSE;POINT (-6.3814312 58.2102105),Europe,Scotland,,Stornoway,gb-sct;166,9441704
+319;Sharpedo;Water;Dark;460;70;120;40;95;40;95;3;FALSE;POINT (17.1217776 48.1604648),Europe,Slovakia,,Bratislava,sk;176,8912614
+319;SharpedoMega Sharpedo;Water;Dark;560;70;140;70;110;65;105;3;FALSE;POINT (24.6600883 60.2088089),Europe,Finland,,Espoo,fi;417,2997579
+320;Wailmer;Water;;400;130;70;35;70;35;60;3;FALSE;POINT (15.0537986 12.1272553),Africa,Chad,,N'Djamena,td;93,89001051
+321;Wailord;Water;;500;170;90;45;90;45;60;3;FALSE;POINT (2.8947534 30.5972388),Africa,Algeria,,El Meniaa,dz;480,479139
+322;Numel;Fire;Ground;305;60;60;40;65;45;35;3;FALSE;POINT (-4.480553 54.1514311),Europe,Isle of Man,,Douglas,im;437,8385062
+323;Camerupt;Fire;Ground;460;70;100;70;105;75;40;3;FALSE;POINT (7.1571005 46.8087704),Europe,Switzerland,,Fribourg,ch;351,8331773
+323;CameruptMega Camerupt;Fire;Ground;560;70;120;100;145;105;20;3;FALSE;POINT (1.5067811 42.5032014),Europe,Andorra,,Andorra la Vella,ad;112,8905004
+324;Torkoal;Fire;;470;70;85;140;85;70;20;3;FALSE;POINT (-61.8082912 17.102398),North America,Antigua and Barbuda,,Saint John's,ag;121,1216691
+325;Spoink;Psychic;;330;60;25;35;70;80;60;3;FALSE;POINT (-98.2237991 19.0427951),North America,Mexico,,Puebla,mx;350,8607175
+326;Grumpig;Psychic;;470;80;45;65;90;110;80;3;FALSE;POINT (-76.6184288 2.4489896),South America,Colombia,,Popayan,co;178,4194409
+327;Spinda;Normal;;360;60;60;60;60;60;60;3;FALSE;POINT (-74.4367563 39.3652248),North America,United States of America,New Jersey,Atlantic City,us;464,1905591
+328;Trapinch;Ground;;290;45;100;45;45;45;10;3;FALSE;POINT (-80.2873449 43.5488913),North America,Canada,Ontario,Guelph,ca;424,0277528
+329;Vibrava;Ground;Dragon;340;50;70;50;50;50;70;3;FALSE;POINT (149.1709724 -21.1740668),Oceania,Australia,Queensland,Mackay,au;454,7397765
+330;Flygon;Ground;Dragon;520;80;100;80;80;80;100;3;FALSE;POINT (78.4883964 15.4882696),Asia,India,Andhra Pradesh,Nandyala,in;337,4501577
+331;Cacnea;Grass;;335;50;85;40;85;40;35;3;FALSE;POINT (9.9258065 56.0409689),Europe,Denmark,,Skanderborg,dk;407,352362
+332;Cacturne;Grass;Dark;475;70;115;60;115;60;55;3;FALSE;POINT (-3.3163195 57.6489292),Europe,Scotland,,Elgin,gb-sct;372,7635377
+333;Swablu;Normal;Flying;310;45;40;60;40;75;50;3;FALSE;POINT (9.7436048 4.060316),Africa,Cameroon,,Douala,cm;298,7745053
+334;Altaria;Dragon;Flying;490;75;70;90;70;105;80;3;FALSE;POINT (134.255196 7.0415032),Oceania,Palau,,Kloulklubed,pw;455,2968382
+334;AltariaMega Altaria;Dragon;Fairy;590;75;110;110;110;105;80;3;FALSE;POINT (-81.1783305 37.7709681),North America,United States of America,West Virginia,Beckley,us;436,3126138
+335;Zangoose;Normal;;458;73;115;60;60;60;90;3;FALSE;POINT (-111.9019067 40.8514025),North America,United States of America,Utah,Salt Lake City,us;409,6287225
+336;Seviper;Poison;;458;73;100;60;100;60;65;3;FALSE;POINT (51.419186 25.3079568),Asia,Qatar,,Ar Rayyan,qa;426,2947215
+337;Lunatone;Rock;Psychic;440;70;55;65;95;85;70;3;FALSE;POINT (28.0147034 -26.2619928),Africa,South Africa,,Johannesburg,za;363,1625435
+338;Solrock;Rock;Psychic;440;70;95;85;55;65;70;3;FALSE;POINT (116.100067 39.9180644),Asia,China,,Beijing,cn;179,1414458
+339;Barboach;Water;Ground;288;50;48;43;46;41;60;3;FALSE;POINT (-122.9719128 45.4210324),North America,United States of America,Oregon,Portland,us;214,9458276
+340;Whiscash;Water;Ground;468;110;78;73;76;71;60;3;FALSE;POINT (-53.7874895 -29.7076951),South America,Brazil,,Santa Maria,br;278,5694504
+341;Corphish;Water;;308;43;80;65;50;35;35;3;FALSE;POINT (-110.8038153 43.4719488),North America,United States of America,Wyoming,Jackson,us;409,3838623
+342;Crawdaunt;Water;Dark;468;63;120;85;90;55;55;3;FALSE;POINT (89.0722456 22.7206083),Asia,Bangladesh,,Satkhira,bd;270,6358437
+343;Baltoy;Ground;Psychic;300;40;40;55;40;70;55;3;FALSE;POINT (-84.6698329 39.056427),North America,United States of America,Kentucky,Hebron,us;85,12166736
+344;Claydol;Ground;Psychic;500;60;70;105;70;120;75;3;FALSE;POINT (150.949898 -31.0894177),Oceania,Australia,New South Wales,Tamworth,au;310,812484
+345;Lileep;Rock;Grass;355;66;41;77;61;87;23;3;FALSE;POINT (104.8613068 11.5498946),Asia,Cambodia,,Phnom Penh,kh;234,4342164
+346;Cradily;Rock;Grass;495;86;81;97;81;107;43;3;FALSE;POINT (9.7956055 54.9079077),Europe,Denmark,,Sønderborg,dk;254,570034
+347;Anorith;Rock;Bug;355;45;95;50;40;50;75;3;FALSE;POINT (106.8124178 47.9316151),Asia,Mongolia,,Ulaanbaatar,mn;494,2937298
+348;Armaldo;Rock;Bug;495;75;125;100;70;80;45;3;FALSE;POINT (-75.2117473 -12.0553385),South America,Peru,,Huancayo,pe;64,03335629
+349;Feebas;Water;;200;20;15;20;10;55;80;3;FALSE;POINT (15.7950985 29.0655029),Africa,Libya,,Sawknah,ly;443,4056479
+350;Milotic;Water;;540;95;60;79;100;125;81;3;FALSE;POINT (120.403619 36.1279692),Asia,China,,Qingdao,cn;485,2695547
+351;Castform;Normal;;420;70;70;70;70;70;70;3;FALSE;POINT (32.2698479 30.6034849),Africa,Egypt,,Ismailia,eg;104,3861802
+352;Kecleon;Normal;;440;60;90;70;60;120;40;3;FALSE;POINT (-85.5606187 38.1876652),North America,United States of America,Kentucky,Jeffersontown,us;149,6646514
+353;Shuppet;Ghost;;295;44;75;35;63;33;45;3;FALSE;POINT (47.5067358 -18.9344923),Africa,Madagascar,,Antananarivo,mg;292,5732481
+354;Banette;Ghost;;455;64;115;65;83;63;65;3;FALSE;POINT (137.9884367 -33.2387956),Oceania,Australia,South Australia,Port Pirie,au;185,8405731
+354;BanetteMega Banette;Ghost;;555;64;165;75;93;83;75;3;FALSE;POINT (25.512604 -33.9247556),Africa,South Africa,,Port Elizabeth,za;168,9369083
+355;Duskull;Ghost;;295;20;40;90;30;90;25;3;FALSE;POINT (-61.3865699 15.3026034),North America,Dominica,,Roseau,dm;469,3091469
+356;Dusclops;Ghost;;455;40;70;130;60;130;25;3;FALSE;POINT (26.0487981 44.4397923),Europe,Romania,,Bucharest,ro;459,5732443
+357;Tropius;Grass;Flying;460;99;68;83;72;87;51;3;FALSE;POINT (89.6399428 27.4911667),Asia,Bhutan,,Thimphu,bt;324,3506737
+358;Chimecho;Psychic;;425;65;50;70;95;80;65;3;FALSE;POINT (8.5124143 52.0112381),Europe,Germany,,Bielefeld,de;253,3451518
+359;Absol;Dark;;465;65;130;60;75;60;75;3;FALSE;POINT (16.4876209 -28.5967379),Africa,South Africa,,Alexander Bay,za;149,1603006
+359;AbsolMega Absol;Dark;;565;65;150;60;115;60;115;3;FALSE;POINT (82.9578982 25.2577783),Asia,India,Uttar Pradesh,Varanasi,in;131,3071644
+360;Wynaut;Psychic;;260;95;23;48;23;48;23;3;FALSE;POINT (-66.9183993 10.4771034),South America,Venezuela,,Caracas,ve;334,2308214
+361;Snorunt;Ice;;300;50;50;50;50;50;50;3;FALSE;POINT (-58.4651999 -34.5691243),South America,Argentina,,Buenos Aires,ar;64,36649674
+362;Glalie;Ice;;480;80;80;80;80;80;80;3;FALSE;POINT (-76.894838 17.9622831),North America,Jamaica,,Portmore,jm;215,0134315
+362;GlalieMega Glalie;Ice;;580;80;120;80;120;80;100;3;FALSE;POINT (-7.4949403 39.817656),Europe,Portugal,,Castelo Branco,pt;202,7452659
+363;Spheal;Ice;Water;290;70;40;50;55;50;25;3;FALSE;POINT (-94.54647 18.0003451),North America,Mexico,,Minatitlán,mx;264,0683262
+364;Sealeo;Ice;Water;410;90;60;70;75;70;45;3;FALSE;POINT (-58.8207347 -27.4753189),South America,Argentina,,Corrientes,ar;154,6341579
+365;Walrein;Ice;Water;530;110;80;90;95;90;65;3;FALSE;POINT (58.4054415 37.9245027),Asia,Turkmenistan,,Ashgabat,tm;335,4070062
+366;Clamperl;Water;;345;35;64;85;74;55;32;3;FALSE;POINT (44.2026605 15.349442),Asia,Yemen,,Sanaa,ye;141,1248942
+367;Huntail;Water;;485;55;104;105;94;75;52;3;FALSE;POINT (-3.7269782 53.2911674),Europe,Wales,,Colwyn Bay,gb-wls;111,7587652
+368;Gorebyss;Water;;485;55;84;105;114;75;52;3;FALSE;POINT (44.7541346 41.7025807),Europe,Georgia,,Tbilisi,ge;69,22641244
+369;Relicanth;Water;Rock;485;100;90;130;45;65;55;3;FALSE;POINT (23.3983089 42.7292133),Europe,Bulgaria,,Sofia,bg;155,9211606
+370;Luvdisc;Water;;330;43;30;55;40;65;97;3;FALSE;POINT (80.8176293 6.4205779),Asia,Sri Lanka,,Udawalawa,lk;82,29820015
+371;Bagon;Dragon;;300;45;75;60;40;30;50;3;FALSE;POINT (125.552638 -8.5564915),Asia,Timor-Leste,,Dili,tl;322,1478603
+372;Shelgon;Dragon;;420;65;95;100;60;50;50;3;FALSE;POINT (-61.4995981 10.6527515),North America,Trinidad and Tobago,,Port of Spain,tt;418,0286906
+373;Salamence;Dragon;Flying;600;95;135;80;110;80;100;3;FALSE;POINT (-76.9490631 38.8789207),North America,United States of America,DC,Washington,us;426,6599677
+373;SalamenceMega Salamence;Dragon;Flying;700;95;145;130;120;90;120;3;FALSE;POINT (-60.0346472 -3.0966239),South America,Brazil,,Manaus,br;197,889996
+374;Beldum;Steel;Psychic;300;40;55;80;35;60;30;3;FALSE;POINT (100.4156693 13.7752373),Asia,Thailand,,Bangkok,th;208,9796389
+375;Metang;Steel;Psychic;420;60;75;100;55;80;50;3;FALSE;POINT (6.1313714 49.6208217),Europe,Luxembourg,,Luxembourg,lu;150,2555726
+376;Metagross;Steel;Psychic;600;80;135;130;95;90;70;3;FALSE;POINT (87.2360529 24.2457046),Asia,India,Jharkhand,Dumka,in;76,62494699
+376;MetagrossMega Metagross;Steel;Psychic;700;80;145;150;105;110;110;3;FALSE;POINT (-72.688028 19.456941),North America,Haiti,,Gonaives,ht;485,0144815
+377;Regirock;Rock;;580;80;100;200;50;100;50;3;TRUE;POINT (-61.2212736 13.1659339),North America,Saint Vincent and the Grenadines,,Kingstown,vc;56,96710505
+378;Regice;Ice;;580;80;50;100;100;200;50;3;TRUE;POINT (-95.8807278 36.1297206),North America,United States of America,Oklahoma,Tulsa,us;440,2223035
+379;Registeel;Steel;;580;80;75;150;75;150;50;3;TRUE;POINT (-56.0159932 -28.658018),South America,Brazil,,São Borja,br;350,715854
+380;Latias;Dragon;Psychic;600;80;80;90;110;130;110;3;TRUE;POINT (146.8046975 -19.2818962),Oceania,Australia,Queensland,Townsville,au;171,2090856
+380;LatiasMega Latias;Dragon;Psychic;700;80;100;120;140;150;110;3;TRUE;POINT (-63.8420889 -8.743353),South America,Brazil,,Porto Velho,br;276,2209827
+381;Latios;Dragon;Psychic;600;80;90;80;130;110;110;3;TRUE;POINT (-35.7210414 -9.6523476),South America,Brazil,,Maceio,br;388,306016
+381;LatiosMega Latios;Dragon;Psychic;700;80;130;100;160;120;110;3;TRUE;POINT (5.6463837 49.7345645),Europe,Belgium,,Habay,be;157,8493971
+382;Kyogre;Water;;670;100;100;90;150;140;90;3;TRUE;POINT (20.9963401 52.2310315),Europe,Poland,,Warsaw,pl;375,9872582
+382;KyogrePrimal Kyogre;Water;;770;100;150;90;180;160;90;3;TRUE;POINT (69.2265891 41.3349317),Asia,Uzbekistan,,Tashkent,uz;93,09862136
+383;Groudon;Ground;;670;100;150;140;100;90;90;3;TRUE;POINT (68.7980726 38.5673733),Asia,Tajikistan,,Dushanbe,tj;231,4680982
+383;GroudonPrimal Groudon;Ground;Fire;770;100;180;160;150;90;90;3;TRUE;POINT (19.7877133 41.3411466),Europe,Albania,,Tirane,al;347,870261
+384;Rayquaza;Dragon;Flying;680;105;150;90;150;90;95;3;TRUE;POINT (24.1220092 56.9735456),Europe,Latvia,,Riga,lv;491,6192887
+384;RayquazaMega Rayquaza;Dragon;Flying;780;105;180;100;180;100;115;3;TRUE;POINT (16.8749323 -29.2615351),Africa,South Africa,,Port Nolloth,za;60,59194599
+385;Jirachi;Steel;Psychic;600;100;100;100;100;100;100;3;TRUE;POINT (-56.1663578 -34.8887599),South America,Uruguay,,Montevideo,uy;408,3664469
+386;DeoxysNormal Forme;Psychic;;600;50;150;50;150;50;150;3;TRUE;POINT (166.9316346 -0.5106225),Oceania,Nauru,,Baiti,nr;418,0568178
+386;DeoxysAttack Forme;Psychic;;600;50;180;20;180;20;150;3;TRUE;POINT (-78.9817795 43.1312281),North America,United States of America,New York,Buffalo,us;62,60262266
+386;DeoxysDefense Forme;Psychic;;600;50;70;160;70;160;90;3;TRUE;POINT (139.6805987 35.8811625),Asia,Japan,,Saitama,jp;240,842815
+386;DeoxysSpeed Forme;Psychic;;600;50;95;90;95;90;180;3;TRUE;POINT (7.4191702 9.1244277),Africa,Nigeria,,Abuja,ng;72,72328355
+387;Turtwig;Grass;;318;55;68;64;45;55;31;4;FALSE;POINT (25.600106 -25.8556334),Africa,South Africa,,Mahikeng,za;366,624844
+388;Grotle;Grass;;405;75;89;85;55;65;36;4;FALSE;POINT (77.3439038 28.429922),Asia,India,Haryana,Faridabad,in;314,6623332
+389;Torterra;Grass;Ground;525;95;109;105;75;85;56;4;FALSE;POINT (32.61304 -25.942332),Africa,Mozambique,,Maputo,mz;316,0157286
+390;Chimchar;Fire;;309;44;58;44;58;44;61;4;FALSE;POINT (-88.0493092 15.5149015),North America,Honduras,,San Pedro Sula,hn;232,5373895
+391;Monferno;Fire;Fighting;405;64;78;52;78;52;81;4;FALSE;POINT (58.1399961 23.4069084),Asia,Oman,,Bidbid,om;126,8097419
+392;Infernape;Fire;Fighting;534;76;104;71;104;71;108;4;FALSE;POINT (152.0085243 -28.2033325),Oceania,Australia,Queensland,Warwick,au;375,4356579
+393;Piplup;Water;;314;53;51;53;61;56;40;4;FALSE;POINT (49.7837981 26.4576602),Asia,Saudi Arabia,,Dammam,sa;401,7502111
+394;Prinplup;Water;;405;64;66;68;81;76;50;4;FALSE;POINT (-103.0396238 34.3813519),North America,United States of America,Texas,Farwell,us;168,3145713
+395;Empoleon;Water;Steel;530;84;86;88;111;101;60;4;FALSE;POINT (-0.1324469 5.6557363),Africa,Ghana,,Accra,gh;457,9673307
+396;Starly;Normal;Flying;245;40;55;30;30;30;60;4;FALSE;POINT (-71.5201959 41.9928847),North America,United States of America,Rhode Island,Woonsocket,us;108,3311937
+397;Staravia;Normal;Flying;340;55;75;50;40;40;80;4;FALSE;POINT (77.1938815 28.6615819),Asia,India,Delhi (Union Territory),Delhi,in;204,87828
+398;Staraptor;Normal;Flying;485;85;120;70;50;60;100;4;FALSE;POINT (14.4827669 46.055192),Europe,Slovenia,,Ljubljana,si;188,5021157
+399;Bidoof;Normal;;250;59;45;40;35;40;31;4;FALSE;POINT (44.3454 33.2609018),Asia,Iraq,,Baghdad,iq;280,9384585
+400;Bibarel;Normal;Water;410;79;85;60;55;60;71;4;FALSE;POINT (140.8939332 38.2480232),Asia,Japan,,Sendai,jp;331,9879242
+401;Kricketot;Bug;;194;37;25;41;25;41;25;4;FALSE;POINT (119.3259009 26.0841889),Asia,China,,Fuzhou,cn;89,29301916
+402;Kricketune;Bug;;384;77;85;51;55;51;65;4;FALSE;POINT (-69.9476268 18.5000561),North America,Dominican Republic,,Santo Domingo,do;292,2652743
+403;Shinx;Electric;;263;45;65;34;40;34;45;4;FALSE;POINT (18.3970695 -33.9544754),Africa,South Africa,,Cape Town,za;228,4190387
+404;Luxio;Electric;;363;60;85;49;60;49;60;4;FALSE;POINT (-55.2023396 5.8226768),South America,Suriname,,Paramaribo,sr;285,8423075
+405;Luxray;Electric;;523;80;120;79;95;79;70;4;FALSE;POINT (7.0023979 51.4660576),Europe,Germany,,Essen,de;278,8083953
+406;Budew;Grass;Poison;280;40;30;35;50;70;55;4;FALSE;POINT (166.9297168 -0.5108479),Oceania,Nauru,,Baiti,nr;357,4938618
+407;Roserade;Grass;Poison;515;60;70;65;125;105;90;4;FALSE;POINT (12.4556829 43.9415172),Europe,San Marino,,San Marino,sm;175,5627722
+408;Cranidos;Rock;;350;67;125;40;30;30;58;4;FALSE;POINT (-89.7068078 39.7769336),North America,United States of America,Illinois,Springfield,us;416,3362498
+409;Rampardos;Rock;;495;97;165;60;65;50;58;4;FALSE;POINT (44.4356359 33.3107572),Asia,Iraq,,Baghdad,iq;109,8601828
+410;Shieldon;Rock;Steel;350;30;42;118;42;88;30;4;FALSE;POINT (-106.6755888 35.180177),North America,United States of America,New Mexico,Albuquerque,us;300,4541134
+411;Bastiodon;Rock;Steel;495;60;52;168;47;138;30;4;FALSE;POINT (-84.5300962 39.0730888),North America,United States of America,Kentucky,Covington,us;430,4300083
+412;Burmy;Bug;;224;40;29;45;29;45;36;4;FALSE;POINT (24.5383821 -32.2561545),Africa,South Africa,,Graaff-Reinet,za;165,9916382
+413;WormadamPlant Cloak;Bug;Grass;424;60;59;85;79;105;36;4;FALSE;POINT (-54.9791353 -28.4176084),South America,Brazil,,São Luiz Gonzaga,br;200,8014178
+413;WormadamSandy Cloak;Bug;Ground;424;60;79;105;59;85;36;4;FALSE;POINT (-81.7038051 30.3543462),North America,United States of America,Florida,Jacksonville,us;95,47714495
+413;WormadamTrash Cloak;Bug;Steel;424;60;69;95;69;95;36;4;FALSE;POINT (147.2665601 -42.8454203),Oceania,Australia,Tasmania,Hobart,au;245,6183646
+414;Mothim;Bug;Flying;424;70;94;50;94;50;66;4;FALSE;POINT (-73.8843519 40.8302398),North America,United States of America,New York,New York,us;172,310104
+415;Combee;Bug;Flying;244;30;30;42;30;42;70;4;FALSE;POINT (138.4968727 -35.1770313),Oceania,Australia,South Australia,Adelaide,au;474,5174331
+416;Vespiquen;Bug;Flying;474;70;80;102;80;102;40;4;FALSE;POINT (125.5380792 -8.5654457),Asia,Timor-Leste,,Dili,tl;104,957222
+417;Pachirisu;Electric;;405;60;45;70;45;90;95;4;FALSE;POINT (178.4533769 -18.1392907),Oceania,Fiji,,Suva,fj;380,0427084
+418;Buizel;Water;;330;55;65;35;60;30;85;4;FALSE;POINT (24.7347015 -26.9545646),Africa,South Africa,,Vryburg,za;336,373961
+419;Floatzel;Water;;495;85;105;55;85;50;115;4;FALSE;POINT (11.4775264 3.845809),Africa,Cameroon,,Yaounde,cm;80,72936152
+420;Cherubi;Grass;;275;45;35;45;62;53;35;4;FALSE;POINT (-46.6843043 -23.5226403),South America,Brazil,,Sao Paulo,br;340,4175273
+421;Cherrim;Grass;;450;70;60;70;87;78;85;4;FALSE;POINT (106.9878411 47.9109019),Asia,Mongolia,,Ulaanbaatar,mn;243,7770102
+422;Shellos;Water;;325;76;48;48;57;62;34;4;FALSE;POINT (121.4373292 37.4554792),Asia,China,,Yantai,cn;290,1968658
+423;Gastrodon;Water;Ground;475;111;83;68;92;82;39;4;FALSE;POINT (-83.3538452 42.5515741),North America,United States of America,Michigan,Detroit,us;464,635628
+424;Ambipom;Normal;;482;75;100;66;60;66;115;4;FALSE;POINT (14.5290581 50.0934574),Europe,Czech Republic,,Prague,cz;285,4450404
+425;Drifloon;Ghost;Flying;348;90;50;34;60;44;70;4;FALSE;POINT (-79.9731967 22.4014404),North America,Cuba,,Santa Clara,cu;230,7755489
+426;Drifblim;Ghost;Flying;498;150;80;44;90;54;80;4;FALSE;POINT (16.5929414 49.204354),Europe,Czech Republic,,Brno,cz;246,4553433
+427;Buneary;Normal;;350;55;66;44;44;56;85;4;FALSE;POINT (153.0270779 -27.7057401),Oceania,Australia,Queensland,Brisbane,au;219,1519565
+428;Lopunny;Normal;;480;65;76;84;54;96;105;4;FALSE;POINT (-0.1638075 5.6551227),Africa,Ghana,,Accra,gh;263,5519922
+428;LopunnyMega Lopunny;Normal;Fighting;580;65;136;94;54;96;135;4;FALSE;POINT (-77.9668422 39.4687034),North America,United States of America,West Virginia,Martinsburg,us;384,9410684
+429;Mismagius;Ghost;;495;60;60;60;105;105;105;4;FALSE;POINT (23.063928 -34.0333539),Africa,South Africa,,Knysna,za;230,9130147
+430;Honchkrow;Dark;Flying;505;100;125;52;105;52;71;4;FALSE;POINT (-55.2083005 5.8411993),South America,Suriname,,Paramaribo,sr;151,5424381
+431;Glameow;Normal;;310;49;55;42;42;37;85;4;FALSE;POINT (111.8197135 40.8548484),Asia,China,,Hohhot,cn;267,9465084
+432;Purugly;Normal;;452;71;82;64;64;59;112;4;FALSE;POINT (119.3917898 32.3582894),Asia,China,,Yangzhou,cn;485,740594
+433;Chingling;Psychic;;285;45;30;50;65;50;45;4;FALSE;POINT (30.9872325 -29.8803581),Africa,South Africa,,Durban,za;132,9299772
+434;Stunky;Poison;Dark;329;63;63;47;41;41;74;4;FALSE;POINT (14.5651153 35.8612255),Europe,Malta,,Marsaskala,mt;81,82396848
+435;Skuntank;Poison;Dark;479;103;93;67;71;61;84;4;FALSE;POINT (-71.4816162 41.7436342),North America,United States of America,Rhode Island,Providence,us;379,0678511
+436;Bronzor;Steel;Psychic;300;57;24;86;24;86;23;4;FALSE;POINT (152.8267497 -31.0772072),Oceania,Australia,New South Wales,Kempsey,au;101,5277991
+437;Bronzong;Steel;Psychic;500;67;89;116;79;116;33;4;FALSE;POINT (-58.1395221 6.7853406),South America,Guyana,,Georgetown,gy;274,4262858
+438;Bonsly;Rock;;290;50;80;95;10;45;10;4;FALSE;POINT (-70.8683992 43.2116543),North America,United States of America,New Hampshire,Dover,us;497,5881422
+439;Mime Jr.;Psychic;Fairy;310;20;25;45;70;90;60;4;FALSE;POINT (151.1791983 -32.5740448),Oceania,Australia,New South Wales,Singleton,au;265,8602395
+440;Happiny;Normal;;220;100;5;5;15;65;30;4;FALSE;POINT (-79.8570532 32.7871152),North America,United States of America,South Carolina,Mount Pleasant,us;220,983217
+441;Chatot;Normal;Flying;411;76;65;45;92;42;91;4;FALSE;POINT (14.4966225 24.8296502),Africa,Libya,,Al Bakki,ly;262,3162499
+442;Spiritomb;Ghost;Dark;485;50;92;108;92;108;35;4;FALSE;POINT (36.2582169 33.5266235),Asia,Syria,,Damascus,sy;250,1510012
+443;Gible;Dragon;Ground;300;58;70;45;40;45;42;4;FALSE;POINT (7.4280704 43.7387428),Europe,Monaco,,Monaco,mc;449,2898876
+444;Gabite;Dragon;Ground;410;68;90;65;50;55;82;4;FALSE;POINT (7.3601628 18.7896021),Africa,Niger,,Arlit,ne;284,5201769
+445;Garchomp;Dragon;Ground;600;108;130;95;80;85;102;4;FALSE;POINT (-77.1041866 38.8285571),North America,United States of America,Virginia,Alexandria,us;312,9960018
+445;GarchompMega Garchomp;Dragon;Ground;700;108;170;115;120;95;92;4;FALSE;POINT (34.8226046 31.8906211),Asia,Israel,,Rehovot,il;97,79135593
+446;Munchlax;Normal;;390;135;85;40;40;85;5;4;FALSE;POINT (16.4445632 57.2675282),Europe,Sweden,,Oskarshamn,se;458,4074294
+447;Riolu;Fighting;;285;40;70;40;35;40;60;4;FALSE;POINT (-61.8323866 17.1240983),North America,Antigua and Barbuda,,Saint John's,ag;481,6397139
+448;Lucario;Fighting;Steel;525;70;110;70;115;70;90;4;FALSE;POINT (-47.9202526 -15.7994919),South America,Brazil,,Brasilia,br;347,8817134
+448;LucarioMega Lucario;Fighting;Steel;625;70;145;88;140;70;112;4;FALSE;POINT (74.6159159 42.8624013),Asia,Kyrgyzstan,,Bishkek,kg;172,3677512
+449;Hippopotas;Ground;;330;68;72;78;38;42;32;4;FALSE;POINT (-66.9691777 10.5079037),South America,Venezuela,,Caracas,ve;243,2243913
+450;Hippowdon;Ground;;525;108;112;118;68;72;47;4;FALSE;POINT (-169.8966672 -19.0670491),Oceania,Niue,,Alofi,nu;107,8340442
+451;Skorupi;Poison;Bug;330;40;50;90;30;55;65;4;FALSE;POINT (-78.483231 -0.2569809),South America,Ecuador,,Quito,ec;345,7386225
+452;Drapion;Poison;Dark;500;70;90;110;60;75;95;4;FALSE;POINT (-59.9910319 -3.1204322),South America,Brazil,,Manaus,br;236,2064601
+453;Croagunk;Poison;Fighting;300;48;61;40;61;40;50;4;FALSE;POINT (20.4648329 44.8068237),Europe,Serbia,,Belgrade,rs;315,2488764
+454;Toxicroak;Poison;Fighting;490;83;106;65;86;65;85;4;FALSE;POINT (-131.6449045 55.3417386),North America,United States of America,Alaska,Ketchikan,us;143,2046666
+455;Carnivine;Grass;;454;74;100;72;90;72;46;4;FALSE;POINT (50.5808771 26.2246145),Asia,Bahrain,,Manama,bh;329,1867192
+456;Finneon;Water;;330;49;49;56;49;61;66;4;FALSE;POINT (9.019554 47.6749286),Europe,Switzerland,,Berlingen,ch;363,3474412
+457;Lumineon;Water;;460;69;69;76;69;86;91;4;FALSE;POINT (168.3088269 -17.7608397),Oceania,Vanuatu,,Port Vila,vu;229,9169163
+458;Mantyke;Water;Flying;345;45;20;50;60;120;50;4;FALSE;POINT (117.3159164 31.8413158),Asia,China,,Hefei,cn;322,148527
+459;Snover;Grass;Ice;334;60;62;50;62;60;40;4;FALSE;POINT (-83.73606 42.293705),North America,United States of America,Michigan,Ann Arbor,us;440,5350723
+460;Abomasnow;Grass;Ice;494;90;92;75;92;85;60;4;FALSE;POINT (16.5924189 38.9139837),Europe,Italy,,Catanzaro,it;101,885562
+460;AbomasnowMega Abomasnow;Grass;Ice;594;90;132;105;132;105;30;4;FALSE;POINT (102.62548 17.9673189),Asia,Laos,,Vientiane,la;380,3586509
+461;Weavile;Dark;Ice;510;70;120;65;45;85;125;4;FALSE;POINT (18.7164667 -33.8411951),Africa,South Africa,,Cape Town,za;235,4978848
+462;Magnezone;Electric;Steel;535;70;70;115;130;90;60;4;FALSE;POINT (30.0391299 -22.3569998),Africa,South Africa,,Musina,za;385,1864113
+463;Lickilicky;Normal;;515;110;85;95;80;95;50;4;FALSE;POINT (-84.2303194 30.4560391),North America,United States of America,Florida,Tallahassee,us;350,5477849
+464;Rhyperior;Ground;Rock;535;115;140;130;55;55;40;4;FALSE;POINT (44.2037058 15.2988576),Asia,Yemen,,Sanaa,ye;476,660889
+465;Tangrowth;Grass;;535;100;100;125;110;50;50;4;FALSE;POINT (120.3225901 31.4847149),Asia,China,,Wuxi,cn;83,04750122
+466;Electivire;Electric;;540;75;123;67;95;85;95;4;FALSE;POINT (9.7811719 4.0533666),Africa,Cameroon,,Douala,cm;50,55382048
+467;Magmortar;Fire;;540;75;95;67;125;95;83;4;FALSE;POINT (18.3308294 43.8566955),Europe,Bosnia and Herzegovina,,Sarajevo,ba;357,2115724
+468;Togekiss;Fairy;Flying;545;85;50;95;120;115;80;4;FALSE;POINT (151.5867275 -33.0241643),Oceania,Australia,New South Wales,Newcastle,au;156,0417878
+469;Yanmega;Bug;Flying;515;86;76;86;116;56;95;4;FALSE;POINT (-4.4082773 55.9064003),Europe,Scotland,,Clydebank,gb-sct;474,3596012
+470;Leafeon;Grass;;525;65;110;130;60;65;95;4;FALSE;POINT (32.5743521 0.275645),Africa,Uganda,,Kampala,ug;497,2400846
+471;Glaceon;Ice;;525;65;60;110;130;95;65;4;FALSE;POINT (153.1040603 -30.3217184),Oceania,Australia,New South Wales,Coffs Harbour,au;86,6863458
+472;Gliscor;Ground;Flying;510;75;95;125;45;75;95;4;FALSE;POINT (51.4913085 25.3549645),Asia,Qatar,,Doha,qa;420,2346101
+473;Mamoswine;Ice;Ground;530;110;130;80;70;60;80;4;FALSE;POINT (-77.3522951 25.0304933),North America,The Bahamas,,Nassau,bs;336,552046
+474;Porygon-Z;Normal;;535;85;80;70;135;75;90;4;FALSE;POINT (-58.4846926 -34.5537602),South America,Argentina,,Buenos Aires,ar;384,440953
+475;Gallade;Psychic;Fighting;518;68;125;65;65;115;80;4;FALSE;POINT (23.1253338 63.8367969),Europe,Finland,,Kokkola,fi;229,3684839
+475;GalladeMega Gallade;Psychic;Fighting;618;68;165;95;65;115;110;4;FALSE;POINT (34.4500481 31.4957612),Asia,Palestine,,Gaza,ps;131,9590665
+476;Probopass;Rock;Steel;525;60;55;145;75;150;40;4;FALSE;POINT (-0.3169671 27.8721578),Africa,Algeria,,Adrar,dz;199,2361757
+477;Dusknoir;Ghost;;525;45;100;135;65;135;45;4;FALSE;POINT (35.4967099 33.8668501),Asia,Lebanon,,Beirut,lb;322,4963137
+478;Froslass;Ice;Ghost;480;70;80;70;80;70;110;4;FALSE;POINT (-70.1501009 44.1014253),North America,United States of America,Maine,Lewiston,us;360,803926
+479;Rotom;Electric;Ghost;440;50;50;77;95;77;91;4;FALSE;POINT (-5.9406356 54.6814405),Europe,Northern Ireland,,Newtownabbey,gb-nir;250,8956742
+479;RotomHeat Rotom;Electric;Fire;520;50;65;107;105;107;86;4;FALSE;POINT (115.8681961 -32.105529),Oceania,Australia,Western Australia,Perth,au;346,393785
+479;RotomWash Rotom;Electric;Water;520;50;65;107;105;107;86;4;FALSE;POINT (158.1567013 6.9164363),Oceania,Micronesia,,Palikir,fm;352,4197987
+479;RotomFrost Rotom;Electric;Ice;520;50;65;107;105;107;86;4;FALSE;POINT (96.0880422 19.7561056),Asia,Burma,,Naypyidaw,mm;237,5579109
+479;RotomFan Rotom;Electric;Flying;520;50;65;107;105;107;86;4;FALSE;POINT (8.2736001 56.0895743),Europe,Denmark,,Ringkøbing,dk;136,8811584
+479;RotomMow Rotom;Electric;Grass;520;50;65;107;105;107;86;4;FALSE;POINT (-72.9446382 -41.4714752),South America,Chile,,Puerto Montt,cl;226,798791
+480;Uxie;Psychic;;580;75;75;130;75;130;95;4;TRUE;POINT (35.8275691 31.8563744),Asia,Jordan,,Amman,jo;383,7244789
+481;Mesprit;Psychic;;580;80;105;105;105;105;80;4;TRUE;POINT (27.5422937 53.8922612),Europe,Belarus,,Minsk,by;261,5590284
+482;Azelf;Psychic;;580;75;125;70;125;70;115;4;TRUE;POINT (93.5666038 42.8379353),Asia,China,,Hami,cn;95,07904008
+483;Dialga;Steel;Dragon;680;100;120;120;150;100;90;4;TRUE;POINT (10.562523 25.7781139),Africa,Libya,,Alawenat,ly;412,1345722
+484;Palkia;Water;Dragon;680;90;120;100;150;120;100;4;TRUE;POINT (83.5009827 26.7261759),Asia,India,Uttar Pradesh,Gorakhpur,in;195,3492486
+485;Heatran;Fire;Steel;600;91;90;106;130;106;77;4;TRUE;POINT (-82.3851604 23.105815),North America,Cuba,,Havana,cu;101,8161865
+486;Regigigas;Normal;;670;110;160;110;80;110;100;4;TRUE;POINT (-64.1875265 -31.4212456),South America,Argentina,,Córdoba,ar;233,4141336
+487;GiratinaAltered Forme;Ghost;Dragon;680;150;100;120;100;120;90;4;TRUE;POINT (29.9754577 -26.5459785),Africa,South Africa,,Ermelo,za;92,83350935
+487;GiratinaOrigin Forme;Ghost;Dragon;680;150;120;100;120;100;90;4;TRUE;POINT (15.1284268 12.1267859),Africa,Chad,,N'Djamena,td;164,1632754
+488;Cresselia;Psychic;;600;120;70;120;75;130;85;4;FALSE;POINT (-72.6182292 -38.7317229),South America,Chile,,Temuco,cl;451,4715227
+489;Phione;Water;;480;80;80;80;80;80;80;4;FALSE;POINT (-81.5212616 23.0341519),North America,Cuba,,Matanzas,cu;236,2893864
+490;Manaphy;Water;;600;100;100;100;100;100;100;4;FALSE;POINT (27.8387782 -26.2479386),Africa,South Africa,,Soweto,za;60,49658095
+491;Darkrai;Dark;;600;70;90;90;135;90;125;4;TRUE;POINT (-57.5826338 -25.2617305),South America,Paraguay,,Asuncion,py;164,2832617
+492;ShayminLand Forme;Grass;;600;100;100;100;100;100;100;4;TRUE;POINT (-58.140667 6.8071306),South America,Guyana,,Georgetown,gy;52,73267972
+492;ShayminSky Forme;Grass;Flying;600;100;103;75;120;75;127;4;TRUE;POINT (-6.8329961 33.9990843),Africa,Morocco,,Rabat,ma;153,9717918
+493;Arceus;Normal;;720;120;120;120;120;120;120;4;TRUE;POINT (-56.158338 -34.8597818),South America,Uruguay,,Montevideo,uy;287,3736207
+494;Victini;Psychic;Fire;600;100;100;100;100;100;100;5;TRUE;POINT (-82.5125552 27.8427276),North America,United States of America,Florida,Tampa,us;161,6050432
+495;Snivy;Grass;;308;45;45;55;45;55;63;5;FALSE;POINT (-89.1684739 13.6943372),North America,El Salvador,,San Salvador,sv;312,7651313
+496;Servine;Grass;;413;60;60;75;60;75;83;5;FALSE;POINT (147.5015857 -42.8470371),Oceania,Australia,Tasmania,Hobart,au;199,0422057
+497;Serperior;Grass;;528;75;75;95;75;95;113;5;FALSE;POINT (23.3737263 42.6868507),Europe,Bulgaria,,Sofia,bg;98,61965174
+498;Tepig;Fire;;308;65;63;45;45;45;45;5;FALSE;POINT (85.3321336 27.7276572),Asia,Nepal,,Kathmandu,np;272,6222725
+499;Pignite;Fire;Fighting;418;90;93;55;70;55;55;5;FALSE;POINT (73.4082016 55.033881),Europe,Russia,,Omsk,ru;224,4480655
+500;Emboar;Fire;Fighting;528;110;123;65;100;65;65;5;FALSE;POINT (-5.2703303 6.8491495),Africa,Cote d'Ivoire,,Yamoussoukro,ci;461,1602374
+501;Oshawott;Water;;308;55;55;45;63;45;45;5;FALSE;POINT (19.8213362 41.3265391),Europe,Albania,,Tirane,al;316,4663735
+502;Dewott;Water;;413;75;75;60;83;60;60;5;FALSE;POINT (77.8048489 12.7656087),Asia,India,Tamil Nadu,Hosur,in;478,1557325
+503;Samurott;Water;;528;95;100;85;108;70;70;5;FALSE;POINT (55.5585406 25.5665621),Asia,United Arab Emirates,,Umm Al Quwain,ae;289,3659534
+504;Patrat;Normal;;255;45;55;39;35;39;42;5;FALSE;POINT (31.0823165 -17.8860232),Africa,Zimbabwe,,Harare,zw;81,96044163
+505;Watchog;Normal;;420;60;85;69;60;69;77;5;FALSE;POINT (27.6079067 53.910416),Europe,Belarus,,Minsk,by;61,01796393
+506;Lillipup;Normal;;275;45;60;45;25;45;55;5;FALSE;POINT (152.7524929 -25.2895094),Oceania,Australia,Queensland,Hervey Bay,au;435,7396803
+507;Herdier;Normal;;370;65;80;65;35;65;60;5;FALSE;POINT (-73.2558776 10.4766915),South America,Colombia,,Valledupar,co;330,3298582
+508;Stoutland;Normal;;500;85;110;90;45;90;80;5;FALSE;POINT (69.1025902 34.5215982),Asia,Afghanistan,,Kabul,af;457,1420798
+509;Purrloin;Dark;;281;41;50;37;50;37;66;5;FALSE;POINT (18.6799496 -33.9079413),Africa,South Africa,,Cape Town,za;198,6623087
+510;Liepard;Dark;;446;64;88;50;88;50;106;5;FALSE;POINT (90.4289384 23.858672),Asia,Bangladesh,,Dhaka,bd;309,4866587
+511;Pansage;Grass;;316;50;53;48;53;48;64;5;FALSE;POINT (6.1332702 46.2000937),Europe,Switzerland,,Geneva,ch;102,6003706
+512;Simisage;Grass;;498;75;98;63;98;63;101;5;FALSE;POINT (34.6277836 28.0332018),Asia,Saudi Arabia,,Ras Gasabah,sa;320,7457182
+513;Pansear;Fire;;316;50;53;48;53;48;64;5;FALSE;POINT (28.8288121 47.0195836),Europe,Moldova,,Chi?in?u,md;299,6975882
+514;Simisear;Fire;;498;75;98;63;98;63;101;5;FALSE;POINT (21.368547 41.9861126),Europe,North Macedonia,,Skopje,mk;252,6544309
+515;Panpour;Water;;316;50;53;48;53;48;64;5;FALSE;POINT (12.4528911 43.9400225),Europe,San Marino,,San Marino,sm;427,4398379
+516;Simipour;Water;;498;75;98;63;98;63;101;5;FALSE;POINT (-57.5678729 -25.2949336),South America,Paraguay,,Asuncion,py;443,0876444
+517;Munna;Psychic;;292;76;25;45;67;55;24;5;FALSE;POINT (-76.3575589 37.0194534),North America,United States of America,Virginia,Hampton,us;403,9957395
+518;Musharna;Psychic;;487;116;55;85;107;95;29;5;FALSE;POINT (-88.0955751 43.1693459),North America,United States of America,Wisconsin,Milwaukee,us;200,5403886
+519;Pidove;Normal;Flying;264;50;55;50;36;30;43;5;FALSE;POINT (56.0374122 24.829762),Asia,United Arab Emirates,,Sayh Mudayrah,ae;238,2035914
+520;Tranquill;Normal;Flying;358;62;77;62;50;42;65;5;FALSE;POINT (69.6536011 23.2563604),Asia,India,Gujarat,Bhuj,in;245,0038466
+521;Unfezant;Normal;Flying;488;80;115;80;65;55;93;5;FALSE;POINT (176.1500578 -37.6729047),Oceania,New Zealand,,Tauranga,nz;482,4510928
+522;Blitzle;Electric;;295;45;60;32;50;32;76;5;FALSE;POINT (33.3254354 35.1430665),Europe,Cyprus,,Nicosia,cy;339,1353886
+523;Zebstrika;Electric;;497;75;100;63;80;63;116;5;FALSE;POINT (-97.4278131 42.028594),North America,United States of America,Nebraska,Norfolk,us;145,4648841
+524;Roggenrola;Rock;;280;55;75;85;25;25;15;5;FALSE;POINT (-20.2782569 65.660155),Europe,Iceland,,Blönduós,is;199,2795718
+525;Boldore;Rock;;390;70;105;105;50;40;20;5;FALSE;POINT (-106.6682815 35.1737139),North America,United States of America,New Mexico,Albuquerque,us;72,30740294
+526;Gigalith;Rock;;515;85;135;130;60;80;25;5;FALSE;POINT (-58.4128753 -34.5830143),South America,Argentina,,Buenos Aires,ar;410,4890371
+527;Woobat;Psychic;Flying;313;55;45;43;55;43;72;5;FALSE;POINT (-74.2091052 11.2465616),South America,Colombia,,Santa Marta,co;468,8014576
+528;Swoobat;Psychic;Flying;425;67;57;55;77;55;114;5;FALSE;POINT (129.3219251 35.5212177),Asia,South Korea,,Ulsan,kr;217,99062
+529;Drilbur;Ground;;328;60;85;40;30;45;68;5;FALSE;POINT (121.8040628 31.1294507),Asia,China,,Shanghai,cn;68,63822141
+530;Excadrill;Ground;Steel;508;110;135;60;50;65;88;5;FALSE;POINT (-84.3688473 39.0671606),North America,United States of America,Ohio,Cincinnati,us;159,2925093
+531;Audino;Normal;;445;103;60;86;60;86;50;5;FALSE;POINT (-3.9679138 55.8627708),Europe,Scotland,,Airdrie,gb-sct;299,7212863
+531;AudinoMega Audino;Normal;Fairy;545;103;60;126;80;126;50;5;FALSE;POINT (22.4235604 39.6416249),Europe,Greece,,Larissa,gr;125,9385286
+532;Timburr;Fighting;;305;75;80;55;25;35;35;5;FALSE;POINT (80.9395828 26.8532035),Asia,India,Uttar Pradesh,Lucknow,in;228,6348184
+533;Gurdurr;Fighting;;405;85;105;85;40;50;40;5;FALSE;POINT (26.8654592 -31.9096967),Africa,South Africa,,Komani,za;360,4809521
+534;Conkeldurr;Fighting;;505;105;140;95;55;65;45;5;FALSE;POINT (-0.150988 5.6102551),Africa,Ghana,,Accra,gh;378,9682281
+535;Tympole;Water;;294;50;50;40;50;40;64;5;FALSE;POINT (77.228305 28.4464959),Asia,India,Delhi (Union Territory),Delhi,in;138,2096493
+536;Palpitoad;Water;Ground;384;75;65;55;65;55;69;5;FALSE;POINT (-84.0678761 9.903995),North America,Costa Rica,,San José,cr;89,59981748
+537;Seismitoad;Water;Ground;509;105;95;75;85;75;74;5;FALSE;POINT (45.2521517 2.0778615),Africa,Somalia,,Mogadishu,so;388,3543681
+538;Throh;Fighting;;465;120;100;85;30;85;45;5;FALSE;POINT (10.5985828 55.0599833),Europe,Denmark,,Svendborg,dk;311,7228885
+539;Sawk;Fighting;;465;75;125;75;30;75;85;5;FALSE;POINT (-79.4993363 8.9958459),North America,Panama,,Panama City,pa;270,1846121
+540;Sewaddle;Bug;Grass;310;45;53;70;40;60;42;5;FALSE;POINT (51.5145275 25.3246274),Asia,Qatar,,Doha,qa;152,3722413
+541;Swadloon;Bug;Grass;380;55;63;90;50;80;42;5;FALSE;POINT (1.5088191 42.5000442),Europe,Andorra,,Andorra la Vella,ad;336,4476698
+542;Leavanny;Bug;Grass;500;75;103;80;70;80;92;5;FALSE;POINT (171.554102 7.0629595),Oceania,Marshall Islands,,Arno,mh;87,50086971
+543;Venipede;Bug;Poison;260;30;45;59;30;39;57;5;FALSE;POINT (151.180179 -32.5741948),Oceania,Australia,New South Wales,Singleton,au;304,1401713
+544;Whirlipede;Bug;Poison;360;40;55;99;40;79;47;5;FALSE;POINT (-38.5381091 -3.7635918),South America,Brazil,,Fortaleza,br;131,2473298
+545;Scolipede;Bug;Poison;485;60;100;89;55;69;112;5;FALSE;POINT (119.3131669 26.0827693),Asia,China,,Fuzhou,cn;50,6702052
+546;Cottonee;Grass;Fairy;280;40;27;60;37;50;66;5;FALSE;POINT (44.3322917 32.006532),Asia,Iraq,,Najaf,iq;196,5277451
+547;Whimsicott;Grass;Fairy;480;60;67;85;77;75;116;5;FALSE;POINT (158.1711232 6.9349462),Oceania,Micronesia,,Palikir,fm;176,1063425
+548;Petilil;Grass;;280;45;35;50;70;50;30;5;FALSE;POINT (-0.2516632 44.54969),Europe,France,,Langon,fr;342,6938274
+549;Lilligant;Grass;;480;70;60;75;110;75;90;5;FALSE;POINT (35.8775671 31.9564132),Asia,Jordan,,Amman,jo;161,0641633
+550;Basculin;Water;;460;70;92;65;80;55;98;5;FALSE;POINT (4.9094484 52.3523301),Europe,Netherlands,,Amsterdam,nl;359,0690219
+551;Sandile;Ground;Dark;292;50;72;35;35;35;65;5;FALSE;POINT (34.5819779 36.8236318),Europe,Türkiye,,Mersin,tr;316,5798882
+552;Krokorok;Ground;Dark;351;60;82;45;45;45;74;5;FALSE;POINT (49.9323524 40.5238716),Asia,Azerbaijan,,Baku,az;444,4514229
+553;Krookodile;Ground;Dark;519;95;117;80;65;70;92;5;FALSE;POINT (69.3030054 41.2660704),Asia,Uzbekistan,,Tashkent,uz;82,26306571
+554;Darumaka;Fire;;315;70;90;45;15;45;50;5;FALSE;POINT (-74.0746379 40.7294882),North America,United States of America,New Jersey,Jersey City,us;305,8672122
+555;DarmanitanStandard Mode;Fire;;480;105;140;55;30;55;95;5;FALSE;POINT (32.586012 -25.8794159),Africa,Mozambique,,Maputo,mz;446,6183742
+555;DarmanitanZen Mode;Fire;Psychic;540;105;30;105;140;105;55;5;FALSE;POINT (81.3388974 43.9074703),Asia,China,,Ili,cn;71,82481885
+556;Maractus;Grass;;461;75;86;67;106;67;60;5;FALSE;POINT (152.9822107 -30.64341),Oceania,Australia,New South Wales,Nambucca,au;235,5789888
+557;Dwebble;Bug;Rock;325;50;65;85;35;35;55;5;FALSE;POINT (25.3268707 13.6227367),Africa,Sudan,,Al Fashir,sd;404,3629414
+558;Crustle;Bug;Rock;475;70;95;125;65;75;45;5;FALSE;POINT (-61.5064726 10.6641463),North America,Trinidad and Tobago,,Port of Spain,tt;223,3599065
+559;Scraggy;Dark;Fighting;348;50;75;70;35;70;48;5;FALSE;POINT (-61.3887479 15.2997262),North America,Dominica,,Roseau,dm;414,0321501
+560;Scrafty;Dark;Fighting;488;65;90;115;45;115;58;5;FALSE;POINT (78.7423138 28.807255),Asia,India,Uttar Pradesh,Muradabad,in;329,9604146
+561;Sigilyph;Psychic;Flying;490;72;58;80;103;80;97;5;FALSE;POINT (51.6467658 32.6704809),Asia,Iran,,Isfahan,ir;280,6057243
+562;Yamask;Ghost;;303;38;30;85;55;65;30;5;FALSE;POINT (19.060737 47.4551517),Europe,Hungary,,Budapest,hu;72,15115515
+563;Cofagrigus;Ghost;;483;58;50;145;95;105;30;5;FALSE;POINT (25.2678125 60.3758276),Europe,Finland,,Sipoo,fi;163,2618339
+564;Tirtouga;Water;Rock;355;54;78;103;53;45;22;5;FALSE;POINT (150.847498 -34.5680773),Oceania,Australia,New South Wales,Wollongong,au;480,9136501
+565;Carracosta;Water;Rock;495;74;108;133;83;65;32;5;FALSE;POINT (27.8912205 -26.587123),Africa,South Africa,,Vereeniging,za;418,6689668
+566;Archen;Rock;Flying;401;55;112;45;74;45;70;5;FALSE;POINT (-74.9163168 38.9377396),North America,United States of America,New Jersey,Cape May,us;319,3227606
+567;Archeops;Rock;Flying;567;75;140;65;112;65;110;5;FALSE;POINT (-54.7382726 -2.4492073),South America,Brazil,,Santarém,br;153,1203119
+568;Trubbish;Poison;;329;50;50;62;40;62;65;5;FALSE;POINT (-158.014591 21.3820874),North America,United States of America,Hawaii,Waipahu,us;78,68624394
+569;Garbodor;Poison;;474;80;95;82;60;82;75;5;FALSE;POINT (23.7623101 37.9667186),Europe,Greece,,Athens,gr;260,8925605
+570;Zorua;Dark;;330;40;65;40;80;40;65;5;FALSE;POINT (-68.1629805 -16.5335837),South America,Bolivia,,La Paz,bo;234,1787101
+571;Zoroark;Dark;;510;60;105;60;120;60;105;5;FALSE;POINT (68.747147 38.5507149),Asia,Tajikistan,,Dushanbe,tj;174,5216388
+572;Minccino;Normal;;300;55;50;40;40;40;75;5;FALSE;POINT (149.5679968 -33.4278463),Oceania,Australia,New South Wales,Bathurst,au;292,3785098
+573;Cinccino;Normal;;470;75;95;60;65;60;115;5;FALSE;POINT (120.1794745 30.2901585),Asia,China,,Hangzhou,cn;307,9545233
+574;Gothita;Psychic;;290;45;30;50;55;65;45;5;FALSE;POINT (14.5281669 -22.6650818),Africa,Namibia,,Swakopmund,na;134,1508489
+575;Gothorita;Psychic;;390;60;45;70;75;85;55;5;FALSE;POINT (10.1771339 36.7842124),Africa,Tunisia,,Tunis,tn;259,0014309
+576;Gothitelle;Psychic;;490;70;55;95;95;110;65;5;FALSE;POINT (92.0757655 31.4750411),Asia,China,,Nagqu,cn;427,9458342
+577;Solosis;Psychic;;290;45;30;40;105;50;20;5;FALSE;POINT (13.8338662 46.5924213),Europe,Austria,,Villach,at;162,4971888
+578;Duosion;Psychic;;370;65;40;50;125;60;30;5;FALSE;POINT (12.4525396 41.9033024),Europe,Vatican City,,Vatican City,va;339,5347205
+579;Reuniclus;Psychic;;490;110;65;75;125;85;30;5;FALSE;POINT (28.3240678 -15.3860439),Africa,Zambia,,Lusaka,zm;333,6691185
+580;Ducklett;Water;Flying;305;62;44;50;44;50;55;5;FALSE;POINT (-59.6024653 13.0961227),North America,Barbados,,Bridgetown,bb;455,0124718
+581;Swanna;Water;Flying;473;75;87;63;87;63;98;5;FALSE;POINT (151.1009732 -33.7986001),Oceania,Australia,New South Wales,Sydney,au;341,1203745
+582;Vanillite;Ice;;305;36;50;50;65;60;44;5;FALSE;POINT (4.7592907 52.9489911),Europe,Netherlands,,Den Helder,nl;175,152044
+583;Vanillish;Ice;;395;51;65;65;80;75;59;5;FALSE;POINT (-86.2637274 12.1326969),North America,Nicaragua,,Managua,ni;237,1312413
+584;Vanilluxe;Ice;;535;71;95;85;110;95;79;5;FALSE;POINT (-54.614072 -20.4522448),South America,Brazil,,Campo Grande,br;131,8365611
+585;Deerling;Normal;Grass;335;60;60;50;40;50;75;5;FALSE;POINT (-47.0766508 -22.9081611),South America,Brazil,,Campinas,br;489,7835265
+586;Sawsbuck;Normal;Grass;475;80;100;70;60;70;95;5;FALSE;POINT (125.561495 -8.5588703),Asia,Timor-Leste,,Dili,tl;251,2668802
+587;Emolga;Electric;Flying;428;55;75;60;75;60;103;5;FALSE;POINT (-77.2608301 39.1724109),North America,United States of America,Maryland,Germantown,us;372,6092337
+588;Karrablast;Bug;;315;50;75;45;40;45;60;5;FALSE;POINT (20.9642163 52.2273038),Europe,Poland,,Warsaw,pl;146,4576397
+589;Escavalier;Bug;Steel;495;70;135;105;60;105;20;5;FALSE;POINT (115.8496297 28.6695263),Asia,China,,Nanchang,cn;271,8417439
+590;Foongus;Grass;Poison;294;69;55;45;55;55;15;5;FALSE;POINT (91.1445694 29.6598575),Asia,China,,Lhasa,cn;74,00200844
+591;Amoonguss;Grass;Poison;464;114;85;70;85;80;30;5;FALSE;POINT (66.9209397 39.6798524),Asia,Uzbekistan,,Samarkand,uz;434,9560179
+592;Frillish;Water;Ghost;335;55;40;50;65;85;40;5;FALSE;POINT (105.8198605 21.0037521),Asia,Vietnam,,Hanoi,vn;337,0730695
+593;Jellicent;Water;Ghost;480;100;60;70;85;105;60;5;FALSE;POINT (18.6939728 -33.8516198),Africa,South Africa,,Cape Town,za;298,5067472
+594;Alomomola;Water;;470;165;75;80;40;45;65;5;FALSE;POINT (111.665205 40.8419508),Asia,China,,Hohhot,cn;237,6727105
+595;Joltik;Bug;Electric;319;50;47;50;57;50;65;5;FALSE;POINT (104.861541 11.4889262),Asia,Cambodia,,Phnom Penh,kh;485,6471885
+596;Galvantula;Bug;Electric;472;70;77;60;97;60;108;5;FALSE;POINT (118.1677797 39.6205968),Asia,China,,Tangshan,cn;202,2005498
+597;Ferroseed;Grass;Steel;305;44;50;91;24;86;10;5;FALSE;POINT (41.1238397 37.8960842),Europe,Türkiye,,Batman,tr;53,79184393
+598;Ferrothorn;Grass;Steel;489;74;94;131;54;116;20;5;FALSE;POINT (90.3751279 23.7614793),Asia,Bangladesh,,Dhaka,bd;398,9583192
+599;Klink;Steel;;300;40;55;70;45;60;30;5;FALSE;POINT (18.3285132 43.8593008),Europe,Bosnia and Herzegovina,,Sarajevo,ba;251,3549467
+600;Klang;Steel;;440;60;80;95;70;85;50;5;FALSE;POINT (81.3003061 43.9231105),Asia,China,,Ili,cn;399,6776056
+601;Klinklang;Steel;;520;60;100;115;70;85;90;5;FALSE;POINT (-77.328274 25.0499369),North America,The Bahamas,,Nassau,bs;326,9308585
+602;Tynamo;Electric;;275;35;55;40;45;40;60;5;FALSE;POINT (-60.7198888 -32.9510004),South America,Argentina,,Rosario,ar;285,3613235
+603;Eelektrik;Electric;;405;65;85;70;75;70;40;5;FALSE;POINT (48.087212 29.0832194),Asia,Kuwait,,Ahmadi,kw;336,4062377
+604;Eelektross;Electric;;515;85;115;80;105;80;50;5;FALSE;POINT (150.8620686 -34.5526966),Oceania,Australia,New South Wales,Wollongong,au;325,7031101
+605;Elgyem;Psychic;;335;55;55;55;85;55;30;5;FALSE;POINT (-88.7578281 17.2544342),North America,Belize,,Belmopan,bz;164,9940601
+606;Beheeyem;Psychic;;485;75;75;75;125;95;40;5;FALSE;POINT (-173.9951518 -18.687742),Oceania,Tonga,,Pangai,to;179,0022084
+607;Litwick;Ghost;Fire;275;50;30;55;65;55;20;5;FALSE;POINT (-124.0141099 54.0121684),North America,Canada,British Columbia,Vanderhoof,ca;135,7506765
+608;Lampent;Ghost;Fire;370;60;40;60;95;60;55;5;FALSE;POINT (-78.895202 35.0637188),North America,United States of America,North Carolina,Fayetteville,us;90,26900697
+609;Chandelure;Ghost;Fire;520;60;55;90;145;90;80;5;FALSE;POINT (-58.4176818 -34.5642498),South America,Argentina,,Buenos Aires,ar;132,4973313
+610;Axew;Dragon;;320;46;87;60;30;40;57;5;FALSE;POINT (121.5784242 31.0475518),Asia,China,,Shanghai,cn;97,7741791
+611;Fraxure;Dragon;;410;66;117;70;40;50;67;5;FALSE;POINT (103.8320545 1.2757534),Asia,Singapore,,Singapore,sg;186,6999109
+612;Haxorus;Dragon;;540;76;147;90;60;70;97;5;FALSE;POINT (7.5917051 47.5652421),Europe,Switzerland,,Basel,ch;190,7443059
+613;Cubchoo;Ice;;305;55;70;40;60;40;40;5;FALSE;POINT (-6.7696154 54.5107179),Europe,Northern Ireland,,Dungannon,gb-nir;453,6158646
+614;Beartic;Ice;;485;95;110;80;70;80;50;5;FALSE;POINT (85.2984455 27.7089885),Asia,Nepal,,Kathmandu,np;73,42956433
+615;Cryogonal;Ice;;485;70;50;30;95;135;105;5;FALSE;POINT (115.8442961 -32.2308243),Oceania,Australia,Western Australia,Perth,au;114,3567598
+616;Shelmet;Bug;;305;50;40;85;40;65;25;5;FALSE;POINT (-62.7254442 17.3024568),North America,Saint Kitts and Nevis,,Basseterre,kn;225,7615024
+617;Accelgor;Bug;;495;80;70;40;100;60;145;5;FALSE;POINT (26.7336939 -27.976607),Africa,South Africa,,Welkom,za;276,623495
+618;Stunfisk;Ground;Electric;471;109;66;84;81;99;32;5;FALSE;POINT (-3.7926416 51.6008234),Europe,Wales,,Port Talbot,gb-wls;292,6944726
+619;Mienfoo;Fighting;;350;45;85;50;55;50;65;5;FALSE;POINT (16.6310676 48.3208822),Europe,Austria,,Strasshof an der Nordbahn,at;272,3034686
+620;Mienshao;Fighting;;510;65;125;60;95;60;105;5;FALSE;POINT (13.2491468 -8.8386444),Africa,Angola,,Luanda,ao;289,5041561
+621;Druddigon;Dragon;;485;77;120;90;60;90;48;5;FALSE;POINT (-79.4562331 9.0539782),North America,Panama,,Panama City,pa;156,6340699
+622;Golett;Ground;Ghost;303;59;74;50;35;50;35;5;FALSE;POINT (-77.0717436 38.9208969),North America,United States of America,DC,Washington,us;93,46648083
+623;Golurk;Ground;Ghost;483;89;124;80;55;80;55;5;FALSE;POINT (13.1339833 58.5107831),Europe,Sweden,,Lidköping,se;136,5255663
+624;Pawniard;Dark;Steel;340;45;85;70;40;40;60;5;FALSE;POINT (102.6374836 17.9797079),Asia,Laos,,Vientiane,la;140,6734702
+625;Bisharp;Dark;Steel;490;65;125;100;60;70;70;5;FALSE;POINT (-89.2276017 13.7151534),North America,El Salvador,,San Salvador,sv;63,12689814
+626;Bouffalant;Normal;;490;95;110;95;40;95;55;5;FALSE;POINT (-77.0834975 38.8306503),North America,United States of America,Virginia,Alexandria,us;442,494719
+627;Rufflet;Normal;Flying;350;70;83;50;37;50;60;5;FALSE;POINT (-61.738573 12.0449123),North America,Grenada,,St. George's,gd;276,8698285
+628;Braviary;Normal;Flying;510;100;123;75;57;75;80;5;FALSE;POINT (16.6073213 49.1928095),Europe,Czech Republic,,Brno,cz;382,1230627
+629;Vullaby;Dark;Flying;370;70;55;75;45;65;60;5;FALSE;POINT (101.1336417 4.6377594),Asia,Malaysia,,Ipoh,my;337,0537334
+630;Mandibuzz;Dark;Flying;510;110;65;105;55;95;80;5;FALSE;POINT (14.5227769 50.0929509),Europe,Czech Republic,,Prague,cz;80,81460447
+631;Heatmor;Fire;;484;85;97;66;105;66;65;5;FALSE;POINT (-76.8031281 18.0168622),North America,Jamaica,,Kingston,jm;149,9167575
+632;Durant;Bug;Steel;484;58;109;112;48;48;109;5;FALSE;POINT (100.5169841 13.8725434),Asia,Thailand,,Nonthaburi,th;496,550646
+633;Deino;Dark;Dragon;300;52;65;50;45;50;38;5;FALSE;POINT (27.9696999 -26.300766),Africa,South Africa,,Johannesburg,za;56,92860741
+634;Zweilous;Dark;Dragon;420;72;85;70;65;70;58;5;FALSE;POINT (-122.2250659 37.809749),North America,United States of America,California,Oakland,us;359,1912536
+635;Hydreigon;Dark;Dragon;600;92;105;90;125;90;98;5;FALSE;POINT (116.2770722 39.9293543),Asia,China,,Beijing,cn;233,6210826
+636;Larvesta;Bug;Fire;360;55;85;55;50;55;60;5;FALSE;POINT (14.5008715 46.0606008),Europe,Slovenia,,Ljubljana,si;77,95224409
+637;Volcarona;Bug;Fire;550;85;60;65;135;105;100;5;FALSE;POINT (5.3335607 60.3858875),Europe,Norway,,Bergen,no;447,755214
+638;Cobalion;Steel;Fighting;580;91;90;129;90;72;108;5;TRUE;POINT (17.1298385 48.1566214),Europe,Slovakia,,Bratislava,sk;344,8315917
+639;Terrakion;Rock;Fighting;580;91;129;90;72;90;108;5;TRUE;POINT (-55.7974701 -29.7902835),South America,Brazil,,Alegrete,br;362,002483
+640;Virizion;Grass;Fighting;580;91;90;72;90;129;108;5;TRUE;POINT (-6.2570061 55.202334),Europe,Northern Ireland,,Ballycastle,gb-nir;177,903377
+641;TornadusIncarnate Forme;Flying;;580;79;115;70;125;80;111;5;TRUE;POINT (-48.4838916 -1.4654452),South America,Brazil,,Belem,br;495,9190509
+641;TornadusTherian Forme;Flying;;580;79;100;80;110;90;121;5;TRUE;POINT (-73.9179321 40.7646692),North America,United States of America,New York,New York,us;492,6602915
+642;ThundurusIncarnate Forme;Electric;Flying;580;79;115;70;125;80;111;5;TRUE;POINT (23.5284323 61.4889804),Europe,Finland,,Nokia,fi;228,5652405
+642;ThundurusTherian Forme;Electric;Flying;580;79;105;70;145;80;101;5;TRUE;POINT (33.3777773 35.1608232),Europe,Cyprus,,Nicosia,cy;102,7084265
+643;Reshiram;Dragon;Fire;680;100;120;100;150;120;90;5;TRUE;POINT (-71.5014379 42.8748267),North America,United States of America,New Hampshire,Merrimack,us;343,2890906
+644;Zekrom;Dragon;Electric;680;100;150;120;120;100;90;5;TRUE;POINT (73.5117309 4.1747198),Asia,Maldives,,Malé,mv;364,9091831
+645;LandorusIncarnate Forme;Ground;Flying;600;89;125;90;115;80;101;5;TRUE;POINT (-68.1298783 -16.5332711),South America,Bolivia,,La Paz,bo;383,8547725
+645;LandorusTherian Forme;Ground;Flying;600;89;145;90;105;80;91;5;TRUE;POINT (4.9190299 50.2570332),Europe,Belgium,,Dinant,be;450,0380266
+646;Kyurem;Dragon;Ice;660;125;130;90;130;90;95;5;TRUE;POINT (153.0812265 -26.5966889),Oceania,Australia,Queensland,Sunshine Coast,au;59,47825175
+646;KyuremBlack Kyurem;Dragon;Ice;700;125;170;100;120;90;95;5;TRUE;POINT (44.7823599 20.4613371),Asia,Saudi Arabia,,Wadi ad-Dawasir,sa;246,5146398
+646;KyuremWhite Kyurem;Dragon;Ice;700;125;120;90;170;100;95;5;TRUE;POINT (-104.5308999 33.434145),North America,United States of America,New Mexico,Roswell,us;128,8215126
+647;KeldeoOrdinary Forme;Water;Fighting;580;91;72;90;129;90;108;5;FALSE;POINT (23.3647665 -34.0635562),Africa,South Africa,,Plettenberg Bay,za;86,95471941
+647;KeldeoResolute Forme;Water;Fighting;580;91;72;90;129;90;108;5;FALSE;POINT (19.1230752 47.4981055),Europe,Hungary,,Budapest,hu;104,4558807
+648;MeloettaAria Forme;Normal;Psychic;600;100;77;77;128;128;90;5;FALSE;POINT (-0.2787018 27.8859698),Africa,Algeria,,Adrar,dz;461,0364725
+648;MeloettaPirouette Forme;Normal;Fighting;600;100;128;90;77;77;128;5;FALSE;POINT (28.2466882 -15.4624705),Africa,Zambia,,Lusaka,zm;493,8576959
+649;Genesect;Bug;Steel;600;71;120;95;120;95;99;5;FALSE;POINT (-72.6877019 19.4497621),North America,Haiti,,Gonaives,ht;173,2340671
+650;Chespin;Grass;;313;56;61;65;48;45;38;6;FALSE;POINT (-5.9539925 54.6116639),Europe,Northern Ireland,,Belfast,gb-nir;92,30199981
+651;Quilladin;Grass;;405;61;78;95;56;58;57;6;FALSE;POINT (20.4755601 44.8157427),Europe,Serbia,,Belgrade,rs;159,403704
+652;Chesnaught;Grass;Fighting;530;88;107;122;74;75;64;6;FALSE;POINT (35.8723114 31.865439),Asia,Jordan,,Amman,jo;422,7174702
+653;Fennekin;Fire;;307;40;45;40;62;60;60;6;FALSE;POINT (145.2219687 -36.4548008),Oceania,Australia,Victoria,Tatura,au;90,87512994
+654;Braixen;Fire;;409;59;59;58;90;70;73;6;FALSE;POINT (12.4557844 41.9020713),Europe,Vatican City,,Vatican City,va;76,76095054
+655;Delphox;Fire;Psychic;534;75;69;72;114;100;104;6;FALSE;POINT (14.5428111 -22.6639259),Africa,Namibia,,Swakopmund,na;132,2434005
+656;Froakie;Water;;314;41;56;40;62;44;71;6;FALSE;POINT (32.6129685 -25.9270772),Africa,Mozambique,,Maputo,mz;328,2063636
+657;Frogadier;Water;;405;54;63;52;83;56;97;6;FALSE;POINT (-172.6299599 -13.5192155),Oceania,Samoa,,Asau,ws;402,6339826
+658;Greninja;Water;Dark;530;72;95;67;103;71;122;6;FALSE;POINT (-7.5858892 33.5523166),Africa,Morocco,,Casablanca,ma;248,3126676
+659;Bunnelby;Normal;;237;38;36;38;32;36;57;6;FALSE;POINT (11.5688859 3.868246),Africa,Cameroon,,Yaounde,cm;244,4025674
+660;Diggersby;Normal;Ground;423;85;56;77;50;77;78;6;FALSE;POINT (-0.1538463 5.6498393),Africa,Ghana,,Accra,gh;406,660629
+661;Fletchling;Normal;Flying;278;45;50;43;40;38;62;6;FALSE;POINT (-9.1487291 39.4228926),Europe,Portugal,,Caldas da Rainha,pt;338,6572773
+662;Fletchinder;Fire;Flying;382;62;73;55;56;52;84;6;FALSE;POINT (101.7086709 3.1695312),Asia,Malaysia,,Kuala Lumpur,my;197,9579625
+663;Talonflame;Fire;Flying;499;78;81;71;74;69;126;6;FALSE;POINT (37.0597997 3.3308335),Africa,Kenya,,North Horr,ke;410,3719138
+664;Scatterbug;Bug;;200;38;35;40;27;25;35;6;FALSE;POINT (-38.9570473 -12.2566395),South America,Brazil,,Feira de Santana,br;188,3787155
+665;Spewpa;Bug;;213;45;22;60;27;30;29;6;FALSE;POINT (-60.9873247 14.0093891),North America,Saint Lucia,,Castries,lc;306,4282846
+666;Vivillon;Bug;Flying;411;80;52;50;90;50;89;6;FALSE;POINT (-94.6950876 39.0776904),North America,United States of America,Kansas,Kansas City,us;393,8057383
+667;Litleo;Fire;Normal;369;62;50;58;73;54;72;6;FALSE;POINT (16.8807543 -29.2523431),Africa,South Africa,,Port Nolloth,za;498,6244382
+668;Pyroar;Fire;Normal;507;86;68;72;109;66;106;6;FALSE;POINT (24.7567411 59.4351133),Europe,Estonia,,Tallinn,ee;186,6157397
+669;FlabÃ©bÃ©;Fairy;;303;44;38;39;61;79;42;6;FALSE;POINT (-59.589913 13.0965006),North America,Barbados,,Bridgetown,bb;454,9943386
+670;Floette;Fairy;;371;54;45;47;75;98;52;6;FALSE;POINT (74.3493996 32.3354563),Asia,Pakistan,Punjab,Daska,pk;242,5969179
+671;Florges;Fairy;;552;78;65;68;112;154;75;6;FALSE;POINT (32.6167164 41.1969737),Europe,Türkiye,,Karabük,tr;496,7049553
+672;Skiddo;Grass;;350;66;65;48;62;57;52;6;FALSE;POINT (12.4548058 43.9429481),Europe,San Marino,,San Marino,sm;360,9109052
+673;Gogoat;Grass;;531;123;100;62;97;81;68;6;FALSE;POINT (167.1757367 -15.5134212),Oceania,Vanuatu,,Luganville,vu;231,2279675
+674;Pancham;Fighting;;348;67;82;62;46;48;43;6;FALSE;POINT (85.8449238 20.285106),Asia,India,Odisha,Bhubaneswar,in;235,0142856
+675;Pangoro;Fighting;Dark;495;95;124;78;69;71;58;6;FALSE;POINT (146.3450156 -41.1913079),Oceania,Australia,Tasmania,Devonport,au;271,7084412
+676;Furfrou;Normal;;472;75;80;60;65;90;102;6;FALSE;POINT (179.1999707 -8.5200617),Oceania,Tuvalu,,Funafuti,tv;166,7691654
+677;Espurr;Psychic;;355;62;48;54;63;60;68;6;FALSE;POINT (-74.1059801 4.6415279),South America,Colombia,,Bogota,co;475,3875094
+678;MeowsticMale;Psychic;;466;74;48;76;83;81;104;6;FALSE;POINT (9.676597 59.6731391),Europe,Norway,,Kongsberg,no;221,4519344
+678;MeowsticFemale;Psychic;;466;74;48;76;83;81;104;6;FALSE;POINT (-81.5363283 23.0331681),North America,Cuba,,Matanzas,cu;209,3633978
+679;Honedge;Steel;Ghost;325;45;80;100;35;37;28;6;FALSE;POINT (23.3463585 42.6746628),Europe,Bulgaria,,Sofia,bg;209,4175682
+680;Doublade;Steel;Ghost;448;59;110;150;45;49;35;6;FALSE;POINT (-78.5177218 -0.2355049),South America,Ecuador,,Quito,ec;208,7614488
+681;AegislashBlade Forme;Steel;Ghost;520;60;150;50;150;50;60;6;FALSE;POINT (45.3075629 2.0703346),Africa,Somalia,,Mogadishu,so;380,205159
+681;AegislashShield Forme;Steel;Ghost;520;60;50;150;50;150;60;6;FALSE;POINT (138.0027768 -33.2002154),Oceania,Australia,South Australia,Port Pirie,au;376,1610125
+682;Spritzee;Fairy;;341;78;52;60;63;65;23;6;FALSE;POINT (91.1431524 29.6670929),Asia,China,,Lhasa,cn;340,934476
+683;Aromatisse;Fairy;;462;101;72;72;99;89;29;6;FALSE;POINT (8.6948912 54.9634239),Europe,Denmark,,Højer,dk;367,3655861
+684;Swirlix;Fairy;;341;62;48;66;59;57;49;6;FALSE;POINT (14.5240105 46.0569376),Europe,Slovenia,,Ljubljana,si;189,7754932
+685;Slurpuff;Fairy;;480;82;80;86;85;75;72;6;FALSE;POINT (74.3948842 31.3312963),Asia,Pakistan,Punjab,Lahore,pk;316,3095302
+686;Inkay;Dark;Psychic;288;53;54;53;37;46;45;6;FALSE;POINT (-61.2305586 13.1633747),North America,Saint Vincent and the Grenadines,,Kingstown,vc;434,7215176
+687;Malamar;Dark;Psychic;482;86;92;88;68;75;73;6;FALSE;POINT (-93.7058235 32.516024),North America,United States of America,Louisiana,Bossier City,us;409,9096153
+688;Binacle;Rock;Water;306;42;52;67;39;56;50;6;FALSE;POINT (52.6112655 29.6089096),Asia,Iran,,Shiraz,ir;163,1177384
+689;Barbaracle;Rock;Water;500;72;105;115;54;86;68;6;FALSE;POINT (8.9570383 56.1427144),Europe,Denmark,,Herning,dk;481,6210198
+690;Skrelp;Poison;Water;320;50;60;60;60;60;30;6;FALSE;POINT (-56.1902166 -34.8685108),South America,Uruguay,,Montevideo,uy;386,5021984
+691;Dragalge;Poison;Dragon;494;65;75;90;97;123;44;6;FALSE;POINT (4.9092185 49.7067143),Europe,France,,Sedan,fr;65,34673622
+692;Clauncher;Water;;330;50;53;62;58;63;44;6;FALSE;POINT (19.0979583 47.4933831),Europe,Hungary,,Budapest,hu;254,6124171
+693;Clawitzer;Water;;500;71;73;88;120;89;59;6;FALSE;POINT (15.9295206 29.117363),Africa,Libya,,Hun,ly;350,7348966
+694;Helioptile;Electric;Normal;289;44;38;33;61;43;70;6;FALSE;POINT (28.2992726 -15.430979),Africa,Zambia,,Lusaka,zm;494,4620494
+695;Heliolisk;Electric;Normal;481;62;55;52;109;94;109;6;FALSE;POINT (-87.9167966 43.0527866),North America,United States of America,Wisconsin,Milwaukee,us;446,7403442
+696;Tyrunt;Rock;Dragon;362;58;89;77;45;45;48;6;FALSE;POINT (-4.4821993 54.1515193),Europe,Isle of Man,,Douglas,im;409,5615991
+697;Tyrantrum;Rock;Dragon;521;82;121;119;69;59;71;6;FALSE;POINT (77.7994362 12.7744658),Asia,India,Tamil Nadu,Hosur,in;113,1623542
+698;Amaura;Rock;Ice;362;77;59;50;67;63;46;6;FALSE;POINT (36.0814213 -0.301466),Africa,Kenya,,Nakuru,ke;347,6540128
+699;Aurorus;Rock;Ice;521;123;77;72;99;92;58;6;FALSE;POINT (-79.094951 43.097933),North America,Canada,Ontario,Niagara Falls,ca;397,0684752
+700;Sylveon;Fairy;;525;95;65;65;110;130;60;6;FALSE;POINT (80.9178457 6.4707708),Asia,Sri Lanka,,Udawalawa,lk;467,719903
+701;Hawlucha;Fighting;Flying;500;78;92;75;74;63;118;6;FALSE;POINT (-46.5453723 -23.460439),South America,Brazil,,Guarulhos,br;205,8021384
+702;Dedenne;Electric;Fairy;431;67;58;57;81;67;101;6;FALSE;POINT (-103.3388566 20.6840941),North America,Mexico,,Guadalajara,mx;229,9536819
+703;Carbink;Rock;Fairy;500;50;50;150;50;150;50;6;FALSE;POINT (125.5432902 -8.5686288),Asia,Timor-Leste,,Dili,tl;214,8904869
+704;Goomy;Dragon;;300;45;50;35;55;75;40;6;FALSE;POINT (7.3288123 45.7394581),Europe,Italy,,Aosta,it;231,1203073
+705;Sliggoo;Dragon;;452;68;75;53;83;113;60;6;FALSE;POINT (-77.0041429 -12.0668135),South America,Peru,,Lima,pe;307,6629929
+706;Goodra;Dragon;;600;90;100;70;110;150;80;6;FALSE;POINT (-60.9891545 14.009362),North America,Saint Lucia,,Castries,lc;53,96671832
+707;Klefki;Steel;Fairy;470;57;80;91;80;87;75;6;FALSE;POINT (78.5577199 25.4662622),Asia,India,Uttar Pradesh,Jhansi,in;447,4940509
+708;Phantump;Ghost;Grass;309;43;70;48;50;60;38;6;FALSE;POINT (-106.6268336 35.087194),North America,United States of America,New Mexico,Albuquerque,us;425,0583235
+709;Trevenant;Ghost;Grass;474;85;110;76;65;82;56;6;FALSE;POINT (79.9365587 6.8833189),Asia,Sri Lanka,,Colombo,lk;314,7431782
+710;PumpkabooAverage Size;Ghost;Grass;335;49;66;70;44;55;51;6;FALSE;POINT (76.0255274 22.9608209),Asia,India,Madhya Pradesh,Dewas,in;203,0506535
+710;PumpkabooSmall Size;Ghost;Grass;335;44;66;70;44;55;56;6;FALSE;POINT (-122.3345669 47.599322),North America,United States of America,Washington,Seattle,us;455,4801385
+710;PumpkabooLarge Size;Ghost;Grass;335;54;66;70;44;55;46;6;FALSE;POINT (113.0851929 22.5437548),Asia,China,,Jiangmen,cn;223,1513144
+710;PumpkabooSuper Size;Ghost;Grass;335;59;66;70;44;55;41;6;FALSE;POINT (30.9930134 -25.4688608),Africa,South Africa,,Mbombela,za;499,7802366
+711;GourgeistAverage Size;Ghost;Grass;494;65;90;122;58;75;84;6;FALSE;POINT (58.9056754 23.2622843),Asia,Oman,,Quriyat,om;308,1246322
+711;GourgeistSmall Size;Ghost;Grass;494;55;85;122;58;75;99;6;FALSE;POINT (174.6934162 -36.9219506),Oceania,New Zealand,,Auckland,nz;494,4272585
+711;GourgeistLarge Size;Ghost;Grass;494;75;95;122;58;75;69;6;FALSE;POINT (-122.4351557 47.2385591),North America,United States of America,Washington,Tacoma,us;395,5372167
+711;GourgeistSuper Size;Ghost;Grass;494;85;100;122;58;75;54;6;FALSE;POINT (105.8487792 21.0093029),Asia,Vietnam,,Hanoi,vn;331,1852859
+712;Bergmite;Ice;;304;55;69;85;32;35;28;6;FALSE;POINT (171.2987498 7.0693388),Oceania,Marshall Islands,,Majuro,mh;272,3735142
+713;Avalugg;Ice;;514;95;117;184;44;46;28;6;FALSE;POINT (24.1484335 56.9720432),Europe,Latvia,,Riga,lv;463,8413165
+714;Noibat;Flying;Dragon;245;40;30;35;45;40;55;6;FALSE;POINT (-97.6095008 35.4526505),North America,United States of America,Oklahoma,Oklahoma City,us;477,1607548
+715;Noivern;Flying;Dragon;535;85;70;80;97;80;123;6;FALSE;POINT (-21.1887955 64.001044),Europe,Iceland,,Hveragerði,is;338,031916
+716;Xerneas;Fairy;;680;126;131;95;131;98;99;6;TRUE;POINT (32.0621778 -28.7459537),Africa,South Africa,,Richards Bay,za;192,9709264
+717;Yveltal;Dark;Flying;680;126;131;95;131;98;99;6;TRUE;POINT (-112.0217221 46.5936971),North America,United States of America,Montana,Helena,us;320,4687534
+718;Zygarde50% Forme;Dragon;Ground;600;108;100;121;81;95;95;6;TRUE;POINT (119.3160233 26.0626547),Asia,China,,Fuzhou,cn;213,7925997
+719;Diancie;Rock;Fairy;600;50;100;150;100;150;50;6;TRUE;POINT (3.2084433 36.7254665),Africa,Algeria,,Algiers,dz;193,1292494
+719;DiancieMega Diancie;Rock;Fairy;700;50;160;110;160;110;110;6;TRUE;POINT (11.4727169 3.883484),Africa,Cameroon,,Yaounde,cm;439,6802419
+720;HoopaHoopa Confined;Psychic;Ghost;600;80;110;60;150;130;70;6;TRUE;POINT (-157.9238197 21.3188142),North America,United States of America,Hawaii,Honolulu,us;252,8448273
+720;HoopaHoopa Unbound;Psychic;Dark;680;80;160;60;170;130;80;6;TRUE;POINT (69.2415425 41.2857817),Asia,Uzbekistan,,Tashkent,uz;469,0554318
+721;Volcanion;Fire;Water;600;80;110;120;130;90;70;6;TRUE;POINT (-43.1815387 -22.9116417),South America,Brazil,,Rio de Janeiro,br;94,66895949
+722;Sandercooleon;Electric;Flying;520;70;85;65;95;75;130;0;TRUE;POINT (20.4587991 44.7973093),Europe,Serbia,,Belgrade,rs;306,7654879
+723;Dennisaur;Psychic;Normal;545;85;70;80;110;105;95;0;TRUE;POINT (28.8718522 47.0058866),Europe,Moldova,,Chi?in?u,md;350,1533965
+724;Leersumander;Fighting;Rock;560;95;105;100;75;85;100;0;TRUE;POINT (-66.1486329 -17.3739191),South America,Bolivia,,Cochabamba,bo;469,7291372
+725;Estharizard;Dragon;Fire;555;80;95;85;110;90;95;0;FALSE;POINT (67.0059295 39.6559564),Asia,Uzbekistan,,Samarkand,uz;78,4283817
+726;Roderickchu;Electric;Steel;530;75;90;95;85;80;105;0;FALSE;POINT (150.8916125 -34.384893),Oceania,Australia,New South Wales,Wollongong,au;224,6976253
+727;Jooseptile;Grass;Dragon;540;70;100;75;95;85;115;0;FALSE;POINT (51.2368752 35.6969305),Asia,Iran,,Tehran,ir;203,1669336
+728;Wimpeterzard;Flying;Psychic;525;85;75;70;105;95;95;0;FALSE;POINT (14.5651334 35.8627665),Europe,Malta,,Marsaskala,mt;375,2740649
+729;Smuldersaur;Ground;Rock;550;100;110;105;65;70;100;0;FALSE;POINT (85.3236959 27.7025145),Asia,Nepal,,Kathmandu,np;199,6849196
+730;Lennartoise;Water;Ice;545;90;80;110;85;100;80;0;FALSE;POINT (75.5923264 31.3480579),Asia,India,Punjab,Jalandhar,in;303,2781284
+731;Wesleeon;Normal;Fairy;515;80;70;65;90;95;115;0;FALSE;POINT (-61.6805626 10.1750869),North America,Trinidad and Tobago,,Point Fortin,tt;333,1900069
+732;Scheepstraptor;Flying;Fighting;535;85;105;80;75;70;120;0;FALSE;POINT (14.4574968 50.0790633),Europe,Czech Republic,,Prague,cz;369,6512802
+733;Michalizard;Fire;Psychic;550;75;85;80;115;100;95;0;FALSE;POINT (170.5320222 -45.8919346),Oceania,New Zealand,,Dunedin,nz;428,2069862
+734;Boudezard;Dark;Dragon;560;90;110;95;85;80;100;0;FALSE;POINT (17.1097027 -22.5929123),Africa,Namibia,,Windhoek,na;203,8267442
+735;Kokeon;Poison;Dark;520;70;85;75;100;90;100;0;FALSE;POINT (-48.4819142 -1.3799029),South America,Brazil,,Belem,br;479,5037891
+736;Kalleon;Fairy;Psychic;525;85;70;80;110;95;85;0;FALSE;POINT (55.5752939 25.5896928),Asia,United Arab Emirates,,Umm Al Quwain,ae;62,88853941
+737;Wangzard;Fighting;Fire;545;95;115;90;70;75;100;0;FALSE;POINT (36.2713127 33.5154433),Asia,Syria,,Damascus,sy;96,49550238
+738;Hoogentoise;Water;Steel;555;100;85;115;80;95;80;0;FALSE;POINT (-108.5322113 45.8091565),North America,United States of America,Montana,Billings,us;459,9728046
+739;Janheinite;Dragon;Psychic;565;85;95;90;110;100;85;0;FALSE;POINT (18.7121499 -33.8711329),Africa,South Africa,,Cape Town,za;459,2743398
+740;Baastoise;Water;Ground;540;95;90;105;75;85;90;0;FALSE;POINT (15.2882642 -4.3500455),Africa,Democratic Republic of the Congo,,Kinshasa,cd;276,7797244
+741;Sebazard;Fire;Flying;550;80;100;75;105;90;100;0;FALSE;POINT (-62.7180833 17.3024536),North America,Saint Kitts and Nevis,,Basseterre,kn;357,7381323
+742;Nutmeon;Psychic;Fairy;535;80;75;85;115;100;80;0;FALSE;POINT (15.1307733 12.1108233),Africa,Chad,,N'Djamena,td;364,5891949
+743;Mikachu;Electric;Fairy;520;70;80;70;95;90;115;0;FALSE;POINT (114.9472053 4.935698),Asia,Brunei,,Brunei,bn;57,4778017
+744;Abuzarizard;Dark;Fire;560;85;110;85;100;90;90;0;FALSE;POINT (114.0583705 22.5601812),Asia,China,,Shenzhen,cn;310,3244422
+745;Adriaansaur;Grass;Poison;530;90;85;90;90;95;80;0;FALSE;POINT (-121.9602324 37.5039431),North America,United States of America,California,Fremont,us;130,9358955
+746;Jaysaur;Grass;Flying;525;75;90;80;85;85;110;0;FALSE;POINT (35.8969081 31.957083),Asia,Jordan,,Amman,jo;135,3739825
+747;Joeptoise;Water;Fighting;545;95;100;100;70;80;100;0;FALSE;POINT (56.3018715 25.1066588),Asia,United Arab Emirates,,Fujairah,ae;386,6651196
+748;Munschereon;Ice;Psychic;540;85;75;90;105;100;85;0;FALSE;POINT (-75.5155321 39.767978),North America,United States of America,Delaware,Wilmington,us;410,8611709
