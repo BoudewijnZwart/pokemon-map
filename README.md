@@ -154,7 +154,6 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 - Voeg `key=` toe aan de widgets zodat elke filterwijziging opgeslagen wordt in de URL query parameters
 - Voeg `bind=` toe zodat de widget waardes uit de URL worden geladen
 
-
 ### Stap 2: Share knop
 
 - Voeg een **"🔗 Kopieer link"** button toe  <--- DONT KNOW HOW YET

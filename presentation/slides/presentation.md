@@ -322,7 +322,7 @@ in the top right corner
 
 ---
 
-## 🧩 Core Widgets - display & Input
+### 🧩 Core Widgets - display & Input
 
 <table>
 <tr>
@@ -379,7 +379,7 @@ st.metric("Totaal Pokemon", "151", "+1 nieuwe")
 </table>
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -438,7 +438,7 @@ st.bar_chart(filtered_data.set_index("stad"))
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -487,7 +487,7 @@ st.pyplot(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -541,7 +541,7 @@ st.plotly_chart(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -597,7 +597,7 @@ st.plotly_chart(fig)
 
 ---
 
-## 🧩 Core Widgets - Visualize
+### 🧩 Core Widgets - Visualize
 
 <table>
 <tr>
@@ -655,23 +655,58 @@ st.plotly_chart(fig_pie, width="stretch")
 
 ---
 
-### 🚀 Deel 1: Aan de slag met Streamlit
+### 🎯 Opdracht 1: Aan de slag met Streamlit
 
-<div style="font-size: 0.95em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
+<div style="font-size: 0.75em; margin: 40px 0px 60px 0px; line-height: 1.5; text-align: left;">
 
 ### Wat gaan we doen?
-1. 📡 **Dataset Uploaden**
-2. 📊 **Dataset Overview**
-3. 📉 **Data Preview & Filters**
-4. 👩‍🎨 **Visualiseren**
-5. 💾 **Download**
+1. 📡 **Dataset Inladen** - Overview van Pokemon
+2. 📊 **Data Preview** - Interactieve tabel met alle Pokemon
+3. 👩‍🎨 **Visualisaties** - Type distribution, stats, plots, charts
+4. 💾 **Download** - Export gefilterde data
 
-🎁 **Bonus Challenges** 
-TODO: Duidelijker doelen? (zoals in het docje?)
-laad de pokemon data (direct of via upload)
-laad de data in een dataframe
-maak 1 (of meer) visualisatie van de volgende opties: (pie chart, bar chart scatter plot, line_chart)
-Bonus:? tabs? filters? download?
+</div>
+<div style="font-size: 0.7em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
+
+📁 GitLab: Starter code staat klaar in branch `exercise-1`
+
+```bash
+git checkout exercise-1
+streamlit run app.py
+```
+
+</div>
+
+---
+
+## 💡 Tips Voordat Je Begint
+
+<div style="font-size: 0.65em; margin: 30px 0px; text-align: left;">
+
+### 🐛 **Debugging**
+```python
+st.write("Debug:", variable)  # Simpelste debug tool
+st.json(data)                 # JSON data inspecteren
+st.dataframe(df)              # Dataframe inspecteren
+```
+
+</div>
+<div style="font-size: 0.65em; margin: 30px 0px; text-align: left;">
+
+### 📚 **Hulp Nodig?**
+
+- 📖 **Streamlit docs:** [docs.streamlit.io](https://docs.streamlit.io)
+- 🎨 **Widget gallery:** Zoek naar "streamlit components"
+- 👥 **Je collega's!** Pair programming encouraged
+- 🙋 **Trainers:** Sander, Dennis, Dervis
+
+</div>
+<div style="font-size: 0.65em; margin: 30px 0px; text-align: left;">
+
+### 🔄 **Hot Reload**
+
+Wijzig code → Save → **"Rerun" knop verschijnt** → Click!
+
 </div>
 
 ---
@@ -682,20 +717,108 @@ Bonus:? tabs? filters? download?
 
 ---
 
-## Sessiebeheer in Streamlit
+## 🔄 Recap: Het Probleem
 
-### Wat is sessiebeheer?
-Streamlit herlaadt de app bij elke interactie. Met **`st.session_state`** kun je data behouden tussen interacties, zoals:
-- Gebruikersinvoer
-- Tussenresultaten
-- App-status (bijv. "ingelogd")
+<div style="font-size: 0.65em; margin: 30px 0px;">
+
+### 😢 **Herinner je dit uit Deel 1?**
+```python
+import streamlit as st
+
+count = 0  # Reset bij elke rerun!
+
+if st.button("➕ Klik me"):
+    count += 1
+
+st.write(f"Count: {count}")  # Altijd 0!
+```
+
+<br>
+
+### 🤔 **Het Probleem:**
+
+Bij elke interactie draait Streamlit je **hele script opnieuw**.  
+Alle variabelen worden **gereset**.
+
+<br>
+
+### 💡 **De Oplossing: Session State!**
+
+</div>
+
+---
+
+### 🎯 Session State - De Oplossing
+
+<div style="font-size: 0.65em; margin: 30px 0px;">
+
+### ✅ **Dit werkt WEL!**
+```python
+import streamlit as st
+
+# Initialiseer in session state
+if 'count' not in st.session_state:
+    st.session_state.count = 0
+
+# Button update
+if st.button("➕ Klik me"):
+    st.session_state.count += 1
+
+st.write(f"Count: {st.session_state.count}")  # Blijft tellen! 🎉
+```
+
+<br>
+
+### 🔑 **Key Concept:**
+
+</div>
+<div style="font-size: 0.5em; margin: 30px 0px;">
+
+> `st.session_state` is een **dictionary** die **persistent** is tussen reruns!
+
+</div>
+
+---
+
+## 📝 Session State Patterns
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🔧 **Best Practices**
+```python
+# ✅ GOED: Check eerst of key bestaat
+if "my_key" not in st.session_state:
+    st.session_state.my_key = initial_value
+
+# ✅ GOED: Direct toewijzen
+st.session_state.pokemon = "Pikachu"
+
+# ✅ GOED: Dictionary-style access
+st.session_state["pokemon"] = "Pikachu"
+
+# ❌ FOUT: Geen check, kan errors geven
+value = st.session_state.maybe_doesnt_exist  # KeyError!
+
+# ✅ GOED: Safe access met get()
+value = st.session_state.get("maybe_doesnt_exist", "default")
+```
+
+</div>
+<div style="font-size: 0.6em; margin: 30px 0px;">
+
+#### Kortom:
+* **Gebruikersinvoer**
+* **Tussenresultaten**
+* **App-status** (bijv. "ingelogd")
+
+</div>
 
 ---
 
 ## 🧩 Teller met sessie beheer
 
-📊 Data Weergeven TODO: Wat hier zetten?
-TODO: Erbij zetten dan het normaal op 1 blijft of dat gewoon zeggen?
+📊 Voorbeeld
+
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -727,7 +850,7 @@ st.write(f"Je hebt {st.session_state.count} keer geklikt!")
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/deel2/session_state_klik.png"
+    src="images/deel2/click-session-state.gif"
     alt="Streamlit Basic Widgets"
     style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
@@ -762,7 +885,9 @@ import streamlit as st
 params = st.query_params
 
 if params:
-    st.success(f"Found {len(params)} parameter(s) in the URL!")
+    st.success(
+      f"Found {len(params)} parameter(s) in the URL!"
+    )
     
     for key, value in params.items():
         st.write(f"**`{key}`** → `{value}`")
@@ -788,40 +913,61 @@ if st.button("Set in URL"):
 
 ---
 
-## 🧩 Forms
+### 🧩 Forms
 
+<div style="font-size: 0.6em; margin: 20px 0px;">
+
+- Batch updates
 - Groepeer inputs voor betere UX
 - Voorkom onnodige reruns
 
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
 
 </td>
-<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+<td style="font-size: 0.65em; width: 40%; padding: 10px;">
 
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.50em; width: 40%; vertical-align: top; padding: 10px;">
 
+#### 😫 **Het Probleem:**
 ```python
-import streamlit as st
-
-with st.form("pokemon_filter"):
-    type = st.selectbox("Type", ["Fire", "Water", "Grass"])
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        st.write(f"Gefilterd op: {type}")
+# Elke widget = rerun!
+name = st.text_input("Name")      # Rerun bij elke letter!
+hp = st.slider("HP", 0, 200)      # Rerun bij elke wijziging!
+attack = st.slider("Attack", 0, 200)  # Rerun!
 ```
-</td>
+
+→ 3 widgets = potentieel 100+ reruns terwijl je invult! 😱
+
+<br>
+
+#### ✅ **De Oplossing: Forms**
+```python
+with st.form("pokemon_form"):
+    name = st.text_input("Name")
+    hp = st.slider("HP", 0, 200)
+    attack = st.slider("Attack", 0, 200)
+    
+    submitted = st.form_submit_button("💾 Save Pokemon")
+    
+if submitted:
+    st.success(
+      f"Pokemon {name} saved! HP: {hp}, Attack: {attack}"
+    )
+    # Slechts 1 rerun bij submit!
+```
 <td style="width: 40%; vertical-align: top; padding: 10px;">
 
 <div style="flex: 1; text-align: center;">
   <img
-    src="images/deel2/forms.png"
+    src="images/deel2/forms_multi.png"
     alt="Streamlit Basic Widgets"
-    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
+    style="width: 85%; max-width: 85%; height: auto; border: 1px solid #ddd;"
   >
 </div>
 
@@ -831,11 +977,22 @@ with st.form("pokemon_filter"):
 
 ---
 
-## 🧩 Geavanceerde Filters
+#### 🧩 Forms - voorbeeld
+
+<div style="display: flex; font-size: 0.6em; margin: 20px 0px; justify-content: center;">
+<img src="images/deel2/forms-example.gif" width="500" alt="Streamlit demo" />
+</div>
+
+---
+
+## 🧩 Filters
+
+<div style="font-size: 0.6em; margin: 20px 0px;">
 
 1. Filter op generatie → updates beschikbare types
 2. Filter op type → updates beschikbare Pokémon
 
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -846,13 +1003,10 @@ with st.form("pokemon_filter"):
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.45em; width: 40%; vertical-align: top; padding: 10px;">
 
 ```python
-import streamlit as st
-import pandas as pd
-
-# Load data
+# Load and cache data
 @st.cache_data
 def load_data():
     csv_path = 'Pokemon_Stats.csv'
@@ -861,12 +1015,27 @@ def load_data():
 pokemon_df = load_data()
 
 generations = st.multiselect("Generatie", [1, 2, 3])
-types = pokemon_df[pokemon_df["Generation"].isin(generations)]["Type 1"].unique()
+
+# Filter by generation, or use all if none selected
+filtered_by_gen = (
+    pokemon_df[pokemon_df["Generation"].isin(generations)]
+    if generations
+    else pokemon_df
+)
+
+types = ["All"] + filtered_by_gen["Type 1"].unique().tolist()
 selected_type = st.selectbox("Type", types)
-filtered_df = pokemon_df[pokemon_df["Type 1"] == selected_type]
+
+# Filter by type, or use all if "All" selected
+filtered_df = (
+  filtered_by_gen
+  if selected_type == "All"
+  else filtered_by_gen[filtered_by_gen["Type 1"] == selected_type]
+)
+
+# Present filtered data
 st.dataframe(filtered_df)
 ```
-TODO: Code werkt niet (alle generaties zichtbaar altijd)
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
 
@@ -884,10 +1053,14 @@ TODO: Code werkt niet (alle generaties zichtbaar altijd)
 
 ---
 
-## 🧩 Dynamische Updates
+### 🧩 Cascading Filters 
+##### dynamisch updaten
 
-Gebruik `on_change` om filters direct te updaten:
+<div style="font-size: 0.6em; margin: 20px 0px;">
 
+- Gebruik `on_change` om filters direct te updaten:
+
+</div>
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
@@ -898,12 +1071,9 @@ Gebruik `on_change` om filters direct te updaten:
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.40em; width: 20%; vertical-align: top; padding: 10px;">
 
 ```python
-import streamlit as st
-import pandas as pd
-
 # Load data
 @st.cache_data
 def load_data():
@@ -913,42 +1083,48 @@ def load_data():
 pokemon_df = load_data()
 
 def update_types():
-    st.session_state.types = pokemon_df[pokemon_df["Generation"].isin(st.session_state.generations)]["Type 1"].unique()
+  st.session_state.types = (
+    pokemon_df[pokemon_df["Generation"]
+      .isin(st.session_state.generations)]["Type 1"]
+      .unique()
+      .tolist()
+  )
+
+def reset_filters():
+  st.session_state.generations = []
+  st.session_state.types = []
+  st.session_state.type = None
 
 st.multiselect(
-    "Generatie",
-    [1, 2, 3],
-    key="generations",
-    on_change=update_types
+  "Generatie",
+  [1, 2, 3, 4, 5, 6, 7],
+  key="generations",
+  on_change=update_types
 )
 st.selectbox(
-    "Type",
-    st.session_state.get("types", []),
-    key="type"
+  "Type",
+  st.session_state.get("types", []),
+  key="type"
+)
+st.button(
+  "🔄 Reset filters",
+  on_click=reset_filters  # on_click is on_change voor buttons
 )
 ```
-TODO: Code werkt niet
 </td>
-<td style="width: 40%; vertical-align: top; padding: 10px;">
-
+<td style="width: 55%; vertical-align: top; padding: 10px;">
 <div style="flex: 1; text-align: center;">
-TODO
-  <!-- <img
-    src="images/deel2/multi_select.png"
-    alt="Streamlit Basic Widgets"
-    style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
-  > -->
+<img src="images/deel2/on-change.gif" width="700" alt="Streamlit demo" />
 </div>
-
 </td>
 </tr>
 </table>
 
 ---
 
-## 🧩 UX: Collapsible Filter Sections
+### 🧩 UX: Collapsible Filter Sections
 
-Gebruik `on_change` om filters direct te updaten:
+#### 📂 **Organiseer complexe UI**
 
 <table>
 <tr>
@@ -960,23 +1136,40 @@ Gebruik `on_change` om filters direct te updaten:
 </td>
 </tr>
 <tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+<td style="font-size: 0.50em; width: 40%; vertical-align: top; padding: 10px;">
 
 ```python
 import streamlit as st
 
-with st.expander("Geavanceerde filters"):
-    hp_range = st.slider("HP Range", 0, 200, (50, 150))
-    st.write(f"HP tussen {hp_range[0]} en {hp_range[1]}")
+st.title("⚙️ Pokemon Filters")
+
+with st.expander("🔍 Basic Filters", expanded=True):
+    pokemon_type = st.selectbox(
+      "Type", ["Fire", "Water", "Grass"]
+    )
+    generation = st.slider(
+      "Generation", 1, 9, (1, 3)
+    )
+
+with st.expander("📊 Advanced Filters"):
+    min_hp = st.number_input("Minimum HP", 0, 255, 50)
+    min_attack = st.number_input(
+      "Minimum Attack", 0, 255, 50
+    )
+    only_legendary = st.checkbox("Only Legendaries")
+
+with st.expander("🎨 Display Options"):
+    show_images = st.checkbox("Show Pokemon Sprites", True)
+    items_per_page = st.slider(
+      "Items per page", 10, 100, 20
+    )
 ```
 
 </td>
 <td style="width: 40%; vertical-align: top; padding: 10px;">
-
 <div style="flex: 1; text-align: center;">
-TODO
   <img
-    src="images/deel2/advanced_filter.png"
+    src="images/deel2/collapsible-sections.gif"
     alt="Streamlit Basic Widgets"
     style="width: 90%; max-width: 90%; height: auto; border: 1px solid #ddd;"
   >
@@ -987,16 +1180,224 @@ TODO
 </table>
 
 ---
-## filters
-(denk aan slides met: file_uploader(), dataframe(), selectbox(), multiselect(), slider(), metric(), tabs(), columns(), image(), download_button())
 
-### Query Params
+### 💾 Caching - Performance Boost
 
-### On Change
+<div style="font-size: 0.7em; margin: 30px 0px;">
 
-### Collapsible Filter Sections
+### ⚡ **Het Probleem:**
 
-### Add more advanced stuff here...
+Elke rerun = heel script opnieuw = **dure operaties telkens herhalen**
+```python
+import pandas as pd
+import streamlit as st
+
+# ❌ SLECHT: Laadt 800 Pokemon bij ELKE interactie!
+df = pd.read_csv("pokemon.csv")  # Kost tijd...
+
+pokemon_type = st.selectbox("Type", df['type'].unique())
+# Zelfs als je alleen type wijzigt, laadt CSV opnieuw!
+```
+
+<br>
+
+### 💡 **De Oplossing: Caching!**
+
+Streamlit onthoudt het resultaat, hergebruikt het bij volgende runs.
+
+</div>
+
+---
+
+### 🚀 @st.cache_data
+
+<div style="font-size: 0.65em; margin: 20px 0px;">
+
+### 📊 **Voor Data** (DataFrames, Lists, Dicts)
+```python
+import streamlit as st
+import pandas as pd
+
+@st.cache_data  # ⭐ De magic decorator!
+def load_pokemon_data():
+    """Laadt Pokemon data - wordt maar 1x uitgevoerd!"""
+    df = pd.read_csv("pokemon.csv")  # Dure operatie
+    return df
+
+# Eerste keer: laadt van CSV (traag)
+# Daarna: haalt uit cache (supersnel!)
+df = load_pokemon_data()
+
+st.write(f"Loaded {len(df)} Pokemon")  # Instant!
+```
+
+<br>
+
+💡 **Gebruik voor:** CSV/Excel laden, data processing, API calls, DB acties, etc.
+
+</div>
+
+---
+
+### 🔌 @st.cache_resource
+
+<div style="font-size: 0.65em; margin: 20px 0px;">
+
+### 🤖 **Voor Resources (Models, Connections, Objects)**
+```python
+import streamlit as st
+from transformers import pipeline
+
+@st.cache_resource  # Voor objecten die NIET gekopieerd moeten worden
+def load_pokemon_classifier():
+    """Laadt ML model - heavy operation!"""
+    model = pipeline("text-classification")
+    return model
+
+# Model wordt 1x geladen, daarna hergebruikt
+model = load_pokemon_classifier()
+
+# Gebruik het model
+pokemon_name = st.text_input("Describe a Pokemon:")
+if pokemon_name:
+    result = model(pokemon_name)
+    st.write(result)
+```
+
+<br>
+
+💡 **Gebruik voor:** ML models, database connections, API clients
+
+</div>
+
+---
+
+## 🆚 Cache: Data vs Resource
+
+<div style="font-size: 0.6em; margin: 30px 0px;">
+
+<table style="width: 100%;">
+<tr style="background: #b67979;">
+<th>Feature</th>
+<th>@st.cache_data</th>
+<th>@st.cache_resource</th>
+</tr>
+<tr>
+<td><strong>Gebruik voor</strong></td>
+<td>DataFrames, lists, dicts, JSON</td>
+<td>ML models, DB connections</td>
+</tr>
+<tr>
+<td><strong>Retourneert</strong></td>
+<td>📋 Kopie (nieuwe instance)</td>
+<td>🔗 Zelfde object (reference)</td>
+</tr>
+<tr>
+<td><strong>Thread-safe?</strong></td>
+<td>✅ Ja (elke user krijgt kopie)</td>
+<td>⚠️ Nee (shared tussen users)</td>
+</tr>
+<tr>
+<td><strong>Voorbeeld</strong></td>
+<td>pd.read_csv()</td>
+<td>load_ml_model()</td>
+</tr>
+</table>
+
+<br>
+
+💡 **Vuistregel:** 
+* Data kan veranderen? → `cache_data`
+* Expensive object? → `cache_resource`
+
+</div>
+
+---
+
+## ⏱️ Cache Invalidation
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🔄 **Wanneer Wordt Cache Gecleared?**
+```python
+import streamlit as st
+import pandas as pd
+from datetime import datetime, timedelta
+
+# Cache voor 1 uur
+@st.cache_data(ttl=3600)  # Time-to-live in seconden
+def load_pokemon_stats():
+    return pd.read_csv("pokemon_stats.csv")
+
+# Cache op basis van parameters
+@st.cache_data
+def get_pokemon_by_type(pokemon_type):
+    # Andere type = andere cache entry
+    df = pd.read_csv("pokemon.csv")
+    return df[df['type'] == pokemon_type]
+
+# Parameters veranderen? Nieuwe cache!
+fire_pokemon = get_pokemon_by_type("Fire")    # Cache miss
+fire_pokemon2 = get_pokemon_by_type("Fire")   # Cache hit! ⚡
+water_pokemon = get_pokemon_by_type("Water")  # Cache miss (andere param)
+```
+
+</div>
+
+---
+
+### 🎨 Advanced Features Overview
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🚀 **Meer Streamlit Goodies**
+
+<div style="text-align: left; margin-left: 60px;">
+
+🎯 **st.spinner()** - Loading indicator tijdens slow operations  
+📊 **st.progress()** - Progress bar voor long tasks  
+🎈 **st.balloons() / st.snow()** - Celebratory animations!  
+📝 **st.toast()** - Temporary notification messages  
+🔔 **st.success/info/warning/error()** - Colored alert boxes  
+📸 **st.camera_input()** - Capture photos (Pokemon AR!)  
+🎤 **st.audio_input()** - Record audio  
+📍 **st.map()** - Display geospatial data  
+🎨 **st.color_picker()** - Select colors (Pokemon type colors!)  
+
+</div>
+
+</div>
+
+---
+
+## ⚡ Tips
+
+<div style="font-size: 0.7em; margin: 30px 0px;">
+
+### 🏎️ **Maak je App Sneller**
+```python
+# ✅ GOED: Cache dure operaties
+@st.cache_data
+def load_data():
+    return pd.read_csv("large_file.csv")
+
+# ✅ GOED: Gebruik st.spinner voor UX
+with st.spinner("Loading Pokemon data..."):
+    df = load_expensive_data()
+
+# ✅ GOED: Fragmenteer heavy visualizations
+@st.fragment
+def render_chart():
+    # Alleen dit fragment rerun bij interactie
+    st.plotly_chart(create_heavy_chart())
+
+# ❌ SLECHT: Globale variabelen buiten functies
+pokemon_df = pd.read_csv("pokemon.csv")  # Laadt bij elke rerun!
+
+# ❌ SLECHT: Te veel widgets in een form (UX nightmare)
+```
+
+</div>
 
 ---
 
@@ -1021,6 +1422,301 @@ bonus: url paramter
 </div>
 
 ---
-Deel 3: maak je eigen pokedex
+
+<h1 style="font-size: 1.3em;">Streamlit: Advanced stuff...</h1>
+
+<h3 style="font-size: 0.8em;">Deel 3: Let the games begin!</h3>
+
+---
+
+### 🌍 Publishing
+
+<div style="font-size: 0.55em; margin: 30px 0px;">
+
+### ☁️ **Streamlit Community Cloud** — gratis hosting voor je apps
+
+1. Push je code naar **GitHub**
+2. Ga naar [share.streamlit.io](https://share.streamlit.io)
+3. Verbind je repo → kies `app.py` → klik **Deploy**
+
+```
+https://jouw-naam-jouw-repo-app-xyz123.streamlit.app  🎉
+```
+
+<br>
+
+### 🔒 **Secrets beheren**
+```python
+# secrets.toml (lokaal, NIET in git!)
+# [database]
+# password = "super_secret"
+
+# In je app:
+import streamlit as st
+
+db_password = st.secrets["database"]["password"]
+api_key = st.secrets["API_KEY"]
+```
+
+Secrets stel je in via de Community Cloud UI — nooit in je code!
+
+</div>
+
+---
+
+### 🌍 Publishing — Vereisten
+
+<div style="font-size: 0.55em; margin: 30px 0px;">
+
+### 📦 **Wat heb je nodig?**
+
+| Bestand | Doel |
+|---|---|
+| `app.py` | Je Streamlit app |
+| `requirements.txt` of `pyproject.toml` | Dependencies |
+| (optioneel) `.streamlit/secrets.toml` | Lokale secrets |
+
+<br>
+
+### ✅ **Checklist voor deployment**
+```
+☐ requirements.txt bevat alle imports
+☐ Geen hardcoded secrets in je code
+☐ Data bestanden staan in de repo of via URL
+☐ App draait lokaal zonder fouten
+☐ GitHub repo is public (geen harde eis)
+```
+
+<br>
+
+💡 **Alternatief:** Deploy ook op **Azure**, **GCP**, **AWS** of **Docker**s
+
+</div>
+
+---
+
+### 🔐 OAuth out of the box
+
+<div style="font-size: 0.55em; margin: 30px 0px;">
+
+### 🆕 **Ingebouwde authenticatie**
+
+Streamlit heeft native ondersteuning voor OAuth — geen extra libraries nodig!
+
+```toml
+# .streamlit/secrets.toml
+[auth]
+redirect_uri = "http://localhost:8501/oauth2callback"
+cookie_secret = "een-willekeurig-geheim"
+
+[auth.google]
+client_id = "jouw-google-client-id"
+client_secret = "jouw-google-client-secret"
+```
+
+```python
+import streamlit as st
+
+# Login knop
+st.login()  # Toont login popup
+
+# Check of gebruiker is ingelogd
+if not st.user.is_logged_in:
+    st.stop()  # Stop de app voor niet-ingelogde gebruikers
+
+# Gebruik gebruikersinfo
+st.write(f"Welkom, {st.user.name}! 👋")
+st.write(f"Email: {st.user.email}")
+
+# Logout knop
+if st.button("Uitloggen"):
+    st.logout()
+```
+
+</div>
+
+---
+
+### 🔐 OAuth — Ondersteunde Providers
+
+<div style="font-size: 0.5em; margin: 30px 0px;">
+
+### 🌐 **Werkt out of the box met:**
+
+<div style="text-align: left; margin-left: 40px;">
+
+🔵 **Google** — `[auth.google]`  
+🟣 **Microsoft / Entra ID** — `[auth.microsoft]`  
+⚫ **GitHub** — `[auth.github]`  
+🟠 **Okta** — `[auth.okta]`  
+🔧 **Elke OpenID Connect provider** — `[auth.oidc]`
+
+</div>
+
+<br>
+
+### 🛡️ **Toegang beperken per gebruiker**
+```python
+import streamlit as st
+
+ALLOWED_EMAILS = ["alice@bedrijf.nl", "bob@bedrijf.nl"]
+
+st.login("google")
+
+if not st.user.is_logged_in:
+    st.stop()
+
+if st.user.email not in ALLOWED_EMAILS:
+    st.error("❌ Geen toegang. Neem contact op met de beheerder.")
+    st.stop()
+
+st.success(f"✅ Welkom {st.user.name}!")
+```
+
+</div>
+
+---
+
+### 📄 Multiple Pages
+
+<div style="font-size: 0.65em; margin: 30px 0px;">
+
+### 🗂️ **Methode 1: `pages/` map** — eenvoudigst
+
+```
+mijn_app/
+├── app.py          ← Hoofdpagina
+├── pages/
+│   ├── 1_📊_Dashboard.py
+│   ├── 2_🔍_Zoeken.py
+│   └── 3_⚙️_Instellingen.py
+└── requirements.txt
+```
+
+Streamlit detecteert automatisch de `pages/` map en voegt een **sidebar navigatie** toe — geen extra code nodig!
+
+<br>
+
+### 💡 **Naamgeving truc:**
+```
+1_Pagina_Naam.py  →  "Pagina Naam"   (cijfer = volgorde)
+🔥_Fire_Types.py  →  "Fire Types"    (emoji werkt ook!)
+```
+
+</div>
+
+---
+
+### 📄 Multiple Pages — `st.navigation`
+
+<div style="font-size: 0.55em; margin: 30px 0px;">
+
+### 🚀 **Methode 2: `st.navigation()`** — meer controle
+
+```python
+# app.py
+import streamlit as st
+
+# Definieer pagina's als objecten
+dashboard = st.Page("pages/dashboard.py", title="📊 Dashboard", icon="📊")
+zoeken    = st.Page("pages/zoeken.py",    title="🔍 Zoeken",    icon="🔍")
+instellingen = st.Page(
+    "pages/instellingen.py",
+    title="⚙️ Instellingen",
+    icon="⚙️",
+    default=True  # Standaard pagina
+)
+
+# Groepeer pagina's
+pg = st.navigation({
+    "Overzicht": [dashboard],
+    "Tools": [zoeken, instellingen],
+})
+
+pg.run()  # Voer de actieve pagina uit
+```
+
+<br>
+
+✅ **Voordelen:** Dynamische navigatie, pagina's verbergen, eigen sidebar layout
+
+</div>
+
+---
+
+### 📄 Multiple Pages — Gedeelde State
+
+<div style="font-size: 0.55em; margin: 30px 0px;">
+
+### 🔗 **Data delen tussen pagina's**
+
+`st.session_state` werkt over alle pagina's heen!
+
+```python
+# pages/zoeken.py
+import streamlit as st
+
+st.title("🔍 Zoeken")
+
+pokemon_naam = st.text_input("Zoek een Pokemon")
+
+if st.button("Zoek"):
+    st.session_state.geselecteerde_pokemon = pokemon_naam
+    st.switch_page("pages/dashboard.py")  # Navigeer naar andere pagina
+```
+
+```python
+# pages/dashboard.py
+import streamlit as st
+
+st.title("📊 Dashboard")
+
+# Lees data van de andere pagina
+if "geselecteerde_pokemon" in st.session_state:
+    pokemon = st.session_state.geselecteerde_pokemon
+    st.write(f"Stats voor: **{pokemon}**")
+else:
+    st.info("Ga naar 'Zoeken' om een Pokemon te selecteren.")
+```
+
+<br>
+
+💡 `st.switch_page()` laat je navigeren tussen pagina's
+
+</div>
+
+---
+
+#### 🏆 Deel 3: Bouw de beste Pokémon app!
+
+<div style="font-size: 0.65em; margin: 30px 0px 30px 0px; line-height: 1.6; text-align: left;">
+
+Jullie bouwen **in groepen** de ultieme Pokémon Streamlit app. Aan het einde kiezen we een winnaar! 🥇
+
+</div>
+
+<div style="font-size: 0.45em; margin: 10px 0px; line-height: 1.6; text-align: left;">
+
+### 💡 Ideeën om mee te starten (of te combineren!)
+
+| Idee | Wat je nodig hebt |
+|---|---|
+| 📖 **Pokédex** | Zoek op naam, toon sprite + alle stats, type badge |
+| ⚔️ **Battle Arena** | Vergelijk 2 Pokémon, simuleer een gevecht op basis van stats |
+| 📊 **Stats Dashboard** | Radar chart, histogrammen, top-10 lijsten per stat |
+| 🌍 **Interactieve Kaart** | Geo-data van Pokémon → `px.scatter_geo` of `st.map` |
+| 🔢 **Type Calculator** | Welke types zijn sterk/zwak tegen elkaar? |
+
+</div>
+
+<div style="font-size: 0.5em; margin: 20px 0px 10px 0px; line-height: 1.6; text-align: left;">
+
+### 🗂️ Beschikbare data
+
+- `Pokemon_Stats.csv` — stats, type, generatie, legendary
+- **Geo-data** — locaties waar Pokémon voorkomen *(tip: `lat`/`lon` kolommen!)*
+- Sprites (zie URL in readme)
+
+</div>
 
 ---
