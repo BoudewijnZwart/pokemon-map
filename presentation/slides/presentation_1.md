@@ -688,7 +688,6 @@ st.plotly_chart(fig)
 1. 📡 **Dataset Inladen** - Overview van Pokemon
 2. 📊 **Data Preview** - Interactieve tabel met alle Pokemon
 3. 👩‍🎨 **Visualisaties** - Type distribution, stats, plots, charts
-4. 💾 **Download** - Export gefilterde data
 
 </div>
 <div style="font-size: 0.7em; margin: 60px 0px 60px 0px; line-height: 1.5; text-align: left;">
