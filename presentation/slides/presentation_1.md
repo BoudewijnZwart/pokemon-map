@@ -468,6 +468,64 @@ st.bar_chart(filtered_data.set_index("stad"))
 <table>
 <tr>
 <td style="width: 50%; vertical-align: top; padding: 10px;">
+🥧 Pie Chart
+</td>
+<td style="font-size: 0.55em; width: 40%; padding: 10px;">
+
+</td>
+</tr>
+<tr>
+<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
+
+```python
+# Voorbeeld Pokemon data
+df = pd.DataFrame({
+    "pokemon": [
+      "Pikachu", "Charizard",
+      "Blastoise", "Venusaur", "Gengar"
+    ],
+    "attack": [55, 84, 83, 82, 65],
+    "defense": [40, 78, 100, 83, 60],
+    "speed": [90, 100, 78, 80, 110],
+    "type": [
+      "Electric", "Fire", "Water", "Grass", "Ghost"
+    ],
+    "hp": [35, 78, 79, 80, 60]
+})
+
+# 🥧 Pie Chart - Type Distribution
+type_counts = df["type"].value_counts().reset_index()
+type_counts.columns = ["type", "count"]
+fig_pie = px.pie(
+    type_counts,
+    values="count",
+    names="type",
+    title="Pokemon Type Distribution"
+)
+st.plotly_chart(fig_pie, width="stretch")
+```
+</td>
+<td style="width: 40%; vertical-align: top; padding: 10px;">
+
+<div style="flex: 1; text-align: center;">
+  <img
+    src="images/deel1/pie-chart.png"
+    alt="Streamlit Basic Widgets"
+    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
+  >
+</div>
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🧩 Core Widgets - Visualize
+
+<table>
+<tr>
+<td style="width: 50%; vertical-align: top; padding: 10px;">
 📊 Matplotlib
 </td>
 <td style="font-size: 0.55em; width: 40%; padding: 10px;">
@@ -611,64 +669,6 @@ st.plotly_chart(fig)
 <div style="flex: 1; text-align: center;">
   <img
     src="images/deel1/scatter_geo.png"
-    alt="Streamlit Basic Widgets"
-    style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
-  >
-</div>
-
-</td>
-</tr>
-</table>
-
----
-
-### 🧩 Core Widgets - Visualize
-
-<table>
-<tr>
-<td style="width: 50%; vertical-align: top; padding: 10px;">
-🥧 Pie Chart
-</td>
-<td style="font-size: 0.55em; width: 40%; padding: 10px;">
-
-</td>
-</tr>
-<tr>
-<td style="font-size: 0.55em; width: 40%; vertical-align: top; padding: 10px;">
-
-```python
-# Voorbeeld Pokemon data
-df = pd.DataFrame({
-    "pokemon": [
-      "Pikachu", "Charizard",
-      "Blastoise", "Venusaur", "Gengar"
-    ],
-    "attack": [55, 84, 83, 82, 65],
-    "defense": [40, 78, 100, 83, 60],
-    "speed": [90, 100, 78, 80, 110],
-    "type": [
-      "Electric", "Fire", "Water", "Grass", "Ghost"
-    ],
-    "hp": [35, 78, 79, 80, 60]
-})
-
-# 🥧 Pie Chart - Type Distribution
-type_counts = df["type"].value_counts().reset_index()
-type_counts.columns = ["type", "count"]
-fig_pie = px.pie(
-    type_counts,
-    values="count",
-    names="type",
-    title="Pokemon Type Distribution"
-)
-st.plotly_chart(fig_pie, width="stretch")
-```
-</td>
-<td style="width: 40%; vertical-align: top; padding: 10px;">
-
-<div style="flex: 1; text-align: center;">
-  <img
-    src="images/deel1/pie-chart.png"
     alt="Streamlit Basic Widgets"
     style="width: 100%; max-width: 100%; height: auto; border: 1px solid #ddd;"
   >

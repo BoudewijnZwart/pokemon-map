@@ -30,7 +30,7 @@ count = 0  # Reset bij elke rerun!
 if st.button("➕ Klik me"):
     count += 1
 
-st.write(f"Count: {count}")  # Altijd 0!
+st.write(f"Count: {count}")  # Nooit voorbij 1!
 ```
 
 <br>
