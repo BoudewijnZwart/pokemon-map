@@ -24,7 +24,7 @@ Welkom bij de Streamlit Workshop! In 4 uur leer je hoe je interactieve data-apps
 uv sync
 
 # Start je app
-uv run streamlit run <path_to_app.py>
+uv run streamlit run app.py
 ```
 
 Je browser opent automatisch op `http://localhost:8501` 🎉
@@ -97,12 +97,7 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 - Voeg `key=` toe aan de widgets zodat elke filterwijziging opgeslagen wordt in de URL query parameters
 - Voeg `bind=` toe zodat de widget waardes uit de URL worden geladen
 
-### Stap 2: Share knop
-
-- Voeg een **"🔗 Kopieer link"** button toe  <--- DONT KNOW HOW YET
-- Toon een `st.success` melding na het klikken
-
-### Stap 3: Reset knop
+### Stap 2: Reset knop
 
 - Voeg een **"🔄 Reset filters"** button toe die:
   - Alle filters terugzet naar een beginstand  

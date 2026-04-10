@@ -6,18 +6,19 @@ import pandas as pd
 import streamlit as st
 
 
+# Load data
+@st.cache_data
+def load_data():
+    project_path = Path(__file__).resolve().parent.parent.parent
+    csv_path = project_path / "data" / "Pokemon_Stats.csv"
+    return pd.read_csv(csv_path, delimiter=";", encoding='latin-1')
+
+
 def run_assignment() -> None:
     """Run the Streamlit app for Assignment 2."""
     # Page config and title
     st.set_page_config(layout="wide", page_title="Pokemon Streamlit workshop")
     st.title("Pokemon Streamlit workshop")
-
-    # Load data
-    @st.cache_data
-    def load_data():
-        project_path = Path(__file__).resolve().parent.parent.parent
-        csv_path = project_path / "data" / "Pokemon_Stats.csv"
-        return pd.read_csv(csv_path, delimiter=";", encoding='latin-1')
 
     pokemon_df = load_data()
 
