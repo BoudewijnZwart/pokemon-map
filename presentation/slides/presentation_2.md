@@ -314,7 +314,7 @@ def load_data():
 
 pokemon_df = load_data()
 
-generations = st.multiselect("Generatie", [1, 2, 3])
+generations = st.multiselect("Generatie", [0, 1, 2, 3, 4, 5, 6, 7])
 
 # Filter by generation, or use all if none selected
 filtered_by_gen = (
@@ -397,7 +397,7 @@ def reset_filters():
 
 st.multiselect(
   "Generatie",
-  [1, 2, 3, 4, 5, 6, 7],
+  [0, 1, 2, 3, 4, 5, 6, 7],
   key="generations",
   on_change=update_types
 )
