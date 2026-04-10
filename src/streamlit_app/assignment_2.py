@@ -1,4 +1,4 @@
-"""Assignment 1: Basic Streamlit App with Pokémon Data."""
+"""Assignment 2: Filters and more widgets."""
 
 from pathlib import Path
 
@@ -7,7 +7,7 @@ import streamlit as st
 
 
 def run_assignment() -> None:
-    """Run the Streamlit app for Assignment 1."""
+    """Run the Streamlit app for Assignment 2."""
     # Page config and title
     st.set_page_config(layout="wide", page_title="Pokemon Streamlit workshop")
     st.title("Pokemon Streamlit workshop")
