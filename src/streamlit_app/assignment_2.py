@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 
-def run_assignment_1() -> None:
+def run_assignment() -> None:
     """Run the Streamlit app for Assignment 1."""
     # Page config and title
     st.set_page_config(layout="wide", page_title="Pokemon Streamlit workshop")
