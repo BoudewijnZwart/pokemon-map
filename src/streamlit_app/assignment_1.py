@@ -1,6 +1,5 @@
 """Assignment 1: Basic Streamlit App with Pokémon Data."""
 
-import os
 from pathlib import Path
 
 import pandas as pd
@@ -17,8 +16,8 @@ def run_assignment_1() -> None:
     @st.cache_data
     def load_data():
         project_path = Path(__file__).resolve().parent.parent.parent
-        csv_path = os.path.join(project_path, 'data', 'Pokemon_Stats.csv')
-        return pd.read_csv(csv_path)
+        csv_path = project_path / "data" / "Pokemon_Stats.csv"
+        return pd.read_csv(csv_path, delimiter=";", encoding='latin-1')
 
     pokemon_df = load_data()
 
@@ -58,15 +57,12 @@ def run_assignment_1() -> None:
         df_type_all_count.columns = ["Type all", "Count"]
         st.bar_chart(df_type_all_count, x="Type all", y="Count")
 
-        # Water-Flying Scatter Plot
-        st.subheader("Attack vs. Defense for Water-Flying Pokémon")
+        # Water Scatter Plot
+        st.subheader("Attack vs. Defense Water Pokémon")
         water_flying_attack = pokemon_df[
-            (pokemon_df["Type 1"] == "Water") &
-            (pokemon_df["Type 2"] == "Flying")
+            (pokemon_df["Type 1"] == "Water")
         ][["Name", "Attack", "Defense"]].reset_index(drop=True)
-        st.scatter_chart(
-        water_flying_attack, x="Name", y=["Attack", "Defense"], color=["blue", "yellow"]
-    )
+        st.scatter_chart(water_flying_attack, x="Defense", y="Attack")
 
     # Table Tab
     with tab_table:
