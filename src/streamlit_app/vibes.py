@@ -94,20 +94,20 @@ def build_folium_map(filtered: pd.DataFrame):
     m = folium.Map(
         location=[center_lat, center_lon],
         zoom_start=3,
-        tiles="https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
+        tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         attr="© Stadia Maps © Stamen Design © OpenMapTiles © OpenStreetMap contributors",
         prefer_canvas=True,
     )
 
-    # Faint label overlay so country/city names are still readable
-    folium.TileLayer(
-        tiles="https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}.png",
-        attr="© Stadia Maps © Stamen Design",
-        name="Labels",
-        overlay=True,
-        control=False,
-        opacity=0.45,
-    ).add_to(m)
+    # # Faint label overlay so country/city names are still readable
+    # folium.TileLayer(
+    #     tiles="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    #     attr="© OpenStreetMap contributors",
+    #     name="Labels",
+    #     overlay=True,
+    #     control=False,
+    #     opacity=0.45,
+    # ).add_to(m)
 
     # Cluster for performance
     cluster = MarkerCluster(
