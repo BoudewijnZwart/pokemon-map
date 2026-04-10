@@ -127,9 +127,9 @@ De filters moeten **in volgorde** werken: elke filter beperkt de opties van de v
 
 > **Doel:** Bouw een complete multipage Pokémon-app met een turn-based battle game, Pokémon management en een leaderboard.
 
-## Wat ga je bouwen?
+## Wat kan je bouwen?
 
-Een volledige app met meerdere pagina's, een battle game, en zoveel mogelijk Streamlit-features. Dit is de **competitie-opdracht** — de beste app wint! 🥇
+Hier hebben we een voorbeeld van een volledige app met meerdere pagina's, een battle game, en zoveel mogelijk Streamlit-features.
 
 ---
 
@@ -140,14 +140,14 @@ Gebruik Streamlit's multipage-functionaliteit (`pages/` map of `st.navigation`):
 ```
 📁 pages/
    🏠 1_Home.py          → Overzicht & statistieken
-   ⚔️  2_Battle.py        → Turn-based battle game
+   ⚔️ 2_Battle.py        → Turn-based battle game
    📋 3_Pokemon.py       → Pokémon management & team builder
    🏆 4_Leaderboard.py   → Scores & ranglijst
 ```
 
 ---
 
-## ✅ Pagina 1 — Home
+## ✅ Voorbeeld 1 — Home
 
 - Overzicht van de volledige Pokédex (gebruik wat je al hebt van Opdracht 1)
 - Zoekfunctie op naam
@@ -155,7 +155,7 @@ Gebruik Streamlit's multipage-functionaliteit (`pages/` map of `st.navigation`):
 
 ---
 
-## ✅ Pagina 2 — Battle Game ⚔️
+## ✅ Voorbeeld 2 — Battle Game ⚔️
 
 Bouw een **turn-based Pokémon battle** tegen een willekeurige tegenstander:
 
@@ -179,7 +179,7 @@ schade = max(1, aanvaller_attack - verdediger_defense // 2)
 
 ---
 
-## ✅ Pagina 3 — Pokémon Management 📋
+## ✅ Voorbeeld 3 — Pokémon Management 📋
 
 - Zoek en bekijk Pokémon (met afbeeldingen via PokeAPI  https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{id}.png)
 - Stel je team samen (max 6 Pokémon)
@@ -188,7 +188,7 @@ schade = max(1, aanvaller_attack - verdediger_defense // 2)
 
 ---
 
-## ✅ Pagina 4 — Leaderboard 🏆
+## ✅ Voorbeeld 4 — Leaderboard 🏆
 
 - Toon de battle-resultaten van de huidige sessie
 - Ranglijst: meeste overwinningen, hoogste score
